@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 
-const Home = () => {
+const About = () => {
     return (
         <div>
-            <p>this is home page</p>
+            <p>The about page coming soon....</p>
         </div>
     );
 };
 
-export default Home ;
+export default About;
