@@ -3,14 +3,16 @@ import React from 'react';
 import Navbar from '../../Pages/Share/Navbar/Navbar';
 import { Outlet } from 'react-router-dom';
 import Footer from '../../Pages/Share/Footer/Footer';
+import Services from '../../Pages/Services/Services';
 
 const Main = () => {
     return (
-        <div>
-            <Navbar></Navbar>
-            <Outlet></Outlet>
-            <Footer></Footer>
-        </div>
+      <div className="bg-[#D8D3D3]">
+        <Navbar></Navbar>
+        <Services />
+        <Outlet></Outlet>
+        <Footer></Footer>
+      </div>
     );
 };
 
