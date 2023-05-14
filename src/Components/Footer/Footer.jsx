@@ -3,7 +3,7 @@ import React from 'react';
 import navicon from "../../assets/navicon.png"
 const Footer = () => {
     return (
-        <div>
+        <div className=' absolute top-[505px] w-full'>
         <footer className="footer p-10 bg-base-200 text-base-content">
         <div>
         <img style={{width:'80px',height:'80px'}} src={navicon} alt=''></img>

@@ -8,7 +8,7 @@ const Navbar = () => {
   const navbarList = (
     <React.Fragment>
       <li>
-        <Link to="/home">Home</Link>
+        <Link to="/">Home</Link>
       </li>
       <li>
         <Link to="/about">About</Link>
@@ -20,10 +20,10 @@ const Navbar = () => {
         <Link to="/services">Services</Link>
       </li>
       <li>
-        <Link to="/portfolio">Portfolio</Link>
+        <Link to="/">Portfolio</Link>
       </li>
       <li>
-        <Link to="/blog">Blog</Link>
+        <Link to="/">Blog</Link>
       </li>
     </React.Fragment>
   );
