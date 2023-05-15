@@ -3,10 +3,12 @@ import React from 'react';
 import Footer from '../../../Components/Footer/Footer';
 import Banner from '../Banner/Banner';
 import Services from '../../Services/Services';
+import Portfolio from '../../Portfolio/Portfolio';
 
 const Home = () => {
     return (
         <div>
+
            <div className='lg:grid grid-cols-12 w-full h-[600px]'  style={{ background: `url("https://cdn.discordapp.com/attachments/1101528250964000938/1107265249209503804/ezgif.com-optimize_1.gif")`,backgroundRepeat:"",backgroundSize:"1600px 400px" }}>
            <div className=' text-stone-50 col-span-6 text-center flex justify-center items-center'>
             <div>
@@ -19,7 +21,10 @@ const Home = () => {
            <Banner></Banner>
            </div>
            </div>
-            <Services/>
+            <Banner></Banner>
+            <Services />
+            <Portfolio/>
+
         </div>
     );
 };

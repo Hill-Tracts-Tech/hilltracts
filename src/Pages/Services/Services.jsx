@@ -8,7 +8,7 @@ const Services = () => {
   return (
     <div className="max-w-5xl mx-auto mb-10">
       <div className="s-title-outline w-48 mx-auto my-5">
-        <h2 className="text-lg font-semibold text-orange-400 s-title text-center">
+        <h2 className="text-lg font-semibold text-orange-400 s-title text-center uppercase">
           Services
         </h2>
       </div>
