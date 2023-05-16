@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { FaClock, FaComment } from 'react-icons/fa';
-import"../../../styles/Services.css"
+import"../../../styles/styles.css"
 const BlogAndNew = () => {
     const data = [
         {

@@ -1,0 +1,137 @@
+/* Services Section Style */
+.s-title-outline {
+    position: relative;
+}
+
+.s-title::before {
+    content: '';
+    width: 35px;
+    height: 3px;
+    background: orange;
+    position: absolute;
+    top: 14px;
+    left: 18px;
+}
+
+.s-title::after {
+    content: '';
+    width: 35px;
+    height: 3px;
+    background: orange;
+    position: absolute;
+    top: 14px;
+    right: 18px;
+}
+
+/* Services Section Style ended */
+
+/* Portfolio style */
+
+.project {
+    display: inline-block;
+    cursor: pointer;
+    color: #eae3e3;
+    margin: 0 10px;
+}
+
+.p-title-outline {
+    position: relative;
+}
+
+.p-title::after {
+    content: '';
+    width: 35px;
+    height: 3px;
+    background: orange;
+    position: absolute;
+    top: 13px;
+    right: 26px;
+}
+
+.active {
+    color: orange;
+    text-decoration: underline;
+    transition: all ease 0.5s;
+}
+
+.project-card {
+    position: relative;
+}
+
+.details-project {
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    animation: increase;
+    transition: 0.5s ease;
+}
+
+.project-card:hover .details-project {
+    height: 30%;
+    width: 100%;
+}
+
+/* Portfolio style ended */
+
+/* TeamMembers style */
+
+.social-icons-wrapper {
+    position: relative;
+}
+
+.social-icons {
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    bottom: -50px;
+    left: 65px;
+    transition: 0.3s ease;
+    visibility: hidden;
+}
+.social-icons-wrapper:hover .social-icons{
+    bottom: 15px;
+    visibility: visible;
+}
+
+/* TeamMembers style ended */
+
+/* Feedback style */
+.f-title-outline {
+    position: relative;
+}
+
+.f-title::before {
+    content: '';
+    width: 35px;
+    height: 3px;
+    background: orange;
+    position: absolute;
+    top: 14px;
+    left: 8px;
+}
+
+.f-title::after {
+    content: '';
+    width: 35px;
+    height: 3px;
+    background: orange;
+    position: absolute;
+    top: 14px;
+    right: 8px;
+}
+
+.custom-hover {
+    border: 2px solid #595857;
+}
+
+.custom-hover:hover {
+    border: 2px solid #d3550c;
+}
+
+/* Feedback style ended */

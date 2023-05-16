@@ -3,7 +3,7 @@ import { BsArrowRight, BsCodeSlash, BsDatabaseCheck } from "react-icons/bs";
 import { GiCyberEye } from "react-icons/gi";
 import { MdBusiness } from "react-icons/md";
 import { SiSimpleanalytics } from "react-icons/si";
-import "../../styles/Services.css"
+import "../../../styles/styles.css"
 const Services = () => {
   return (
     <div className="max-w-5xl mx-auto mb-10">
