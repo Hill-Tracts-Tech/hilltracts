@@ -8,22 +8,22 @@ const Navbar = () => {
   const navbarList = (
     <React.Fragment>
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/" className="hover:text-[#1DA1F2]">Home</Link>
       </li>
       <li>
-        <Link to="/about">About</Link>
+        <Link to="/about" className="hover:text-[#1DA1F2]">About</Link>
       </li>
       <li>
-        <Link to="/contact">Contact</Link>
+        <Link to="/contact" className="hover:text-[#1DA1F2]">Contact</Link>
       </li>
       <li>
-        <Link to="/services">Services</Link>
+        <Link to="/services" className="hover:text-[#1DA1F2]">Services</Link>
       </li>
       <li>
-        <Link to="/">Portfolio</Link>
+        <Link to="/" className="hover:text-[#1DA1F2]">Portfolio</Link>
       </li>
       <li>
-        <Link to="/">Blog</Link>
+        <Link to="/" className="hover:text-[#1DA1F2]">Blog</Link>
       </li>
     </React.Fragment>
   );
