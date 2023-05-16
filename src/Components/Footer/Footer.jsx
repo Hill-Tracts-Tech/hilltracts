@@ -26,7 +26,7 @@ const Footer = () => {
             <a
               target={"_blank"}
               rel="noreferrer"
-              href="https://www.facebook.com/hotelgreenlandbandarban"
+              href="https://www.facebook.com/hilltrackstech"
             >
               <img src={facebook} alt="" />
             </a>
@@ -36,7 +36,7 @@ const Footer = () => {
             <a target={"_blank"} rel="noreferrer" href="www.twittor.com">
               <img src={twittor} alt="" />
             </a>
-            <a target={"_blank"} rel="noreferrer" href="www.linkedin.com">
+            <a target={"_blank"} rel="noreferrer" href="https://www.linkedin.com/in/hill-tracts-tech-450aa4274/">
               <img src={linkedIn} alt="" />
             </a>
           </div>
