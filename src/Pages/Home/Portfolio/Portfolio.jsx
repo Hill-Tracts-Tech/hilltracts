@@ -10,7 +10,7 @@ const Portfolio = () => {
   return (
     <div className="max-w-5xl mx-auto">
       <div className="p-title-outline w-32">
-        <h2 className="text-orange-400 p-title uppercase">Project</h2>
+        <h2 className="text-[#1DA1F2] p-title uppercase">Project</h2>
       </div>
       <div className="flex justify-between items-center">
         <div>
@@ -43,7 +43,7 @@ const Portfolio = () => {
             <a href="#" className="text-white">
               Software Development
             </a>
-            <h3 className="font-semibold text-orange-400">Software</h3>
+            <h3 className="font-semibold text-[#1DA1F2]">Software</h3>
           </div>
         </div>
         <div className="project-card">
@@ -56,7 +56,7 @@ const Portfolio = () => {
             <a href="#" className="text-white">
               Cloud Computing
             </a>
-            <h3 className="font-semibold text-orange-400">Cloud</h3>
+            <h3 className="font-semibold text-[#1DA1F2]">Cloud</h3>
           </div>
         </div>
         <div className="project-card">
@@ -69,7 +69,7 @@ const Portfolio = () => {
             <a href="#" className="text-white">
               Web Development
             </a>
-            <h3 className="font-semibold text-orange-400">Web Dev</h3>
+            <h3 className="font-semibold text-[#1DA1F2]">Web Dev</h3>
           </div>
         </div>
         <div className="project-card">
@@ -82,7 +82,7 @@ const Portfolio = () => {
             <a href="#" className="text-white">
               Web Design
             </a>
-            <h3 className="font-semibold text-orange-400">Web Design</h3>
+            <h3 className="font-semibold text-[#1DA1F2]">Web Design</h3>
           </div>
         </div>
         <div className="project-card">
@@ -95,7 +95,7 @@ const Portfolio = () => {
             <a href="#" className="text-white">
               Digital Marketing
             </a>
-            <h3 className="font-semibold text-orange-400">Marketing</h3>
+            <h3 className="font-semibold text-[#1DA1F2]">Marketing</h3>
           </div>
         </div>
         <div className="project-card">
@@ -108,7 +108,7 @@ const Portfolio = () => {
             <a href="#" className="text-white">
               Cyber Security
             </a>
-            <h3 className="font-semibold text-orange-400">Security</h3>
+            <h3 className="font-semibold text-[#1DA1F2]">Security</h3>
           </div>
         </div>
       </div>

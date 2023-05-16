@@ -89,4 +89,13 @@ export const data = [
         gitHub:"",
         linkedIn:""
     },
+    {
+        id: 11,
+        name: "Tanmoy Dewanjee",
+        designation: "Dev",
+        imgURL: "https://i.ibb.co/5BZvb4s/sadia.jpg",
+        faceBook:"",
+        gitHub:"",
+        linkedIn:""
+    },
 ]

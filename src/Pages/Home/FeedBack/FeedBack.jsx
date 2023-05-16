@@ -4,7 +4,7 @@ const FeedBack = () => {
   return (
     <div className="max-w-5xl mx-auto mb-10">
       <div className="f-title-outline w-48 mx-auto my-5">
-        <h2 className="text-lg font-semibold text-orange-400 f-title text-center uppercase">
+        <h2 className="text-lg font-semibold text-[#1DA1F2] f-title text-center uppercase">
           feedback
         </h2>
       </div>
