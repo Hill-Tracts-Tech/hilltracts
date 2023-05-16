@@ -5,6 +5,7 @@ import Banner from "../Banner/Banner";
 import Services from "../../Services/Services";
 import Portfolio from "../../Portfolio/Portfolio";
 import BlogAndNew from "../BlogAndNew/BlogAndNew";
+import Navbar from "../../../Components/Navbar/Navbar";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
           backgroundSize: "",
         }}
       >
+        
         <div className=" text-stone-50 col-span-6 text-center flex justify-center items-center">
           <div>
             <p>Digital Superheroes</p>
