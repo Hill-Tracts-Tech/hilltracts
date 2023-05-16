@@ -1,5 +1,5 @@
 import { filterData } from "./filterData";
-import "../../styles/portfolio.css";
+import "../../../styles/styles.css";
 import { useState } from "react";
 const Portfolio = () => {
   const [active, setActive] = useState(1);
@@ -14,7 +14,7 @@ const Portfolio = () => {
       </div>
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-xl text-gray-800 font-bold capitalize">Awesome Portfolio and Projects</h1>
+          <h1 className="text-xl text-gray-100 font-bold capitalize">Awesome Portfolio and Projects</h1>
         </div>
         <div>
           <ul>

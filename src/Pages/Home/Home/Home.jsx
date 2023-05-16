@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Footer from "../../../Components/Footer/Footer";
 import Banner from "../Banner/Banner";
-import Services from "../../Services/Services";
-import Portfolio from "../../Portfolio/Portfolio";
 import BlogAndNew from "../BlogAndNew/BlogAndNew";
-import Navbar from "../../../Components/Navbar/Navbar";
+import Services from "../Services/Services";
+import Portfolio from "../Portfolio/Portfolio";
+import TeamMembers from "../TeamMembers/TeamMembers";
+import FeedBack from "../FeedBack/FeedBack";
 
 const Home = () => {
   return (
@@ -41,6 +41,8 @@ const Home = () => {
       </div>
       <Services />
       <Portfolio />
+      <TeamMembers />
+      <FeedBack/>
       <BlogAndNew></BlogAndNew>
     </div>
   );

@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { FaClock, FaComment } from 'react-icons/fa';
-import"../../../styles/Services.css"
+import"../../../styles/styles.css"
 const BlogAndNew = () => {
     const data = [
         {
@@ -35,7 +35,7 @@ const BlogAndNew = () => {
     ]
     return (
         <div className='max-w-5xl mx-auto mb-10'>
-                <div className="s-title-outline w-48 mx-auto my-5">
+                <div className="b-title-outline w-48 mx-auto my-5">
         <h2 className="text-lg font-semibold text-[#1DA1F2] b-title text-center uppercase">
         What’s Happening
         </h2>
