@@ -36,7 +36,7 @@ const BlogAndNew = () => {
     return (
         <div className='max-w-5xl mx-auto mb-10'>
                 <div className="s-title-outline w-48 mx-auto my-5">
-        <h2 className="text-lg font-semibold text-orange-400 s-title text-center uppercase">
+        <h2 className="text-lg font-semibold text-[#1DA1F2] b-title text-center uppercase">
         What’s Happening
         </h2>
       </div>
