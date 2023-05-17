@@ -7,6 +7,7 @@ import Portfolio from "../Portfolio/Portfolio";
 // import TeamMembers from "../TeamMembers/TeamMembers";
 import FeedBack from "../FeedBack/FeedBack";
 import Members from "../Members/Members";
+import OurClients from "../OurClients/OurClients";
 
 const Home = () => {
   return (
@@ -37,7 +38,7 @@ const Home = () => {
           </div>
         </div>
         <div className="col-span-6">
-          <Banner></Banner>
+          <Banner/>
         </div>
       </div>
       <Services />
@@ -45,7 +46,8 @@ const Home = () => {
       {/* <TeamMembers /> */}
       <Members/>
       <FeedBack/>
-      <BlogAndNew></BlogAndNew>
+      <OurClients/>
+      <BlogAndNew/>
     </div>
   );
 };

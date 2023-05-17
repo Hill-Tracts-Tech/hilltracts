@@ -8,7 +8,7 @@ const Services = () => {
   return (
     <div className="max-w-[90%] mx-auto mb-10">
       <div className="s-title-outline w-48 mx-auto my-5">
-        <h2 className="text-lg font-semibold text-orange-400 s-title text-center uppercase">
+        <h2 className="text-lg font-semibold text-[#1DA1F2] s-title text-center uppercase">
           Services
         </h2>
       </div>
@@ -22,7 +22,7 @@ const Services = () => {
           <div className="content">
             <div className=" flex justify-start items-center gap-2">
               <div className="icon">
-                <FaConnectdevelop size={23} className="text-orange-400" />
+                <FaConnectdevelop size={23} className="text-[#1DA1F2]" />
               </div>
               <div>
                 <h2 className="text-xl font-bold capitalize">
@@ -38,7 +38,7 @@ const Services = () => {
 
               <button className="mt-5">
                 Read More{" "}
-                <BsArrowRight className="text-orange-400 inline-block" />
+                <BsArrowRight className="text-[#1DA1F2] inline-block" />
               </button>
             </div>
           </div>
@@ -47,7 +47,7 @@ const Services = () => {
           <div className="content">
             <div className=" flex justify-start items-center gap-2">
               <div className="icon">
-                <GiCyberEye size={23} className="text-orange-400" />
+                <GiCyberEye size={23} className="text-[#1DA1F2]" />
               </div>
               <div>
                 <h2 className="text-xl font-bold capitalize">Cyber Security</h2>
@@ -61,7 +61,7 @@ const Services = () => {
 
               <button className="mt-5">
                 Read More{" "}
-                <BsArrowRight className="text-orange-400 inline-block" />
+                <BsArrowRight className="text-[#1DA1F2] inline-block" />
               </button>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Services = () => {
           <div className="content">
             <div className=" flex justify-start items-center gap-2">
               <div className="icon">
-                <BsDatabaseCheck size={23} className="text-orange-400" />
+                <BsDatabaseCheck size={23} className="text-[#1DA1F2]" />
               </div>
               <div>
                 <h2 className="text-xl font-bold capitalize">Data recovery</h2>
@@ -84,7 +84,7 @@ const Services = () => {
 
               <button className="mt-5">
                 Read More{" "}
-                <BsArrowRight className="text-orange-400 inline-block" />
+                <BsArrowRight className="text-[#1DA1F2] inline-block" />
               </button>
             </div>
           </div>
@@ -93,7 +93,7 @@ const Services = () => {
           <div className="content">
             <div className=" flex justify-start items-center gap-2">
               <div className="icon">
-                <BsCodeSlash size={23} className="text-orange-400" />
+                <BsCodeSlash size={23} className="text-[#1DA1F2]" />
               </div>
               <div>
                 <h2 className="text-xl font-bold capitalize">
@@ -109,7 +109,7 @@ const Services = () => {
 
               <button className="mt-5">
                 Read More{" "}
-                <BsArrowRight className="text-orange-400 inline-block" />
+                <BsArrowRight className="text-[#1DA1F2] inline-block" />
               </button>
             </div>
           </div>
@@ -118,7 +118,7 @@ const Services = () => {
           <div className="content">
             <div className=" flex justify-start items-center gap-2">
               <div className="icon">
-                <MdBusiness size={23} className="text-orange-400" />
+                <MdBusiness size={23} className="text-[#1DA1F2]" />
               </div>
               <div>
                 <h2 className="text-xl font-bold capitalize">
@@ -134,7 +134,7 @@ const Services = () => {
 
               <button className="mt-5">
                 Read More{" "}
-                <BsArrowRight className="text-orange-400 inline-block" />
+                <BsArrowRight className="text-[#1DA1F2] inline-block" />
               </button>
             </div>
           </div>
@@ -143,7 +143,7 @@ const Services = () => {
           <div className="content">
             <div className=" flex justify-start items-center gap-2">
               <div className="icon">
-                <SiSimpleanalytics size={23} className="text-orange-400" />
+                <SiSimpleanalytics size={23} className="text-[#1DA1F2]" />
               </div>
               <div>
                 <h2 className="text-xl font-bold capitalize">data analysis</h2>
@@ -157,7 +157,7 @@ const Services = () => {
 
               <button className="mt-5">
                 Read More{" "}
-                <BsArrowRight className="text-orange-400 inline-block" />
+                <BsArrowRight className="text-[#1DA1F2] inline-block" />
               </button>
             </div>
           </div>

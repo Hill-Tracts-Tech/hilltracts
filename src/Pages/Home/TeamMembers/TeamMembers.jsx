@@ -6,7 +6,7 @@ const TeamMembers = () => {
   return (
     <div className="max-w-5xl mx-auto mb-10">
       <div className="s-title-outline w-48 mx-auto my-5">
-        <h2 className="text-lg font-semibold text-orange-400 s-title text-center uppercase">
+        <h2 className="text-lg font-semibold text-[#1DA1F2] s-title text-center uppercase">
           Team
         </h2>
       </div>
@@ -25,17 +25,17 @@ const TeamMembers = () => {
                 alt={info.name}
               />
               <div className="flex justify-center z-0 items-center gap-2 social-icons">
-                <button className="bg-orange-500 p-2 rounded-full">
+                <button className="bg-[#1DA1F2] p-2 rounded-full">
                   <a href={info.faceBook}>
                     <FaFacebookF color="white" />
                   </a>
                 </button>
-                <button className="bg-orange-500 p-2 rounded-full">
+                <button className="bg-[#1DA1F2] p-2 rounded-full">
                   <a href={info.gitHub}>
                     <FaGithub color="white" />
                   </a>
                 </button>
-                <button className="bg-orange-500 p-2 rounded-full">
+                <button className="bg-[#1DA1F2] p-2 rounded-full">
                   <a href={info.linkedIn}>
                     <FaLinkedinIn color="white" />
                   </a>
@@ -44,7 +44,7 @@ const TeamMembers = () => {
             </div>
             <div className="text-center z-10 leading-none">
               <h3 className="text-xl font-semibold">{info.name}</h3>
-              <span className="text-sm font-semibold text-orange-400">
+              <span className="text-sm font-semibold text-[#1DA1F2]">
                 {info.designation}
               </span>
             </div>
