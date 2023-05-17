@@ -90,4 +90,11 @@ export const productData = [
     designation: "Designer",
     description: "Some text about the career....",
   },
+  {
+    id: 10,
+    imageurl:"https://i.ibb.co/P9mjGDZ/tonmoy.jpg",
+    name: "Tonmoy",
+    designation: "Human Resource",
+    description: "Some text about the career....",
+  },
 ];
