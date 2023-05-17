@@ -6,16 +6,16 @@ const Portfolio = () => {
   const handleFilter = (currentID) => {
     setActive(currentID);
   };
-  console.log(active);
   return (
-    <div className="max-w-5xl mx-auto">
-      <div className="p-title-outline w-32">
+    <div className="max-w-[90%] mx-auto">
+      <div className="p-title-outline w-32 mx-auto text-center">
         <h2 className="text-orange-400 p-title uppercase">Project</h2>
       </div>
-      <div className="flex justify-between items-center">
-        <div>
-          <h1 className="text-xl text-gray-100 font-bold capitalize">Awesome Portfolio and Projects</h1>
-        </div>
+      <h1 className="text-3xl text-gray-100 font-bold capitalize">
+        Awesome Portfolio and Projects
+      </h1>
+      <div className="flex justify-start items-center">
+        <div></div>
         <div>
           <ul>
             {filterData.map((project, i) => (

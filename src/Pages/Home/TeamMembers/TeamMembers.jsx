@@ -1,8 +1,8 @@
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import "../../../styles/styles.css";
-import { data } from "./data";
+import { productData } from "./data";
 const TeamMembers = () => {
-  console.log(data);
+  console.log(productData);
   return (
     <div className="max-w-5xl mx-auto mb-10">
       <div className="s-title-outline w-48 mx-auto my-5">
@@ -16,12 +16,14 @@ const TeamMembers = () => {
         </h1>
       </div>
       <div className="services grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-between gap-3 mt-8">
-        {data?.map((info) => (
-          <div
-            key={info.id}
-            className="bg-slate-50">
+        {productData?.map((info) => (
+          <div key={info.id} className="bg-slate-50">
             <div className="social-icons-wrapper">
-              <img className="h-[250px] w-full" src={info.imgURL} alt={info.name} />
+              <img
+                className="h-[250px] w-full"
+                src={info.imgURL}
+                alt={info.name}
+              />
               <div className="flex justify-center z-0 items-center gap-2 social-icons">
                 <button className="bg-orange-500 p-2 rounded-full">
                   <a href={info.faceBook}>
