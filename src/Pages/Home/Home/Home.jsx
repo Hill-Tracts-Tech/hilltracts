@@ -8,6 +8,7 @@ import Portfolio from "../Portfolio/Portfolio";
 import FeedBack from "../FeedBack/FeedBack";
 import Members from "../Members/Members";
 import OurClients from "../OurClients/OurClients";
+import ShowModal from "../TestModal/ShowModal";
 
 const Home = () => {
   return (
@@ -47,7 +48,8 @@ const Home = () => {
       <Members/>
       <FeedBack/>
       <OurClients/>
-      <BlogAndNew/>
+      <BlogAndNew />
+      <ShowModal/>
     </div>
   );
 };
