@@ -121,13 +121,13 @@
     overflow: hidden;
     text-align: center;
     bottom: 15px;
-    left: 38px;
+    left: 68px;
     transition: 0.3s ease;
     visibility: hidden;
 }
 
 .social-icons-wrapper:hover .social-icons {
-    bottom: 115px;
+    bottom: 100px;
     visibility: visible;
 }
 
@@ -241,3 +241,12 @@ h1 {
 }
 
 /* Blog and News Style ended */
+
+/* Service Details Page style */
+.s-icon{
+    transition: 0.5s ease;
+}
+.single-service:hover .s-icon{
+    transform: rotate(180deg);
+}
+/* Service Details Page Style ended */

@@ -4,6 +4,7 @@ import { GiCyberEye } from "react-icons/gi";
 import { MdBusiness } from "react-icons/md";
 import { SiSimpleanalytics } from "react-icons/si";
 import "../../../styles/styles.css"
+import { Link } from "react-router-dom";
 const Services = () => {
   return (
     <div className="max-w-[90%] mx-auto mb-10">
@@ -36,10 +37,10 @@ const Services = () => {
                 Distinctio, eius.lorem10
               </p>
 
-              <button className="mt-5">
+              <Link to="/servicesDetails" className="mt-5">
                 Read More{" "}
                 <BsArrowRight className="text-[#1DA1F2] inline-block" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>

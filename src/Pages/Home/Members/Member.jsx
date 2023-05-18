@@ -6,7 +6,13 @@ import "./style.css";
 function Member(props) {
   return (
     <div className="card social-icons-wrapper">
-      <img className="member-img" src={props.url} alt="product image" />
+      <div className="rounded-full my-3">
+        <img
+          className="member-img rounded-full ring ring-primary ring-offset-base-100 ring-offset-2"
+          src={props.url}
+          alt="product image"
+        />
+      </div>
       <div className="flex justify-center z-0 items-center gap-2 social-icons">
         <button className="bg-orange-500 p-2 rounded-full">
           <a href={props.faceBook}>
@@ -24,9 +30,8 @@ function Member(props) {
           </a>
         </button>
       </div>
-      <h2>{props.name}</h2>
-      <p className="designation">{props.designation}</p>
-      <p>{props.description}</p>
+      <h2 className="text-md">{props.name}</h2>
+      <p className="text-sm font-semibold">{props.designation}</p>
     </div>
   );
 }
