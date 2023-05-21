@@ -55,7 +55,7 @@ export const serviceData = [
   {
     serviceId: "#7",
     id: 7,
-    title: "Mobile app development",
+    title: "Mobile App Development",
     description:
       "Our tech companies deliver customized and user-centric mobile applications that enhance brand visibility, engage users, and drive business growth in the mobile ecosystem.",
     icon: <SiSimpleanalytics size={23} className="text-[#1DA1F2]" />,
@@ -63,7 +63,7 @@ export const serviceData = [
   {
     serviceId: "#8",
     id: 8,
-    title: "E-commerce solutions",
+    title: "E-commerce Solutions",
     description:
       "Our tech companies offer end-to-end expertise and technologies to build, optimize, and manage online stores, enabling seamless transactions, personalized customer experiences, and revenue growth in the e-commerce space.",
     icon: <SiSimpleanalytics size={23} className="text-[#1DA1F2]" />,
