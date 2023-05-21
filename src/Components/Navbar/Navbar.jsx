@@ -2,40 +2,48 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Link } from "react-router-dom";
-import navicon from "../../assets/navicon.png"
+import navicon from "../../assets/Logo1.svg";
 
 const Navbar = () => {
   const navbarList = (
     <React.Fragment>
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/" className="hover:text-[#1DA1F2]">
+          Home
+        </Link>
       </li>
       <li>
-        <Link to="/about">About</Link>
+        <Link to="/about" className="hover:text-[#1DA1F2]">
+          About
+        </Link>
       </li>
       <li>
-        <Link to="/contact">Contact</Link>
+        <Link to="/contact" className="hover:text-[#1DA1F2]">
+          Contact
+        </Link>
       </li>
       <li>
-        <Link to="/services">Services</Link>
+        <Link to="/servicesDetails" className="hover:text-[#1DA1F2]">
+          Services
+        </Link>
       </li>
       <li>
-        <Link to="/">Portfolio</Link>
+        <Link to="/" className="hover:text-[#1DA1F2]">
+          Portfolio
+        </Link>
       </li>
       <li>
-        <Link to="/">Blog</Link>
+        <Link to="/" className="hover:text-[#1DA1F2]">
+          Blog
+        </Link>
       </li>
     </React.Fragment>
   );
 
   return (
-    <div className=" border-b z-40 border-gray-200 shadow-md navbar sticky top-0   backdrop-filter backdrop-blur-lg bg-opacity-50">
+    <div className=" z-40 shadow-md navbar sticky top-0 backdrop-filter backdrop-blur-lg bg-transparent !important">
       <div className="navbar-start">
-        
         <div className="dropdown">
-        <label tabIndex={0} className="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-          </label>
           {/* Mobile navbar */}
           <ul
             tabIndex={0}
@@ -45,14 +53,35 @@ const Navbar = () => {
           </ul>
           {/* Mobile navbar ends */}
         </div>
-        <img style={{width:'80px',height:'80px'}} src={navicon} alt=''></img>
+        <img
+          style={{ width: "80px", height: "80px" }}
+          src={navicon}
+          alt=""
+        ></img>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="flex justify-center items-center gap-5 px-1">
           {navbarList}
         </ul>
       </div>
-      <div className="navbar-end"></div>
+      <div className="navbar-end">
+        <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h8m-8 6h16"
+            />
+          </svg>
+        </label>
+      </div>
     </div>
   );
 };
