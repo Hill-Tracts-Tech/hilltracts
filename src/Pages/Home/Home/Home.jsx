@@ -16,18 +16,20 @@ const Home = () => {
   return (
     <div>
       <div
-        className="w-full h-[calc(110vh-0rem)]"
+        className="w-full h-[calc(110vh-0rem)] "
         style={{
           background: `url(${backgroundImage})`,
           backgroundRepeat: "",
           backgroundSize: "",
+        
         }}
       >
-        <div className=" text-stone-50 col-span-6 text-center flex justify-center items-center">
+        <div className="lg:grid grid-cols-12 flex flex-col-reverse justify-between items-center ">
+        <div className=" text-stone-50  text-center flex justify-center items-center lg:col-span-6">
           <div>
             <p>Digital Superheroes</p>
             <h1>Digital Superheroes</h1>
-            <p>
+            <p className="">
               In the last 12 years, Analyzen evolved from a local digital-first
               marketing company to offering an integrated mix of strategy,
               analytics, creativity, technology, media and experience to drive
@@ -39,10 +41,11 @@ const Home = () => {
             </p>
           </div>
         </div>
-        {/* <div className="col-span-6">
+        <div className="lg:col-span-6 py-5" style={{height:"300px"}}>
           <Banner />
-        </div> */}
-        <div className="bubbles">
+        </div>
+        </div>
+        <div className="bubbles mb-[-60px]">
           <img src={bubble} alt="" />
           <img src={bubble} alt="" />
           <img src={bubble} alt="" />
