@@ -1,26 +1,26 @@
 /* Services Section Style */
 .s-title-outline {
-    position: relative;
+  position: relative;
 }
 
 .s-title::before {
-    content: '';
-    width: 35px;
-    height: 3px;
-    background: #1DA1F2;
-    position: absolute;
-    top: 14px;
-    left: 18px;
+  content: "";
+  width: 35px;
+  height: 3px;
+  background: #1da1f2;
+  position: absolute;
+  top: 14px;
+  left: 18px;
 }
 
 .s-title::after {
-    content: '';
-    width: 35px;
-    height: 3px;
-    background: #1DA1F2;
-    position: absolute;
-    top: 14px;
-    right: 18px;
+  content: "";
+  width: 35px;
+  height: 3px;
+  background: #1da1f2;
+  position: absolute;
+  top: 14px;
+  right: 18px;
 }
 
 /* Services Section Style ended */
@@ -28,225 +28,218 @@
 /* Portfolio style */
 
 .project {
-    display: inline-block;
-    cursor: pointer;
-    color: #252323;
-    margin: 0 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: #252323;
+  margin: 0 10px;
 }
 
 .p-title-outline {
-    position: relative;
+  position: relative;
 }
 
 .p-title::after {
-    content: '';
-    width: 35px;
-    height: 3px;
-    background: #1DA1F2;
-    position: absolute;
-    top: 13px;
-    right: -9px;
+  content: "";
+  width: 35px;
+  height: 3px;
+  background: #1da1f2;
+  position: absolute;
+  top: 13px;
+  right: -9px;
 }
 
 .p-title::before {
-    content: '';
-    width: 35px;
-    height: 3px;
-    background: #1DA1F2;
-    position: absolute;
-    left: -11px;
-    top: 13px;
+  content: "";
+  width: 35px;
+  height: 3px;
+  background: #1da1f2;
+  position: absolute;
+  left: -11px;
+  top: 13px;
 }
 
 .active {
-    color: #1DA1F2;
-    text-decoration: underline;
-    transition: all ease 0.5s;
+  color: #1da1f2;
+  text-decoration: underline;
+  transition: all ease 0.5s;
 }
 
 .project-card {
-    position: relative;
+  position: relative;
 }
 
 .details-project {
-    position: absolute;
-    bottom: 0px;
-    padding: 10px;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.65);
-    overflow: hidden;
-    height: 0;
-    width: 0;
-    animation: increase;
-    transition: 0.5s ease;
+  position: absolute;
+  bottom: 0px;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  overflow: hidden;
+  height: 0;
+  width: 0;
+  animation: increase;
+  transition: 0.5s ease;
 }
 
 .project-card:hover .details-project {
-    height: 30%;
-    width: 100%;
+  height: 30%;
+  width: 100%;
 }
 
 /* Portfolio style ended */
 
 /* TeamMembers style */
 .m-title-outline {
-    position: relative;
+  position: relative;
 }
 .m-title::before {
-    content: '';
-    width: 35px;
-    height: 3px;
-    background: #1DA1F2;
-    position: absolute;
-    top: 14px;
-    left: 30px;
+  content: "";
+  width: 35px;
+  height: 3px;
+  background: #1da1f2;
+  position: absolute;
+  top: 14px;
+  left: 30px;
 }
 
 .m-title::after {
-    content: '';
-    width: 35px;
-    height: 3px;
-    background: #1DA1F2;
-    position: absolute;
-    top: 14px;
-    right: 25px;
+  content: "";
+  width: 35px;
+  height: 3px;
+  background: #1da1f2;
+  position: absolute;
+  top: 14px;
+  right: 25px;
 }
 .social-icons-wrapper {
-    position: relative;
+  position: relative;
 }
 
 .social-icons {
-    position: absolute;
-    overflow: hidden;
-    text-align: center;
-    bottom: 15px;
-    left: 68px;
-    transition: 0.3s ease;
-    visibility: hidden;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  bottom: 15px;
+  left: 68px;
+  transition: 0.3s ease;
+  visibility: hidden;
 }
 
 .social-icons-wrapper:hover .social-icons {
-    bottom: 100px;
-    visibility: visible;
+  bottom: 100px;
+  visibility: visible;
 }
 
 /* ============== */
-#root {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: center;
-}
-
 h1 {
-    margin: 1rem auto 4rem;
+  margin: 1rem auto 4rem;
 }
 
 .member-img {
-    width: 100%;
-    height: 16em;
-    object-fit: cover;
+  width: 100%;
+  height: 16em;
+  object-fit: cover;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 320px;
-    margin: auto 1rem;
-    text-align: center;
-    font-family: arial;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 320px;
+  margin: auto 1rem;
+  text-align: center;
+  font-family: arial;
 }
 
 .designation {
-    color: grey;
-    font-size: 22px;
+  color: grey;
+  font-size: 22px;
 }
 
 .card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
 
 .card button:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 /* TeamMembers style ended */
 
 /* Feedback style */
 .f-title-outline {
-    position: relative;
+  position: relative;
 }
 
 .f-title::before {
-    content: '';
-    width: 35px;
-    height: 3px;
-    background: #1DA1F2;
-    position: absolute;
-    top: 14px;
-    left: 8px;
+  content: "";
+  width: 35px;
+  height: 3px;
+  background: #1da1f2;
+  position: absolute;
+  top: 14px;
+  left: 8px;
 }
 
 .f-title::after {
-    content: '';
-    width: 35px;
-    height: 3px;
-    background: #1DA1F2;
-    position: absolute;
-    top: 14px;
-    right: 8px;
+  content: "";
+  width: 35px;
+  height: 3px;
+  background: #1da1f2;
+  position: absolute;
+  top: 14px;
+  right: 8px;
 }
 
 .custom-hover {
-    border: 2px solid #595857;
+  border: 2px solid #595857;
 }
 
 .custom-hover:hover {
-    border: 2px solid #1DA1F2;
+  border: 2px solid #1da1f2;
 }
 
 /* Feedback style ended */
 
 /* Blog and News Style */
 .b-title-outline {
-    position: relative;
+  position: relative;
 }
 
 .b-title::before {
-    content: '';
-    width: 35px;
-    height: 3px;
-    background: #1DA1F2;
-    position: absolute;
-    top: 14px;
-    left: -30px;
+  content: "";
+  width: 35px;
+  height: 3px;
+  background: #1da1f2;
+  position: absolute;
+  top: 14px;
+  left: -30px;
 }
 
 .b-title::after {
-    content: '';
-    width: 35px;
-    height: 3px;
-    background: #1DA1F2;
-    position: absolute;
-    top: 14px;
-    right: -30px;
+  content: "";
+  width: 35px;
+  height: 3px;
+  background: #1da1f2;
+  position: absolute;
+  top: 14px;
+  right: -30px;
 }
 
 /* Blog and News Style ended */
 
 /* Service Details Page style */
-.s-icon{
-    transition: 0.5s ease;
+.s-icon {
+  transition: 0.5s ease;
 }
-.single-service:hover .s-icon{
-    transform: rotate(180deg);
+.single-service:hover .s-icon {
+  transform: rotate(180deg);
 }
 /* Service Details Page Style ended */
