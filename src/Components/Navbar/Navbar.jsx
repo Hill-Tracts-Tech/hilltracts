@@ -2,7 +2,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Link } from "react-router-dom";
-import navicon from "../../assets/Logo1.svg"
+import navicon from "../../assets/Logo1.svg";
 
 const Navbar = () => {
   const navbarList = (
@@ -41,11 +41,9 @@ const Navbar = () => {
   );
 
   return (
-    <div className=" z-40 shadow-md navbar sticky top-0   backdrop-filter backdrop-blur-lg bg-opacity-50">
+    <div className=" z-40 shadow-md navbar sticky top-0 backdrop-filter backdrop-blur-lg bg-transparent !important">
       <div className="navbar-start">
-        
         <div className="dropdown">
-        
           {/* Mobile navbar */}
           <ul
             tabIndex={0}
@@ -55,7 +53,11 @@ const Navbar = () => {
           </ul>
           {/* Mobile navbar ends */}
         </div>
-        <img style={{width:'80px',height:'80px'}} src={navicon} alt=''></img>
+        <img
+          style={{ width: "80px", height: "80px" }}
+          src={navicon}
+          alt=""
+        ></img>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="flex justify-center items-center gap-5 px-1">
@@ -63,12 +65,23 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-
-      
-      <label tabIndex={0} className="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-          </label>
-          </div>
+        <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h8m-8 6h16"
+            />
+          </svg>
+        </label>
+      </div>
     </div>
   );
 };

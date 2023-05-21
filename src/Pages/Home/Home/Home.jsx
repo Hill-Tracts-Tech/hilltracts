@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
 import Banner from "../Banner/Banner";
 import BlogAndNew from "../BlogAndNew/BlogAndNew";
 import Services from "../Services/Services";
@@ -8,19 +7,22 @@ import Portfolio from "../Portfolio/Portfolio";
 import FeedBack from "../FeedBack/FeedBack";
 import Members from "../Members/Members";
 import OurClients from "../OurClients/OurClients";
+import ShowModal from "../TestModal/ShowModal";
+import backgroundImage from "../../../assets/background.png";
+import bubble from "../../../assets/bubble.png";
+import "./Home.css";
 
 const Home = () => {
   return (
     <div>
       <div
-        className="lg:grid grid-cols-12 w-full h-[600px] z-0"
+        className="w-full h-[calc(110vh-0rem)]"
         style={{
-          background: `url("https://cdn.discordapp.com/attachments/1101528250964000938/1107265249209503804/ezgif.com-optimize_1.gif")`,
+          background: `url(${backgroundImage})`,
           backgroundRepeat: "",
           backgroundSize: "",
         }}
       >
-        
         <div className=" text-stone-50 col-span-6 text-center flex justify-center items-center">
           <div>
             <p>Digital Superheroes</p>
@@ -37,17 +39,27 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-6">
-          <Banner/>
+        {/* <div className="col-span-6">
+          <Banner />
+        </div> */}
+        <div className="bubbles">
+          <img src={bubble} alt="" />
+          <img src={bubble} alt="" />
+          <img src={bubble} alt="" />
+          <img src={bubble} alt="" />
+          <img src={bubble} alt="" />
+          <img src={bubble} alt="" />
+          <img src={bubble} alt="" />
         </div>
       </div>
       <Services />
       <Portfolio />
       {/* <TeamMembers /> */}
-      <Members/>
-      <FeedBack/>
-      <OurClients/>
+      <Members />
+      <FeedBack />
+      <OurClients />
       <BlogAndNew />
+      <ShowModal />
     </div>
   );
 };
