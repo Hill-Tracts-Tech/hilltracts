@@ -36,6 +36,10 @@ const Banner = () => {
       pagination={{ el: '.swiper-pagination', clickable: true }}
       
       modules={[EffectCoverflow, Pagination, Navigation,Autoplay]}
+      autoplay={{
+        delay: 2400,
+        disableOnInteraction: false,
+      }}
       className="swiper_container"
     >
       <SwiperSlide>
