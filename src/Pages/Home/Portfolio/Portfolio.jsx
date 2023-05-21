@@ -1,11 +1,19 @@
 import { filterData } from "./filterData";
 import "../../../styles/styles.css";
 import { useState } from "react";
+import { portfolioData } from "./PortfolioProjects";
 const Portfolio = () => {
-  const [active, setActive] = useState(1);
+  const [active, setActive] = useState("all");
+  const [filterProject, setFilterProject] = useState("all");
   const handleFilter = (currentID) => {
     setActive(currentID);
+    setFilterProject(currentID);
   };
+  const filteredItems =
+    filterProject === "all"
+      ? portfolioData
+      : portfolioData.filter((item) => item.projectType === filterProject);
+  console.log(active, filterProject);
   return (
     <div className="max-w-[90%] mx-auto">
       <div className="p-title-outline mx-auto w-32">
@@ -21,10 +29,10 @@ const Portfolio = () => {
             {filterData.map((project, i) => (
               <li
                 className={
-                  project.filterId == active ? "active project" : "project"
+                  project.category == active ? "active project" : "project"
                 }
                 key={i}
-                onClick={() => handleFilter(project.filterId)}
+                onClick={() => handleFilter(project.category)}
               >
                 {project.label}
               </li>
@@ -33,84 +41,23 @@ const Portfolio = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-4 my-5">
-        <div className="project-card">
-          <img
-            className="w-full h-full img"
-            src="https://i.ibb.co/mHxW1w3/web-dev-resized.png"
-            alt="web_development"
-          />
-          <div className="w-full details-project">
-            <a href="#" className="text-white">
-              Software Development
-            </a>
-            <h3 className="font-semibold text-[#1DA1F2]">Software</h3>
+        {filteredItems.map((data) => (
+          <div key={data.id} className="project-card">
+            <img
+              className="w-full h-[350px] img"
+              src={data.imgURL}
+              alt={data.imgURL}
+            />
+            <div className="w-full details-project">
+              <a href="#" className="text-white">
+                {data.title}
+              </a>
+              <h3 className="font-semibold text-[#1DA1F2]">
+                {data.projectType}
+              </h3>
+            </div>
           </div>
-        </div>
-        <div className="project-card">
-          <img
-            className="w-full h-full img"
-            src="https://i.ibb.co/mHxW1w3/web-dev-resized.png"
-            alt="web_development"
-          />
-          <div className="w-full details-project">
-            <a href="#" className="text-white">
-              Cloud Computing
-            </a>
-            <h3 className="font-semibold text-[#1DA1F2]">Cloud</h3>
-          </div>
-        </div>
-        <div className="project-card">
-          <img
-            className="w-full h-full img"
-            src="https://i.ibb.co/mHxW1w3/web-dev-resized.png"
-            alt="web_development"
-          />
-          <div className="w-full details-project">
-            <a href="#" className="text-white">
-              Web Development
-            </a>
-            <h3 className="font-semibold text-[#1DA1F2]">Web Dev</h3>
-          </div>
-        </div>
-        <div className="project-card">
-          <img
-            className="w-full h-full img"
-            src="https://i.ibb.co/mHxW1w3/web-dev-resized.png"
-            alt="web_development"
-          />
-          <div className="w-full details-project">
-            <a href="#" className="text-white">
-              Web Design
-            </a>
-            <h3 className="font-semibold text-[#1DA1F2]">Web Design</h3>
-          </div>
-        </div>
-        <div className="project-card">
-          <img
-            className="w-full h-full img"
-            src="https://i.ibb.co/mHxW1w3/web-dev-resized.png"
-            alt="web_development"
-          />
-          <div className="w-full details-project">
-            <a href="#" className="text-white">
-              Digital Marketing
-            </a>
-            <h3 className="font-semibold text-[#1DA1F2]">Marketing</h3>
-          </div>
-        </div>
-        <div className="project-card">
-          <img
-            className="w-full h-full img"
-            src="https://i.ibb.co/mHxW1w3/web-dev-resized.png"
-            alt="web_development"
-          />
-          <div className="w-full details-project">
-            <a href="#" className="text-white">
-              Cyber Security
-            </a>
-            <h3 className="font-semibold text-[#1DA1F2]">Security</h3>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

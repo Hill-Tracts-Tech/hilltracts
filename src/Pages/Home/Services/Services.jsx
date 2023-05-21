@@ -1,10 +1,7 @@
-import { FaConnectdevelop } from "react-icons/fa";
-import { BsArrowRight, BsCodeSlash, BsDatabaseCheck } from "react-icons/bs";
-import { GiCyberEye } from "react-icons/gi";
-import { MdBusiness } from "react-icons/md";
-import { SiSimpleanalytics } from "react-icons/si";
-import "../../../styles/styles.css"
+import { BsArrowRight } from "react-icons/bs";
+import "../../../styles/styles.css";
 import { Link } from "react-router-dom";
+import { serviceData } from "./serviceData";
 const Services = () => {
   return (
     <div className="max-w-[90%] mx-auto mb-10">
@@ -19,150 +16,35 @@ const Services = () => {
         </h1>
       </div>
       <div className="services grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-between gap-3 mt-8">
-        <div className="service-card bg-gray-100 p-4 rounded-md">
-          <div className="content">
-            <div className=" flex justify-start items-center gap-2">
-              <div className="icon">
-                <FaConnectdevelop size={23} className="text-[#1DA1F2]" />
-              </div>
-              <div>
-                <h2 className="text-xl font-bold capitalize">
-                  Software development
-                </h2>
-              </div>
-            </div>
-            <div className="ml-[30px] text-start">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Distinctio, eius.lorem10
-              </p>
+        {serviceData &&
+          serviceData.map((data) => (
+            <div key={data.id}>
+              <div className="service-card bg-gray-100 p-4 rounded-md">
+                <div className="content">
+                  <div className=" flex justify-start items-center gap-2">
+                    <div className="icon">{data.icon}</div>
+                    <div>
+                      <h2 className="text-xl font-bold capitalize">
+                        {data.title}
+                      </h2>
+                    </div>
+                  </div>
+                  <div className="ml-[30px] text-start">
+                    <p>{data.description.slice(0, 120)}...</p>
 
-              <Link to="/servicesDetails" className="mt-5">
-                Read More{" "}
-                <BsArrowRight className="text-[#1DA1F2] inline-block" />
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="service-card bg-gray-100 p-4 rounded-md">
-          <div className="content">
-            <div className=" flex justify-start items-center gap-2">
-              <div className="icon">
-                <GiCyberEye size={23} className="text-[#1DA1F2]" />
-              </div>
-              <div>
-                <h2 className="text-xl font-bold capitalize">Cyber Security</h2>
+                    <Link
+                      id={data.serviceId}
+                      to="/servicesDetails"
+                      className="mt-5"
+                    >
+                      Read More{" "}
+                      <BsArrowRight className="text-[#1DA1F2] inline-block" />
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="ml-[30px] text-start">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Distinctio, eius.lorem10
-              </p>
-
-              <button className="mt-5">
-                Read More{" "}
-                <BsArrowRight className="text-[#1DA1F2] inline-block" />
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="service-card bg-gray-100 p-4 rounded-md">
-          <div className="content">
-            <div className=" flex justify-start items-center gap-2">
-              <div className="icon">
-                <BsDatabaseCheck size={23} className="text-[#1DA1F2]" />
-              </div>
-              <div>
-                <h2 className="text-xl font-bold capitalize">Data recovery</h2>
-              </div>
-            </div>
-            <div className="ml-[30px] text-start">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Distinctio, eius.lorem10
-              </p>
-
-              <button className="mt-5">
-                Read More{" "}
-                <BsArrowRight className="text-[#1DA1F2] inline-block" />
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="service-card bg-gray-100 p-4 rounded-md">
-          <div className="content">
-            <div className=" flex justify-start items-center gap-2">
-              <div className="icon">
-                <BsCodeSlash size={23} className="text-[#1DA1F2]" />
-              </div>
-              <div>
-                <h2 className="text-xl font-bold capitalize">
-                  Web Development
-                </h2>
-              </div>
-            </div>
-            <div className="ml-[30px] text-start">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Distinctio, eius.lorem10
-              </p>
-
-              <button className="mt-5">
-                Read More{" "}
-                <BsArrowRight className="text-[#1DA1F2] inline-block" />
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="service-card bg-gray-100 p-4 rounded-md">
-          <div className="content">
-            <div className=" flex justify-start items-center gap-2">
-              <div className="icon">
-                <MdBusiness size={23} className="text-[#1DA1F2]" />
-              </div>
-              <div>
-                <h2 className="text-xl font-bold capitalize">
-                  Business consulting
-                </h2>
-              </div>
-            </div>
-            <div className="ml-[30px] text-start">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Distinctio, eius.lorem10
-              </p>
-
-              <button className="mt-5">
-                Read More{" "}
-                <BsArrowRight className="text-[#1DA1F2] inline-block" />
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="service-card bg-gray-100 p-4 rounded-md">
-          <div className="content">
-            <div className=" flex justify-start items-center gap-2">
-              <div className="icon">
-                <SiSimpleanalytics size={23} className="text-[#1DA1F2]" />
-              </div>
-              <div>
-                <h2 className="text-xl font-bold capitalize">data analysis</h2>
-              </div>
-            </div>
-            <div className="ml-[30px] text-start">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Distinctio, eius.lorem10
-              </p>
-
-              <button className="mt-5">
-                Read More{" "}
-                <BsArrowRight className="text-[#1DA1F2] inline-block" />
-              </button>
-            </div>
-          </div>
-        </div>
+          ))}
       </div>
     </div>
   );

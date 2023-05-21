@@ -75,16 +75,13 @@
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.65);
-    overflow: hidden;
-    height: 0;
-    width: 0;
     animation: increase;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
+    visibility: hidden;
 }
 
 .project-card:hover .details-project {
-    height: 30%;
-    width: 100%;
+    visibility: visible;
 }
 
 /* Portfolio style ended */
@@ -93,6 +90,7 @@
 .m-title-outline {
     position: relative;
 }
+
 .m-title::before {
     content: '';
     width: 35px;
@@ -112,6 +110,7 @@
     top: 14px;
     right: 25px;
 }
+
 .social-icons-wrapper {
     position: relative;
 }
@@ -121,7 +120,7 @@
     overflow: hidden;
     text-align: center;
     bottom: 15px;
-    left: 68px;
+    left: 100px;
     transition: 0.3s ease;
     visibility: hidden;
 }
@@ -132,13 +131,6 @@
 }
 
 /* ============== */
-#root {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 2px;
-    text-align: center;
-}
-
 h1 {
     margin: 1rem auto 4rem;
 }
@@ -243,10 +235,12 @@ h1 {
 /* Blog and News Style ended */
 
 /* Service Details Page style */
-.s-icon{
+.s-icon {
     transition: 0.5s ease;
 }
-.single-service:hover .s-icon{
+
+.single-service:hover .s-icon {
     transform: rotate(180deg);
 }
+
 /* Service Details Page Style ended */

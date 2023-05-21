@@ -10,7 +10,7 @@ export default function Members() {
       <Member
         key={i}
         name={item.name}
-        url={item.imageurl}
+        url={item.imgURL}
         designation={item.designation}
         description={item.description}
       />

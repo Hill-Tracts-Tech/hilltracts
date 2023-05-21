@@ -1,22 +1,22 @@
 export const filterData = [
   {
-    filterId: 1,
+    category: "all",
     label: "All Works",
   },
   {
-    filterId: 2,
+    category: "e-commerce",
     label: "Digital marketing",
   },
   {
-    filterId: 3,
+    category: "web-app",
     label: "Web Development",
   },
   {
-    filterId: 4,
+    category: "web-design",
     label: "Web Design",
   },
   {
-    filterId: 5,
+    category: "security",
     label: "Security",
   },
 ];

@@ -5,26 +5,26 @@ import "./style.css";
 
 function Member(props) {
   return (
-    <div className="card social-icons-wrapper">
-      <div className="rounded-full my-3">
+    <div className="social-icons-wrapper">
+      <div className="card rounded-full h-full p-3">
         <img
-          className="member-img rounded-full ring ring-primary ring-offset-base-100 ring-offset-2"
+          className="member-img rounded-full h-full ring ring-primary ring-offset-base-100 ring-offset-2"
           src={props.url}
           alt="product image"
         />
       </div>
       <div className="flex justify-center z-0 items-center gap-2 social-icons">
-        <button className="bg-orange-500 p-2 rounded-full">
+        <button className="bg-[#1DA1F2] p-2 rounded-full">
           <a href={props.faceBook}>
             <FaFacebookF color="white" />
           </a>
         </button>
-        <button className="bg-orange-500 p-2 rounded-full">
+        <button className="bg-[#1DA1F2] p-2 rounded-full">
           <a href={props.gitHub}>
             <FaGithub color="white" />
           </a>
         </button>
-        <button className="bg-orange-500 p-2 rounded-full">
+        <button className="bg-[#1DA1F2] p-2 rounded-full">
           <a href={props.linkedIn}>
             <FaLinkedinIn color="white" />
           </a>
