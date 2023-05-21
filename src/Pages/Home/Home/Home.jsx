@@ -38,7 +38,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="col-span-6">
+        <div className="col-span-6 " style={{width:"350px"}}>
           <Banner/>
         </div>
       </div>
