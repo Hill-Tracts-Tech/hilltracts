@@ -1,9 +1,12 @@
 
+
 .swiper-wrapper{
   width: 30% !important;
 }
 
-
+.swiper-3d {
+  perspective: 668px !important;
+}
 .swiper {
   width: 100%;
   padding-top: 50px;
@@ -13,12 +16,20 @@
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 300px;
+  width: 600px;
   height: 300px;
 }
 
 .swiper-slide img {
   display: block;
-  width: 130%;
+  width: 200%;
   max-width: 130%;
+}
+
+.swiper-3d .swiper-slide-shadow-left {
+  background-image:none !important;
+}
+
+.swiper-3d .swiper-slide-shadow-right {
+  background-image:none !important;
 }
