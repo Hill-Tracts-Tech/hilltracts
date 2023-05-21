@@ -1,4 +1,4 @@
-/* 
+
 .container {
 zoom: 1.0;
 }
@@ -114,9 +114,9 @@ zoom: 1.0;
 
 .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
-} */
+}
 
-.swiper {
+/* .swiper {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -132,4 +132,4 @@ zoom: 1.0;
 .swiper-slide img {
   display: block;
   width: 100%;
-}
+} */
