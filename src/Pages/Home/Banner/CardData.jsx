@@ -1,9 +1,11 @@
 export const services = [
   {
     id: 1,
-    title: "Web Development",
-    description:
-      "Our company, we harness the power of technology to build dynamic and interactive websites tailored to your specific needs. Our skilled team of developers utilizes the latest frameworks and programming languages to create robust, scalable, and secure web solutions. From intuitive user interfaces to seamless integrations, we ensure that your website not only looks impressive but also performs flawlessly across all devices. With a focus on clean code and optimization, we strive to deliver fast-loading and SEO-friendly websites that drive traffic and conversions. Trust us to bring your digital vision to life with our expertise in web development.",
+  
+    title: "Cloud Computing",
+ 
+      description:
+      "Harnessing the power of cloud computing can significantly enhance your business's scalability, flexibility, and cost-efficiency. We offer cloud consulting, migration, and management services to help you leverage cloud platforms effectively, ensuring data security, reliability, and seamless access from anywhere in the world.",
   },
   {
     id: 2,
@@ -29,28 +31,30 @@ export const services = [
     description:
       "We understand the significance of user experience in driving customer satisfaction and engagement. Our skilled designers create visually appealing and intuitive user interfaces that ensure seamless interactions, smooth navigation, and delightful user experiences across various platforms",
   },
-  {
-    id: 6,
-    title: "Cloud Computing",
-    description:
-      "Harnessing the power of cloud computing can significantly enhance your business's scalability, flexibility, and cost-efficiency. We offer cloud consulting, migration, and management services to help you leverage cloud platforms effectively, ensuring data security, reliability, and seamless access from anywhere in the world.",
-  },
+
+    {
+      id: 6,
+      title: "Digital Marketing",
+      description:
+        "Reach your target audience and boost your online visibility with our digital marketing services. We offer SEO, social media marketing, and content creation to drive traffic and conversions.",
+    },
   {
     id: 7,
-    title: "Cyber Security",
-    description:
-      "In today's increasingly interconnected world, safeguarding your digital assets is of paramount importance. Our cybersecurity experts provide comprehensive solutions to protect your sensitive data from cyber threats, including risk assessments, penetration testing, security audits, and implementation of robust security measures.",
-  },
-  {
-    id: 8,
     title: "IT Consulting",
     description:
       "We offer strategic IT consulting services to help businesses leverage technology effectively and achieve their goals. Our experienced consultants provide tailored advice and solutions to optimize your IT infrastructure, improve processes, and align technology with your business objectives.",
   },
   {
-    id: 9,
-    title: "Digital Marketing",
+    id: 8,
+    title: "Cyber Security",
     description:
-      "Reach your target audience and boost your online visibility with our digital marketing services. We offer SEO, social media marketing, and content creation to drive traffic and conversions.",
+      "In today's increasingly interconnected world, safeguarding your digital assets is of paramount importance. Our cybersecurity experts provide comprehensive solutions to protect your sensitive data from cyber threats, including risk assessments, penetration testing, security audits, and implementation of robust security measures.",
   },
+  {
+    id: 9,
+     title: "Web Development",
+     description:
+     "Our company, we harness the power of technology to build dynamic and interactive websites tailored to your specific needs. Our skilled team of developers utilizes the latest frameworks and programming languages to create robust, scalable, and secure web solutions. From intuitive user interfaces to seamless integrations, we ensure that your website not only looks impressive but also performs flawlessly across all devices. With a focus on clean code and optimization, we strive to deliver fast-loading and SEO-friendly websites that drive traffic and conversions. Trust us to bring your digital vision to life with our expertise in web development.",
+  
+    },
 ];
