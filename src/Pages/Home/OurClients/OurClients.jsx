@@ -3,8 +3,8 @@ import React from 'react';
 import"../../../styles/styles.css"
 const OurClients = () => {
     return (
-        <div className='max-w-5xl mx-auto'>
-            <div className="s-title-outline w-48 mx-auto my-5">
+        <div className='max-w-[90%] mx-auto'>
+            <div className="s-title-outline w-48 mx-auto mt-20">
         <h2 className="text-lg font-semibold text-[#1DA1F2] s-title text-center uppercase">
           Client
         </h2>
@@ -15,7 +15,7 @@ const OurClients = () => {
         </h1>
       </div>
 
-        <div className='bg-gray-100 flex justify-center items-center py-5'>
+        <div className='bg-gray-100 flex justify-center items-center py-5 mt-[-30px]'>
             <div >
                 <img src="http://fbta.gov.bd/resources/img/govt%20logo.png" alt="" className=' w-32'/>
        <div className='text-center ml-[-25px]'>
