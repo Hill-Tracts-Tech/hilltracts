@@ -15,7 +15,7 @@ const OurClients = () => {
         </h1>
       </div>
 
-        <div className='bg-gray-100 flex justify-center items-center py-5 mt-[-30px]'>
+        <div className='bg-[#9fd3f445] flex justify-center items-center py-5 mt-[-30px]'>
             <div >
                 <img src="http://fbta.gov.bd/resources/img/govt%20logo.png" alt="" className=' w-32'/>
        <div className='text-center ml-[-25px]'>
