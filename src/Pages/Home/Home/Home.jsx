@@ -11,8 +11,18 @@ import ShowModal from "../TestModal/ShowModal";
 import backgroundImage from "../../../assets/background.png";
 import bubble from "../../../assets/bubble.png";
 import "./Home.css";
+import { useState } from "react";
 
 const Home = () => {
+  const [cardData, setCardData] = useState();
+  // if (!cardData) {
+  //   return <p>Loading......</p>;
+  // }
+  // else{
+    
+  // }
+
+  console.log("lololo",cardData);
   return (
     <div>
       <div
@@ -27,22 +37,17 @@ const Home = () => {
         <div className="lg:grid grid-cols-12 flex flex-col-reverse justify-between items-center h-[100%]">
           <div className=" text-stone-50  text-center flex justify-center items-center lg:col-span-6">
             <div>
-              <p>Digital Superheroes</p>
-              <h1>Digital Superheroes</h1>
-              <p className="">
-                In the last 12 years, Analyzen evolved from a local
-                digital-first marketing company to offering an integrated mix of
-                strategy, analytics, creativity, technology, media and
-                experience to drive meaningful innovation in communication
-                through multi-country presence. With one of the largest client
-                portfolios, Analyzen is a true integrated marketing company
-                empowered by world class technology team able to offer any
-                solution for any brand across different media.
-              </p>
+              {cardData.map(item=><><div key={item?.serviceId}>
+                <p>{item.title}</p>
+              <p className="">{item.description}</p>
+              </div></>)}
             </div>
           </div>
-          <div className="lg:col-span-6 py-5" style={{ height: "300px" }}>
-            <Banner />
+          <div
+            className="lg:col-span-6 py-5 mt-[100px] lg:mt-0 md:mt-[100px]"
+            style={{ height: "300px" }}
+          >
+            <Banner setCardData={setCardData} />
           </div>
         </div>
         <div className="bubbles mb-[-60px]">
