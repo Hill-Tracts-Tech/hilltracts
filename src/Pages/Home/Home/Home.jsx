@@ -7,7 +7,6 @@ import Portfolio from "../Portfolio/Portfolio";
 import FeedBack from "../FeedBack/FeedBack";
 import Members from "../Members/Members";
 import OurClients from "../OurClients/OurClients";
-import ShowModal from "../TestModal/ShowModal";
 import backgroundImage from "../../../assets/background.png";
 import bubble from "../../../assets/bubble.png";
 import "./Home.css";
@@ -57,12 +56,10 @@ const Home = () => {
       </div>
       <Services />
       <Portfolio />
-      {/* <TeamMembers /> */}
       <Members />
       <FeedBack />
       <OurClients />
       <BlogAndNew />
-      <ShowModal />
     </div>
   );
 };

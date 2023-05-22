@@ -49,7 +49,7 @@ const Portfolio = () => {
               alt={data.imgURL}
             />
             <div className="w-full details-project">
-              <a href="#" className="text-white">
+              <a target="_blank" href={data.projectLink} className="text-white">
                 {data.title}
               </a>
               <h3 className="font-semibold text-[#1DA1F2]">
