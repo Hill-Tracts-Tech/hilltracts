@@ -46,7 +46,7 @@ const BlogAndNew = () => {
         </h2>
       </div>
       <div className="w-1/2 mx-auto">
-        <h1 className="text-2xl font-bold text-center capitalize">
+        <h1 className="text-3xl font-bold text-center capitalize">
           Best News & Blog
         </h1>
       </div>
