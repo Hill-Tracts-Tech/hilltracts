@@ -5,7 +5,7 @@ import { serviceData } from "./serviceData";
 const Services = () => {
   return (
     <div className="max-w-[90%] mx-auto mb-10">
-      <div className="s-title-outline w-48 mx-auto my-5">
+      <div className="s-title-outline w-48 mx-auto mt-20">
         <h2 className="text-lg font-semibold text-[#1DA1F2] s-title text-center uppercase">
           Services
         </h2>
@@ -15,7 +15,7 @@ const Services = () => {
           We offer all types of IT solution services
         </h1>
       </div>
-      <div className="services grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-between gap-3 mt-8">
+      <div className="services grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-between gap-3 mt-[-30px]">
         {serviceData &&
           serviceData.map((data) => (
             <div key={data.id}>

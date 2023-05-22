@@ -19,7 +19,7 @@ export default function Members() {
 
   return (
     <div className="App max-w-[90%] mx-auto">
-      <div className="m-title-outline w-48 mx-auto my-5">
+      <div className="m-title-outline w-48 mx-auto mt-20">
         <h2 className="text-lg font-semibold text-[#1DA1F2] m-title text-center uppercase">
           Team
         </h2>
@@ -29,7 +29,8 @@ export default function Members() {
           Our Best Team members
         </h1>
       </div>
-      <Carousel
+     <div className="mt-[-30px]">
+     <Carousel
         showDots={false}
         responsive={responsive}
         itemClass="carousel-item-padding-0-px"
@@ -37,6 +38,7 @@ export default function Members() {
         {product}
       </Carousel>
       <ModalMember />
+     </div>
     </div>
   );
 }
