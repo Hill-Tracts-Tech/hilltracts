@@ -37,10 +37,12 @@ const Home = () => {
         <div className="lg:grid grid-cols-12 flex flex-col-reverse justify-between items-center h-[100%]">
           <div className=" text-stone-50  text-center flex justify-center items-center lg:col-span-6">
             <div>
-              {cardData.map(item=><><div key={item?.serviceId}>
-                <p>{item.title}</p>
-              <p className="">{item.description}</p>
-              </div></>)}
+              {cardData? 
+            (  cardData.map(item=><><div key={item?.serviceId}>
+              <p className="text-3xl font-semibold">{item.title}</p>
+            <p className="">{item.description}</p>
+            </div></>))
+              :""}
             </div>
           </div>
           <div
