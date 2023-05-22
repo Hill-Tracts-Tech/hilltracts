@@ -10,8 +10,8 @@ const OurClients = () => {
         </h2>
       </div>
       <div className="w-1/2 mx-auto">
-        <h1 className="text-2xl font-bold text-center capitalize">
-        Here is a sample of our current and past clients
+        <h1 className="text-3xl font-bold text-center capitalize">
+         a sample of our current and past clients
         </h1>
       </div>
 

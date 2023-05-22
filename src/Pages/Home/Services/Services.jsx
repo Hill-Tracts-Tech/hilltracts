@@ -11,7 +11,7 @@ const Services = () => {
         </h2>
       </div>
       <div className="w-1/2 mx-auto">
-        <h1 className="text-2xl font-bold text-center capitalize">
+        <h1 className="text-3xl font-bold text-center capitalize">
           We offer all types of IT solution services
         </h1>
       </div>
