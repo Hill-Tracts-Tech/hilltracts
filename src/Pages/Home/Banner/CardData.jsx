@@ -1,7 +1,6 @@
 export const services = [
   {
     id: 1,
-  
     title: "Cloud Computing",
  
       description:
@@ -55,6 +54,13 @@ export const services = [
      title: "Web Development",
      description:
      "Our company, we harness the power of technology to build dynamic and interactive websites tailored to your specific needs. Our skilled team of developers utilizes the latest frameworks and programming languages to create robust, scalable, and secure web solutions. From intuitive user interfaces to seamless integrations, we ensure that your website not only looks impressive but also performs flawlessly across all devices. With a focus on clean code and optimization, we strive to deliver fast-loading and SEO-friendly websites that drive traffic and conversions. Trust us to bring your digital vision to life with our expertise in web development.",
+  
+    },
+  {
+    id: 10,
+     title: "Data Analytics",
+     description:
+     "We specialize in data analytics, leveraging insights to drive informed business decisions. Our expert team utilizes advanced tools and techniques to extract valuable information from complex datasets. From data cleansing and modeling to visualization and reporting, we provide comprehensive analytics solutions. Partner with us to unlock the power of your data, gain actionable insights, and achieve data-driven success.",
   
     },
 ];

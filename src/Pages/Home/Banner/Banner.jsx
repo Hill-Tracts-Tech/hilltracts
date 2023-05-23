@@ -19,6 +19,7 @@ import slide_image_6 from '../../../assets/images/img_6.png';
 import slide_image_7 from '../../../assets/images/img_7.png';
 import slide_image_8 from '../../../assets/images/img_8.png';
 import slide_image_9 from '../../../assets/images/img_9.png';
+import slide_image_10 from '../../../assets/images/img_10.png';
 import { serviceData } from '../Services/serviceData';
 
 
@@ -28,7 +29,7 @@ const Banner = ({setCardData}) => {
   const handleSlideChange = (swiper) => {
   
     const activeIndex = swiper.activeIndex;
-    // console.log("Active slide index:", activeIndex,"length",length);
+    console.log("Active slide index:", activeIndex,"length",length);
     // Perform any actions based on the activeIndex
     // const slideIndexes = [];
     // for (let i = 0; i < swiper.slides.length; i++) {
@@ -88,7 +89,7 @@ const Banner = ({setCardData}) => {
         depth: 100,
         modifier: 2.5,
       }}
-      onSwiper={handleSlideChange}
+      // onSwiper={handleSlideChange}
       onSlideChange={handleSlideChange}
       pagination={{ el: '.swiper-pagination', clickable: true }}
       
@@ -120,12 +121,15 @@ const Banner = ({setCardData}) => {
       <SwiperSlide>
         <img src={slide_image_7} alt="slide_image" />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide >
         <img src={slide_image_8} alt="slide_image" />
       </SwiperSlide>
       
       <SwiperSlide>
         <img src={slide_image_9} alt="slide_image" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={slide_image_10} alt="slide_image" />
       </SwiperSlide>
       
     </Swiper>
