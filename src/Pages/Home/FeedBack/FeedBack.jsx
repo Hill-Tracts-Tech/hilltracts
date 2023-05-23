@@ -2,18 +2,18 @@ import "../../../styles/styles.css";
 import { BsStarFill, BsStar } from "react-icons/bs";
 const FeedBack = () => {
   return (
-    <div className="max-w-5xl mx-auto mb-10">
-      <div className="f-title-outline w-48 mx-auto my-5">
+    <div className="max-w-[90%] mx-auto mb-10">
+      <div className="f-title-outline w-48 mx-auto mt-20">
         <h2 className="text-lg font-semibold text-[#1DA1F2] f-title text-center uppercase">
           feedback
         </h2>
       </div>
       <div className="w-1/2 mx-auto">
-        <h1 className="text-2xl font-bold text-center capitalize">
+        <h1 className="text-3xl font-bold text-center capitalize">
           What are they saying about company
         </h1>
       </div>
-      <div className="services grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-between gap-3 mt-8">
+      <div className="services grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-between gap-3 mt-[-30px]">
         <div className="cursor-pointer bg-white p-4 custom-hover">
           <div className="flex justify-start items-center gap-4">
             <div>
