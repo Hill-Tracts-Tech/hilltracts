@@ -3,14 +3,14 @@ import { BsStarFill, BsStar } from "react-icons/bs";
 import { clientReviewData } from "./ClientReviewData";
 const FeedBack = () => {
   return (
-    <div className="max-w-5xl mx-auto mb-10">
-      <div className="f-title-outline w-48 mx-auto my-5">
+    <div className="max-w-[90%] mx-auto mb-10">
+      <div className="f-title-outline w-48 mx-auto mt-20">
         <h2 className="text-lg font-semibold text-[#1DA1F2] f-title text-center uppercase">
           feedback
         </h2>
       </div>
       <div className="w-1/2 mx-auto">
-        <h1 className="text-2xl font-bold text-center capitalize">
+        <h1 className="text-3xl font-bold text-center capitalize">
           What are they saying about company
         </h1>
       </div>
