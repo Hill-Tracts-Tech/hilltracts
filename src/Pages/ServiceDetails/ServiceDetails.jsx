@@ -1,47 +1,39 @@
-import { useEffect, useState } from "react";
-import { BsBox } from "react-icons/bs";
+import { services } from "./ServiceData";
 // import '../../styles/styles.css'
 
 const ServiceDetails = () => {
-  const [serviceData, setServiceData] = useState();
-  useEffect(() => {
-    fetch(
-      "https://hill-tracts-tech-production.up.railway.app/api/hill-tracts-tech/getServices"
-    ).then(res=>res.json()).then(data=>setServiceData(data))
-  }, [])
-  console.log(serviceData);
   return (
     <>
       <div className="w-full h-[300px] relative">
-        <h1 className="absolute top-[37%] left-[41%] text-4xl uppercase font-bold">
+        <h1 className="absolute top-[37%] left-[41%] text-4xl uppercase font-bold text-white">
           Our Services
         </h1>
         <img
           className="w-full h-full object-cover"
-          src="https://i.ibb.co/WFg7DV1/banner.jpg"
+          src="https://i.ibb.co/9bZ9cXj/4.png"
           alt="Banner"
         />
       </div>
       <div className="max-w-[90%] mx-auto">
-        {serviceData &&
-          serviceData.map((service, i) => (
+        {services &&
+          services.map((service, i) => (
             <div
               key={i}
               className={
                 (i + 1) % 2 == 0
-                  ? "flex justify-between items-center flex-row-reverse my-3"
-                  : "flex justify-between items-center my-3 single-service"
+                  ? "md:flex justify-between items-center flex-row-reverse my-3"
+                  : "md:flex justify-between items-center my-3 single-service"
               }
             >
-              <div className="w-1/2 p-4">
+              <div className="md:w-1/2 w-full p-4">
                 <img
                   className="w-full"
-                  src={service.image.fileName}
-                  alt={service.image.fileName}
+                  src={service.imgURL}
+                  alt={service.imgURL}
                 />
               </div>
-              <div className="w-1/2 p-4">
-                <BsBox size={50} className="s-icon hover:rotate-180" />
+              <div className="md:w-1/2 w-full p-4">
+                {service.icon}
                 <h2 className="text-start text-3xl font-bold my-5">
                   {service.title}
                 </h2>

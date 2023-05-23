@@ -17,3 +17,10 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #00c194;
 }
+
+.bg-gradient {
+  background: linear-gradient(217deg,
+      rgba(58, 185, 55, 0.69),
+      rgba(28, 122, 188, 0) 70.71%), linear-gradient(127deg, rgba(49, 171, 49, 0.682), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(40, 46, 97, 0.493), rgba(0, 0, 255, 0) 70.71%);
+}
