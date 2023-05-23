@@ -36,7 +36,7 @@ export const productData = [
   },
   {
     id: 3,
-    imgURL: "https://i.ibb.co/HKtpBKH/masum.jpg",
+    imgURL: "https://i.ibb.co/9ssTSq7/Shahin.jpg",
     name: "Yeasin arfat shahin",
     designation: "CEO",
     description: "Some text about the career....",
@@ -74,6 +74,13 @@ export const productData = [
     imgURL:"https://i.ibb.co/2MRC8pm/jerin.jpg",
     name: "Jerin",
     designation: "Human Resource Officer",
+    description: "Some text about the career....",
+  },
+  {
+    id: 8,
+    imgURL:"https://i.ibb.co/hg5YP2S/Ranghin-Mro.jpg",
+    name: "Ranghin",
+    designation: "Public Relation Officer",
     description: "Some text about the career....",
   },
   {

@@ -2,7 +2,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Member from "./Member";
 import { productData, responsive } from "./data";
-import ModalMember from "./ModalMember";
 
 export default function Members() {
   const product = productData.map((item, i) => (
@@ -36,7 +35,6 @@ export default function Members() {
       >
         {product}
       </Carousel>
-      <ModalMember />
     </div>
   );
 }

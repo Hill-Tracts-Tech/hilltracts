@@ -20,7 +20,7 @@
 
 .bg-gradient {
   background: linear-gradient(217deg,
-      rgba(58, 185, 55, 0.69),
-      rgba(28, 122, 188, 0) 70.71%), linear-gradient(127deg, rgba(49, 171, 49, 0.682), rgba(0, 255, 0, 0) 70.71%),
+      rgba(36, 109, 34, 0.044),
+      rgba(33, 93, 137, 0) 70.71%), linear-gradient(127deg, rgba(49, 171, 49, 0.288), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(40, 46, 97, 0.493), rgba(0, 0, 255, 0) 70.71%);
 }
