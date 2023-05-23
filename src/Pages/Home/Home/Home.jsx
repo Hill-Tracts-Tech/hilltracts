@@ -15,12 +15,6 @@ import { useState } from "react";
 
 const Home = () => {
   const [cardData, setCardData] = useState();
-  // if (!cardData) {
-  //   return <p>Loading......</p>;
-  // }
-  // else{
-    
-  // }
 
   console.log("lololo",cardData);
   return (
@@ -34,13 +28,13 @@ const Home = () => {
           marginTop: "-100px",
         }}
       >
-        <div className="lg:grid grid-cols-12 flex flex-col-reverse justify-between items-center h-[100%]">
+        <div className="lg:grid grid-cols-12 flex flex-col-reverse justify-between items-center h-[100%] max-w-[90%] mx-auto">
           <div className=" text-stone-50  text-center flex justify-center items-center lg:col-span-6">
-            <div>
+            <div className="px-5">
               {cardData? 
             (  cardData.map(item=><><div key={item?.serviceId}>
-              <p className="text-3xl font-semibold">{item.title}</p>
-            <p className="">{item.description}</p>
+              <p className="text-4xl font-semibold mb-4 text-[#9ad8ff]">{item.title}</p>
+            <p className="text-xl font-medium">{item.description}</p>
             </div></>))
               :""}
             </div>

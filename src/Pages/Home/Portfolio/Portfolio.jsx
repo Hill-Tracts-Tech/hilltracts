@@ -13,7 +13,6 @@ const Portfolio = () => {
     filterProject === "all"
       ? portfolioData
       : portfolioData.filter((item) => item.projectType === filterProject);
-  console.log(active, filterProject);
   return (
     <div className="max-w-[90%] mx-auto">
       <div className="p-title-outline mx-auto w-32 mt-20">
