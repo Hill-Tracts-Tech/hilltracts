@@ -101,7 +101,7 @@ export const productData = [
     id: 11,
     imgURL:"https://i.ibb.co/P9mjGDZ/tonmoy.jpg",
     name: "Tonmoy",
-    designation: "Human Resource",
+    designation: "Human Resource Officer",
     description: "Some text about the career....",
   },
 ];
