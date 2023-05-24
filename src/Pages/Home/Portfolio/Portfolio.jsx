@@ -42,13 +42,9 @@ const Portfolio = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-4 my-5">
         {filteredItems.map((data) => (
           <div key={data.id} className="project-card">
-            <div className="overflow-y-scroll w-full h-[350px]">
-                     <img
-              className=" img"
-              src={data.imgURL}
-              alt={data.imgURL}
-            />
-     </div>
+            <div className="image-container">
+              <img src={data.imgURL} alt={data.imgURL} />
+            </div>
             <div className="w-full details-project">
               <a href={data.projectLink} className="text-white">
                 {data.title}
