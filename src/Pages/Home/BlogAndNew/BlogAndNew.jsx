@@ -41,12 +41,12 @@ const BlogAndNew = () => {
   return (
     <div className="max-w-[90%] mx-auto mb-10">
       <div className="b-title-outline w-48 mx-auto mt-20">
-        <h2 className="text-lg font-semibold text-[#1DA1F2] b-title text-center uppercase">
+        <h2 className="text-lg font-semibold text-[#1DA1F2] b-title text-center uppercase ">
           What’s Happening
         </h2>
       </div>
       <div className="w-1/2 mx-auto">
-        <h1 className="text-3xl font-bold text-center capitalize">
+        <h1 className="text-3xl font-bold text-center capitalize font-[cursive] ">
           Best News & Blog
         </h1>
       </div>

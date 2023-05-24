@@ -22,7 +22,37 @@
   top: 14px;
   right: 18px;
 }
-
+@media only screen and (max-width: 768px){
+  .s-title::after {
+    content: "";
+    width: 35px;
+    height: 3px;
+    background: #1da1f2;
+    position: absolute;
+    top: 14px;
+    right: 396px;
+  }
+}
+@media only screen and (max-width: 500px){
+  .s-title::before {
+    content: "";
+    width: 15px;
+    height: 3px;
+    background: #1da1f2;
+    position: absolute;
+    top: 14px;
+    left: 18px;
+  }
+  .s-title::after {
+    content: "";
+    width: 15px;
+    height: 3px;
+    background: #1da1f2;
+    position: absolute;
+    top: 14px;
+    left: 123px;
+  }
+}
 /* Services Section Style ended */
 
 /* Portfolio style */
