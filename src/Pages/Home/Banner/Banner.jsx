@@ -27,9 +27,9 @@ import { serviceData } from '../Services/serviceData';
 const Banner = ({setCardData}) => {
 
   const handleSlideChange = (swiper) => {
-  
+  console.log("1:>",swiper);
     const activeIndex = swiper.activeIndex;
-    console.log("Active slide index:", activeIndex,"length",length);
+    console.log("2:> Active slide index:", activeIndex,"length",length);
     // Perform any actions based on the activeIndex
     // const slideIndexes = [];
     // for (let i = 0; i < swiper.slides.length; i++) {

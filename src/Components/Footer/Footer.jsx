@@ -17,10 +17,10 @@ const Footer = () => {
             src={navicon}
             alt=""
           ></img>
-          <p>
-            ACME Industries Ltd.
+          <p className="text-left">
+          Hill Tracts Tech
             <br />
-            Providing reliable tech since 1992
+            Providing reliable tech since 2023
           </p>
           <div className="grid grid-flow-col gap-4 ">
             <a

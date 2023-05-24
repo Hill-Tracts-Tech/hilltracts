@@ -32,29 +32,25 @@ const Navbar = () => {
           Portfolio
         </Link>
       </li>
-      <li>
-        <Link to="/" className="hover:text-[#1DA1F2]">
-          Blog
-        </Link>
-      </li>
     </React.Fragment>
   );
 
   return (
-    <div className=" z-40 shadow-md navbar sticky top-0 backdrop-filter backdrop-blur-lg bg-transparent lg:px-24">
-      <div className="navbar-start">
+    <div className=" z-40 shadow-md navbar sticky top-0 backdrop-filter backdrop-blur-lg bg-transparent lg:px-24 ">
+      <div className="navbar-start hidden lg:block md:block">
         <img
           style={{ width: "80px", height: "80px" }}
           src={navicon}
           alt=""
         ></img>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden lg:flex md:flex">
         <ul className="flex justify-center items-center gap-5 px-1">
           {navbarList}
         </ul>
       </div>
-         <div className="dropdown">
+   
+        <div className="dropdown">
           {/* Mobile navbar */}
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -79,9 +75,15 @@ const Navbar = () => {
             {navbarList}
           </ul>
           {/* Mobile navbar ends */}
-        </div> 
-      <div className="navbar-end">
-      </div>
+        </div>
+        <div className=" block lg:hidden md:hidden ml-[200px] ">
+          <img
+            style={{ width: "80px", height: "80px" }}
+            src={navicon}
+            alt=""
+          ></img>
+        </div>
+      
     </div>
   );
 };
