@@ -37,7 +37,7 @@ const Services = () => {
                       to="/servicesDetails"
                       className="mt-5"
                     >
-                      Read More{" "}
+                      Explore More{" "}
                       <BsArrowRight className="text-[#1DA1F2] inline-block" />
                     </Link>
                   </div>
