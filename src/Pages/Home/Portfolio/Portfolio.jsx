@@ -18,7 +18,7 @@ const Portfolio = () => {
       <div className="p-title-outline mx-auto w-32 mt-20">
         <h2 className="text-[#1DA1F2] p-title uppercase">Project</h2>
       </div>
-      <h1 className="text-3xl text-gray-900 font-bold capitalize">
+      <h1 className="text-3xl text-gray-900 font-bold capitalize font-[cursive]">
         Awesome Portfolio and Projects
       </h1>
       <div className="flex justify-start items-center mt-[-30px]">
