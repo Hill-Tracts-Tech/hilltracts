@@ -1,6 +1,7 @@
 import { about, mission, vision } from "./aboutData";
 import logo from "../../../public/Logo1.svg";
 import { services } from "../ServiceDetails/ServiceData";
+import '../../styles/styles.css'
 const About = () => {
   return (
     <>
@@ -39,11 +40,11 @@ const About = () => {
         </section>
         <section className="mb-5">
           <div className="flex justify-between items-center gap-4">
-            <div className="border-2 rounded-md shadow-lg opacity-75 p-4">
+            <div className="border-2 rounded-md shadow-lg opacity-75 p-4 mission">
               <h3 className="text-xl font-bold mb-2 sm-12">Our Mission</h3>
               <p className="text-justify">{mission}</p>
             </div>
-            <div className="border-2 rounded-md shadow-lg opacity-75 p-4">
+            <div className="border-2 rounded-md shadow-lg opacity-75 p-4 vision">
               <h3 className="text-xl font-bold mb-2">Our Vision</h3>
               <p className="text-justify">{vision}</p>
             </div>

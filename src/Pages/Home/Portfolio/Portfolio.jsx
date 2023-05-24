@@ -43,12 +43,8 @@ const Portfolio = () => {
         {filteredItems.map((data) => (
           <div key={data.id} className="project-card">
             <div className="overflow-y-scroll w-full h-[350px]">
-                     <img
-              className=" img"
-              src={data.imgURL}
-              alt={data.imgURL}
-            />
-     </div>
+              <img className=" img" src={data.imgURL} alt={data.imgURL} />
+            </div>
             <div className="w-full details-project">
               <a href={data.projectLink} className="text-white">
                 {data.title}

@@ -21,11 +21,11 @@ const FeedBack = () => {
         clientReviewData.map((data) => (
             <div
             key={data.id}
-              className="cursor-pointer bg-white p-4 custom-hover">
+              className="cursor-pointer rounded-md shadow-lg hover:shadow-xl p-4 custom-effect custom-hover">
               <div className="flex justify-start items-center gap-4">
                 <div>
                   <img
-                    className="w-16 h-16"
+                    className="w-16 h-16 rounded-full"
                     src={data.profile}
                     alt={data.profile}
                   />
@@ -38,8 +38,8 @@ const FeedBack = () => {
                   {
                     data.rating == 1 && (
                       <>
-                    <BsStarFill />
-                    <BsStar />
+                    <BsStarFill className="text-[#FDCC0D]"/>
+                    <BsStar/>
                     <BsStar />
                     <BsStar />
                     <BsStar />
@@ -48,8 +48,8 @@ const FeedBack = () => {
                   {
                     data.rating == 2 && (
                       <>
-                    <BsStarFill />
-                    <BsStarFill />
+                    <BsStarFill className="text-[#FDCC0D]"/>
+                    <BsStarFill className="text-[#FDCC0D]"/>
                     <BsStar />
                     <BsStar />
                     <BsStar />
@@ -58,9 +58,9 @@ const FeedBack = () => {
                   {
                     data.rating == 3 && (
                       <>
-                    <BsStarFill />
-                    <BsStarFill />
-                    <BsStarFill />
+                    <BsStarFill className="text-[#FDCC0D]"/>
+                    <BsStarFill className="text-[#FDCC0D]"/>
+                    <BsStarFill className="text-[#FDCC0D]"/>
                     <BsStar />
                     <BsStar />
                       </>)
@@ -68,21 +68,21 @@ const FeedBack = () => {
                   {
                     data.rating == 4 && (
                       <>
-                    <BsStarFill />
-                    <BsStarFill />
-                    <BsStarFill />
-                    <BsStarFill />
+                    <BsStarFill className="text-[#FDCC0D]"/>
+                    <BsStarFill className="text-[#FDCC0D]"/>
+                    <BsStarFill className="text-[#FDCC0D]"/>
+                    <BsStarFill className="text-[#FDCC0D]"/>
                     <BsStar />
                       </>)
                   }
                   {
                     data.rating == 5 && (
                       <>
-                    <BsStarFill />
-                    <BsStarFill />
-                    <BsStarFill />
-                    <BsStarFill />
-                    <BsStarFill />
+                    <BsStarFill className="text-[#FDCC0D]"/>
+                    <BsStarFill className="text-[#FDCC0D]"/>
+                    <BsStarFill className="text-[#FDCC0D]"/>
+                    <BsStarFill className="text-[#FDCC0D]"/>
+                    <BsStarFill className="text-[#FDCC0D]"/>
                       </>)
                   }
                   </div>
@@ -93,7 +93,7 @@ const FeedBack = () => {
               </div>
             </div>
         ))}
-        </div>
+      </div>
     </div>
   );
 };

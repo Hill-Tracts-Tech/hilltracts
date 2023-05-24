@@ -22,7 +22,7 @@
   top: 14px;
   right: 18px;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   .s-title::after {
     content: "";
     width: 35px;
@@ -33,7 +33,7 @@
     right: 396px;
   }
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 500px) {
   .s-title::before {
     content: "";
     width: 15px;
@@ -96,22 +96,26 @@
 
 .project-card {
   position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
 }
 
 .details-project {
-    position: absolute;
-    bottom: 0px;
-    padding: 10px;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.65);
-    animation: increase;
-    transition: 0.3s ease;
-    visibility: hidden;
+  position: absolute;
+  bottom: 0px;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  animation: increase;
+  transition: 0.3s ease;
+  visibility: hidden;
 }
 
 .project-card:hover .details-project {
-    visibility: visible;
+  visibility: visible;
 }
 
 /* Portfolio style ended */
@@ -146,13 +150,13 @@
 }
 
 .social-icons {
-    position: absolute;
-    overflow: hidden;
-    text-align: center;
-    bottom: 15px;
-    left: 100px;
-    transition: 0.3s ease;
-    visibility: hidden;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  bottom: 15px;
+  left: 100px;
+  transition: 0.3s ease;
+  visibility: hidden;
 }
 
 .social-icons-wrapper:hover .social-icons {
@@ -227,12 +231,18 @@ h1 {
   right: 8px;
 }
 
-.custom-hover {
-  border: 2px solid #595857;
+.custom-effect {
+  border: 1px solid #595857;
 }
-
-.custom-hover:hover {
-  border: 2px solid #1da1f2;
+.custom-effect {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+}
+.custom-effect:hover {
+  border: 1px solid #1da1f2;
 }
 
 /* Feedback style ended */
@@ -266,11 +276,22 @@ h1 {
 
 /* Service Details Page style */
 .s-icon {
-    transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .single-service:hover .s-icon {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /* Service Details Page Style ended */
+
+/* about section */
+
+.mission,
+.vision {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+}
