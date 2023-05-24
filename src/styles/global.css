@@ -1,3 +1,7 @@
+#root {
+  background: #eafaff;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   background-color: #f5f5f5;
@@ -19,8 +23,15 @@
 }
 
 .bg-gradient {
-  background: linear-gradient(217deg,
+  background: linear-gradient(
+      217deg,
       rgba(36, 109, 34, 0.044),
-      rgba(33, 93, 137, 0) 70.71%), linear-gradient(127deg, rgba(137, 206, 137, 0.288), rgba(0, 255, 0, 0) 70.71%),
+      rgba(33, 93, 137, 0) 70.71%
+    ),
+    linear-gradient(
+      127deg,
+      rgba(137, 206, 137, 0.288),
+      rgba(0, 255, 0, 0) 70.71%
+    ),
     linear-gradient(336deg, rgba(84, 87, 118, 0.493), rgba(8, 8, 214, 0) 70.71%);
 }
