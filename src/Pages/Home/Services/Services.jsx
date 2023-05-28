@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { serviceData } from "./serviceData";
 const Services = () => {
   return (
-    <div className=" mb-10 bg-[#b9e2fc] px-9 pb-8 pr-24 rounded-r-full mt-20 pt-9">
+    <div className=" mb-10  px-9 pb-8   mt-20 pt-9">
          <div className=" s-title-outline  lg:w-64 mx-auto  text-center mt-16 lg:mt-0 ">
             <h2 className=" ml-[-50px] lg:ml-0 md:ml-0 w-64 lg:text-2xl md:text-2xl font-semibold text-[#1DA1F2] s-title  uppercase md:mb-16">
               Services
@@ -22,7 +22,7 @@ const Services = () => {
             serviceData.map((data, i) => (
               <div key={data.id}>
                 {i % 2 === 0 ? (
-                  <div className="service-card p-6  lg:p-4 md:p-4 lg:h-auto h-64 rounded-lg shadow-xl card-bordered w-[250px] lg:w-auto md:w-auto" style={{backgroundColor:`${data.bg}`}}>
+                  <div className={`service-card p-6  lg:p-4 md:p-4 lg:h-auto h-72 shadow-xl ${data.rounded} card-bordered w-[250px] lg:w-auto md:w-auto`} style={{backgroundColor:`${data.bg}`}}>
                     <div className="content ">
                       <div className=" flex justify-start items-center gap-2">
                         <div className="icon text-[#ffffff] ">{data.icon}</div>
@@ -40,14 +40,14 @@ const Services = () => {
                           to="/servicesDetails"
                           className="mt-5 font-semibold text-sm  lg:text-base"
                         >
-                          Read More{" "}
+                          Explore More{" "}
                           <BsArrowRight className="text-[#ffffff] inline-block" />
                         </Link>
                       </div>
                     </div>
                   </div>
                 ) : (
-                  <div className='service-card p-6  lg:p-4 md:p-4 lg:h-auto h-64 rounded-lg shadow-xl w-[250px] lg:w-auto md:w-auto card-bordered' style={{backgroundColor:`${data.bg}`}}>
+                  <div className={`service-card p-6  lg:p-4 md:p-4 lg:h-auto h-72 ${data.rounded} shadow-xl w-[250px] lg:w-auto md:w-auto card-bordered`} style={{backgroundColor:`${data.bg}`}}>
                     <div className="content">
                       <div className=" flex justify-start items-center gap-2">
                         <div className="icon text-[#ffffff] ">{data.icon}</div>

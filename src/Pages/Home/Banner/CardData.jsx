@@ -1,8 +1,12 @@
+/* eslint-disable no-unused-vars */
+
+import { json } from "react-router-dom";
+import { serviceData } from "../Services/serviceData";
+
 export const services = [
   {
     id: 1,
-    title: "Cloud Computing",
- 
+    title: "Software Development",
       description:
       "Harnessing the power of cloud computing can significantly enhance your business's scalability, flexibility, and cost-efficiency. We offer cloud consulting, migration, and management services to help you leverage cloud platforms effectively, ensuring data security, reliability, and seamless access from anywhere in the world.",
   },
@@ -14,7 +18,7 @@ export const services = [
   },
   {
     id: 3,
-    title: "Software Development",
+    title: " Cloud Computing",
     description:
       "We offer custom software development services to streamline your business operations and enhance productivity. Our talented developers build robust and scalable software solutions tailored to your specific requirements, helping you automate tasks, manage data effectively, and improve overall efficiency.",
   },
@@ -64,3 +68,65 @@ export const services = [
   
     },
 ];
+
+ const addId =(activeIndex)=>{
+
+if(activeIndex==1){
+    const data=  serviceData.find(item=>item.id===1)
+    setCardData(data)
+    }
+    else if(activeIndex==2){
+    const data=  serviceData.find(item=>item.id===2)
+      setCardData(data)
+    }
+    else if(activeIndex==3){
+    const data=  serviceData.find(item=>item.id===3)
+      setCardData(data)
+    }
+    else if(activeIndex==4){
+    const data=  serviceData.find(item=>item.id===4)
+      setCardData(data)
+    }
+    else if(activeIndex==5){
+    const data=  serviceData.find(item=>item.id===5)
+      setCardData(data)
+    }
+    else if(activeIndex==6){
+    const data=  serviceData.find(item=>item.id===6)
+      setCardData(data)
+    }
+    else if(activeIndex==7){
+    const data=  serviceData.find(item=>item.id===7)
+      setCardData(data)
+    }
+    else if(activeIndex==8){
+    const data=  serviceData.find(item=>item.id===8)
+      setCardData(data)
+    }
+    else if(activeIndex==9){
+    const data=  serviceData.find(item=>item.id===9)
+      setCardData(data)
+    }
+    else {
+    const data=  serviceData.find(item=>item.id===10)
+      setCardData(data)
+    }
+}
+
+const setCardData=(data)=>{
+
+  const cardData=data
+  console.log(cardData);
+  return cardData;
+}
+
+export{
+  addId,
+  setCardData
+}
+
+const setId=(activeIndex)=>{
+  console.log("Active Id",activeIndex);
+
+  
+}
