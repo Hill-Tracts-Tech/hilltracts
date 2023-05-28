@@ -39,29 +39,26 @@ const BlogAndNew = () => {
     },
   ];
   return (
-    <div className="max-w-[90%] mx-auto mb-10">
-      <div className="b-title-outline w-48 mx-auto mt-20">
+    <div className="mb-10  px-9 pb-8  mt-20 pt-1">
+      <div className="max-w-[90%] mx-auto mb-10">
+      <div className="b-title-outline w-48 mx-auto my-10">
         <h2 className="text-lg font-semibold text-[#1DA1F2] b-title text-center uppercase ">
           What’s Happening
         </h2>
       </div>
-      <div className="w-1/2 mx-auto">
-        <h1 className="text-3xl font-bold text-center capitalize font-[cursive] ">
-          Best News & Blog
-        </h1>
-      </div>
-      <div className="lg:flex justify-around gap-8 px-4 mt-[-30px]">
+      <div className="lg:flex md:flex justify-around gap-8  ">
         {data.map((item) => (
-          <div key={item?.id} className="">
+          <div key={item?.id} className=" card-bordered rounded-lg shadow-xl mt-5 lg:mt-0 md:mt-0">
             <div className="">
               <img className=" rounded-lg" src={item?.image} alt="" />
 
               <img
-                className="rounded-full h-12 ml-3 mt-[-30px]  card-bordered"
+                className="rounded-full h-12 ml-3 mt-[-30px]  card-bordered "
                 src={item?.userimage}
                 alt=""
               />
 
+              <div className="p-2">
               <p className="text-xl font-semibold my-4">{item?.title}</p>
               <p className=" text-left">{item?.blog.slice(0, 70)}.....</p>
               <div className="mt-4">
@@ -76,10 +73,18 @@ const BlogAndNew = () => {
                   </li>
                 </ul>
               </div>
+              </div>
             </div>
           </div>
         ))}
+
+<div className="w-1/2 mx-auto">
+        <h1 className="text-3xl font-bold text-center capitalize font-[cursive] lg:text-4xl md:text-4xl  w-20 tracking-[6px] font-[cursive]" style={{lineHeight:"55px"}} >
+          Best News & Blog
+        </h1>
       </div>
+      </div>
+    </div>
     </div>
   );
 };
