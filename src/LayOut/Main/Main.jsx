@@ -1,14 +1,15 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../../Components/Footer/Footer";
 import Navbar from "../../Components/Navbar/Navbar";
+import ScrollToTopComponent from "../../Components/Scroll/ScrollToTop";
 const Main = () => {
-    return (
-      <div className="">
-        <Navbar></Navbar>
-        <Outlet></Outlet>
-        <Footer></Footer>
-      </div>
-    );
+  return (
+    <ScrollToTopComponent>
+      <Navbar></Navbar>
+      <Outlet></Outlet>
+      <Footer></Footer>
+    </ScrollToTopComponent>
+  );
 };
 
 export default Main;
