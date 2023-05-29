@@ -5,14 +5,14 @@ const ServiceDetails = () => {
   return (
     <>
       <div className="w-full h-[300px] relative">
-        <h1 className="absolute top-[37%] left-[41%] text-4xl uppercase font-bold text-white">
-          Our Services
-        </h1>
         <img
           className="w-full h-full object-cover"
-          src="https://i.ibb.co/9bZ9cXj/4.png"
+          src="https://i.ibb.co/Q8GXTb8/2.png"
           alt="Banner"
         />
+        <div className="uppercase absolute text-white font-bold top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] text-4xl">
+          Our Services
+        </div>
       </div>
       <div className="max-w-[90%] mx-auto">
         {services &&

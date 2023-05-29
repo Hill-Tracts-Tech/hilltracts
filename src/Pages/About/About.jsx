@@ -1,18 +1,19 @@
 import { about, mission, vision } from "./aboutData";
 import logo from "../../../public/Logo1.svg";
 import { services } from "../ServiceDetails/ServiceData";
+import "../../styles/styles.css";
 const About = () => {
   return (
     <>
-      <div className="w-full h-[300px] relative">
-        <h1 className="absolute top-[37%] left-[41%] text-4xl uppercase font-bold text-white">
-          About Us
-        </h1>
+      <div className="w-full h-[300px] relative text-center">
         <img
           className="w-full h-full object-cover"
           src="https://i.ibb.co/GPBrF99/aboutus.png"
           alt="Banner"
         />
+        <div className="absolute text-white font-bold top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] text-4xl uppercase">
+          About Us
+        </div>
       </div>
       <div className="max-w-[90%] mx-auto mb-10">
         <section className="mb-32 text-gray-800">
@@ -20,14 +21,16 @@ const About = () => {
             <div className="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
               <div className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg">
                 <img src={logo} className="w-full h-[350px]" alt="Louvre" />
-                <a href="#!">
+                <a href="#">
                   <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"></div>
                 </a>
               </div>
             </div>
 
             <div className="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6">
-              <h3 className="text-2xl font-bold mb-4">That is the news!</h3>
+              <h3 className="text-2xl font-bold mb-4 capitalize">
+                What we do?
+              </h3>
               <p className="text-gray-500 mb-6 text-justify">
                 {about.slice(0, 582)}
               </p>
@@ -38,12 +41,12 @@ const About = () => {
           </div>
         </section>
         <section className="mb-5">
-          <div className="flex justify-between items-center gap-4">
-            <div className="border-2 rounded-md shadow-lg opacity-75 p-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 justify-between items-center gap-4">
+            <div className="border-2 rounded-md shadow-lg opacity-75 p-4 common">
               <h3 className="text-xl font-bold mb-2 sm-12">Our Mission</h3>
               <p className="text-justify">{mission}</p>
             </div>
-            <div className="border-2 rounded-md shadow-lg opacity-75 p-4">
+            <div className="border-2 rounded-md shadow-lg opacity-75 p-4 common">
               <h3 className="text-xl font-bold mb-2">Our Vision</h3>
               <p className="text-justify">{vision}</p>
             </div>

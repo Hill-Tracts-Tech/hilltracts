@@ -1,108 +1,18 @@
-/* eslint-disable no-unused-vars */
-/*
-import React, { useState } from "react";
-
-const Contact = () => {
-  const [contactInfo, setContactInfo] = useState();
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const form = event.target;
-    const email = form.email.value;
-    const fullName = form.fullName.value;
-    const subject = form.subject.value;
-    const message = form.message.value;
-    const data = {
-      email,
-      fullName,
-      subject,
-      message,
-    };
-    setContactInfo(data);
-  };
-  console.log(contactInfo);
-  return (
-    <div>
-      <div className="w-full h-[350px] relative">
-        <img
-          className="h-full w-full"
-          src="https://i.ibb.co/TrgVqrD/5.png"
-          alt=""
-        />
-        <h1 className="text-4xl font-bold text-white absolute top-[140px] left-[619px]">
-          Contact Us
-        </h1>
-      </div>
-      <div className="w-2/3 mx-auto mt-4">
-        <div>
-          <span className="text-md font-bold text-[#1DA1F2]">
-            REQUEST A QUOTE
-          </span>
-          <h3 className="text-2xl text-gray-950 font-bold">
-            How May We Help You!
-          </h3>
-        </div>
-        <form onSubmit={handleSubmit}>
-          <div className="form- flex my-3 gap-3">
-            <input
-              name="fullName"
-              required
-              placeholder="Name *"
-              type="text"
-              className="w-full h-[35px] rounded-md outline-none border-gray-400 p-2"
-            />
-            <input
-              name="email"
-              required
-              placeholder="Email *"
-              type="email"
-              className="w-full h-[35px] rounded-md outline-none border-gray-400 p-2"
-            />
-          </div>
-          <div className="form-">
-            <input
-              name="subject"
-              required
-              placeholder="Subject *"
-              type="text"
-              className="w-full h-[35px] rounded-md outline-none border-gray-400 p-2"
-            />
-          </div>
-          <div className="form- my-3">
-            <textarea
-              name="message"
-              required
-              className="textarea w-full h-[140px] outline-none"
-              placeholder="Your Message *"
-            ></textarea>
-          </div>
-          <button className="btn bg-[#1DA1F2] rounded-md border-none w-full mb-3 capitalize font-semibold text-[18px] hover:bg-[#15dfdf] focus:outline-none focus:border-none">
-            Send Message
-          </button>
-        </form>
-      </div>
-    </div>
-  );
-};
-
-export default Contact;
-*/
-
-/* eslint-disable no-unused-vars */
 const Contact = () => {
   return (
     <>
       <div className="w-full h-[300px] relative">
-        <h1 className="absolute top-[37%] left-[41%] text-4xl uppercase font-bold text-white">
-          Get in touch
-        </h1>
         <img
           className="w-full h-full object-cover"
           src="https://i.ibb.co/zRbvgPF/contactus.png"
           alt="Banner"
         />
+        <div className="absolute text-white font-bold top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] text-4xl uppercase">
+          Get in touch
+        </div>
       </div>
       <div className="max-w-[90%] mx-auto mb-10">
-        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 lg:gap-8">
+        {/* <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 lg:gap-8">
           <a
             className="flex flex-col h-full text-center rounded-md bg-gray-100 hover:bg-gray-200 p-4 sm:p-6 dark:hover:bg-white/[.05]"
             href="#"
@@ -155,9 +65,9 @@ const Contact = () => {
               <p className="mt-1 text-gray-500">info.htt@gmail.com</p>
             </div>
           </a>
-        </div>
+        </div> */}
         <div className="lg:w-[60%] sm:w-[100%] mt-24 mx-auto">
-          <div className="text-left flex flex-col border rounded-xl p-4 sm:p-6 ">
+          <div className="text-left flex flex-col border rounded-xl p-4 sm:p-6 common">
             <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-gray-200">
               Fill in the form
             </h2>
@@ -172,7 +82,7 @@ const Contact = () => {
                     <input
                       type="text"
                       name="fullName"
-required
+                      required
                       className="py-3 px-4 block w-full border-gray-300 border-blue border rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
                     ></input>
                   </div>
@@ -183,7 +93,7 @@ required
                     <input
                       type="tel"
                       name="phone"
-required
+                      required
                       className="py-3 px-4 block w-full border-gray-300 border rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
                     ></input>
                   </div>
@@ -197,7 +107,7 @@ required
                     <input
                       type="email"
                       name="email"
-                     required
+                      required
                       autoComplete="email"
                       className="py-3 px-4 block w-full border-gray-300 rounded-md text-sm focus:border-blue-500 border focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
                     ></input>
@@ -209,7 +119,7 @@ required
                     Message
                   </label>
                   <textarea
-                   required
+                    required
                     name="message"
                     rows="4"
                     className="py-3 px-4 block w-full border-gray-500 rounded-md text-sm focus:border-blue-300 border focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"

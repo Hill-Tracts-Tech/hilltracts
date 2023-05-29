@@ -40,21 +40,25 @@ const Portfolio = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-4 my-5">
-        {filteredItems.map((data) => (
-          <div key={data.id} className="project-card">
-            <div className="image-container">
-              <img src={data.imgURL} alt={data.imgURL} />
+        {filteredItems.length == 0 ? (
+          <p className="text-start text-xl text-red-500">No project found</p>
+        ) : (
+          filteredItems.map((data) => (
+            <div key={data.id} className="project-card">
+              <div className="image-container">
+                <img src={data.imgURL} alt={data.imgURL} />
+              </div>
+              <div className="w-full details-project">
+                <a href={data.projectLink} className="text-white">
+                  {data.title}
+                </a>
+                <h3 className="font-semibold text-[#1DA1F2]">
+                  {data.projectType}
+                </h3>
+              </div>
             </div>
-            <div className="w-full details-project">
-              <a href={data.projectLink} className="text-white">
-                {data.title}
-              </a>
-              <h3 className="font-semibold text-[#1DA1F2]">
-                {data.projectType}
-              </h3>
-            </div>
-          </div>
-        ))}
+          ))
+        )}
       </div>
     </div>
   );

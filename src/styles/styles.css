@@ -96,6 +96,10 @@
 
 .project-card {
   position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
 }
 
 .details-project {
@@ -200,6 +204,14 @@ h1 {
   opacity: 0.7;
 }
 
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+.slider-item img{
+  border-radius: 50%;
+}
+
 /* TeamMembers style ended */
 
 /* Feedback style */
@@ -227,12 +239,18 @@ h1 {
   right: 8px;
 }
 
-.custom-hover {
-  border: 2px solid #595857;
+.custom-effect {
+  border: 1px solid #595857;
 }
-
-.custom-hover:hover {
-  border: 2px solid #1da1f2;
+.custom-effect {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+}
+.custom-effect:hover {
+  border: 1px solid #1da1f2;
 }
 
 /* Feedback style ended */
@@ -287,4 +305,13 @@ h1 {
 
 .image-container:hover img {
   transform: translateY(-50%);
+}
+
+
+.common{
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
 }
