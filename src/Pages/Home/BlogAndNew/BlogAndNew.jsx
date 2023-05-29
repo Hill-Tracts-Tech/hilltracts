@@ -40,46 +40,57 @@ const BlogAndNew = () => {
     },
   ];
   return (
-    <div className="max-w-[90%] mx-auto mb-10">
-      <div className="b-title-outline w-48 mx-auto mt-20">
-        <h2 className="text-lg font-semibold text-[#1DA1F2] b-title text-center uppercase ">
-          What is Happening
-        </h2>
-      </div>
-      <div className="w-1/2 mx-auto">
-        <h1 className="text-3xl font-bold text-center capitalize font-[cursive] ">
-          Best News & Blog
-        </h1>
-      </div>
-      <div className="lg:flex justify-around gap-8 px-4 mt-[-30px]">
-        {data.map((item) => (
-          <div key={item?.id} className="">
-            <div className="">
-              <img className=" rounded-lg" src={item?.image} alt="" />
+    <div className="mb-10  px-9 pb-8  mt-20 pt-1">
+      <div className="max-w-[90%] mx-auto mb-10">
+        <div className="b-title-outline w-48 mx-auto my-10">
+          <h2 className="text-lg font-semibold text-[#1DA1F2] b-title text-center uppercase ">
+            What is Happening
+          </h2>
+        </div>
+        <div className="lg:flex md:flex justify-around gap-8  ">
+          {data.map((item) => (
+            <div
+              key={item?.id}
+              className=" card-bordered rounded-lg shadow-xl mt-5 lg:mt-0 md:mt-0"
+            >
+              <div className="">
+                <img className=" rounded-lg" src={item?.image} alt="" />
 
-              <img
-                className="rounded-full h-12 ml-3 mt-[-30px]  card-bordered"
-                src={item?.userimage}
-                alt=""
-              />
+                <img
+                  className="rounded-full h-12 ml-3 mt-[-30px]  card-bordered "
+                  src={item?.userimage}
+                  alt=""
+                />
 
-              <Link to="/blog-details" className="text-xl font-semibold my-4">{item?.title}</Link>
-              <p className=" text-left">{item?.blog.slice(0, 70)}.....</p>
-              <div className="mt-4">
-                <ul className="flex justify-between">
-                  <li className="flex gap-2">
-                    <FaClock className="text-xl "></FaClock>
-                    <span className="mt-[-2px]">{item?.date}</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <FaComment className="text-xl"></FaComment>
-                    <span className="mt-[-2px]">{item?.comment} comment</span>
-                  </li>
-                </ul>
+                <Link to="/blog-details" className="text-xl font-semibold my-4">
+                  {item?.title}
+                </Link>
+                <p className=" text-left">{item?.blog.slice(0, 70)}.....</p>
+                <div className="mt-4">
+                  <ul className="flex justify-between">
+                    <li className="flex gap-2">
+                      <FaClock className="text-xl "></FaClock>
+                      <span className="mt-[-2px]">{item?.date}</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <FaComment className="text-xl"></FaComment>
+                      <span className="mt-[-2px]">{item?.comment} comment</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        <div className="w-1/2 mx-auto">
+          <h1
+            className="text-3xl font-bold text-center capitalize lg:text-4xl md:text-4xl  w-20 tracking-[6px] font-[cursive]"
+            style={{ lineHeight: "55px" }}
+          >
+            Best News & Blog
+          </h1>
+        </div>
       </div>
     </div>
   );

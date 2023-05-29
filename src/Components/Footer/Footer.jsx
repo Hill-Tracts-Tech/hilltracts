@@ -9,8 +9,8 @@ import { FaEnvelope, FaPhoneAlt, FaPlus, FaPlusCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <div className="w-full bg-base-200 ">
-      <footer className="footer p-10  text-base-content ">
+    <div className="w-full bg-[#d8f0ff] lg:h-[400px] border-t-2  rounded-tr-[250px] ">
+      <footer className="footer p-10  text-base-content pt-24">
         <div className="lg:ml-20">
           <img
             style={{ width: "80px", height: "80px" }}
@@ -58,8 +58,13 @@ const Footer = () => {
           <Link to="/contact" className="link no-underline hover:text-[#1DA1F2]">
           <FaPlusCircle className=" inline-block text-[#1DA1F2] "/> <span >Contact</span> 
           </Link>
-          <a className="link no-underline hover:text-[#1DA1F2]"><FaPlusCircle className=" inline-block text-[#1DA1F2] "/> <span >Jobs</span></a>
-          <a className="link no-underline hover:text-[#1DA1F2]"><FaPlusCircle className=" inline-block text-[#1DA1F2] "/> <span >Press kit</span> </a>
+          <Link to="/servicesDetails" className="link no-underline hover:text-[#1DA1F2]">
+          <FaPlusCircle className=" inline-block text-[#1DA1F2] "/> <span >Services</span> 
+          </Link>
+          <Link to="/" className="link no-underline hover:text-[#1DA1F2]">
+          <FaPlusCircle className=" inline-block text-[#1DA1F2] "/> <span >Portfolio</span> 
+          </Link>
+   
         </div>
         <div>
           <span className="footer-title">Legal</span>

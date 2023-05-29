@@ -2,14 +2,14 @@ const Contact = () => {
   return (
     <>
       <div className="w-full h-[300px] relative">
-        <h1 className="absolute top-[37%] left-[41%] text-4xl uppercase font-bold text-white">
-          Get in touch
-        </h1>
         <img
           className="w-full h-full object-cover"
           src="https://i.ibb.co/zRbvgPF/contactus.png"
           alt="Banner"
         />
+        <div className="absolute text-white font-bold top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] text-4xl uppercase">
+          Get in touch
+        </div>
       </div>
       <div className="max-w-[90%] mx-auto mb-10">
         {/* <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 lg:gap-8">
