@@ -8,27 +8,27 @@ const Navbar = () => {
   const navbarList = (
     <React.Fragment>
       <li>
-        <Link to="/" className="text-lg hover:text-[#1DA1F2]">
+        <Link to="/" className="text-lg text-white hover:text-[#1DA1F2]">
           Home
         </Link>
       </li>
       <li>
-        <Link to="/about" className="hover:text-[#1DA1F2] text-lg">
+        <Link to="/about" className="hover:text-[#1DA1F2] text-lg text-white">
           About
         </Link>
       </li>
       <li>
-        <Link to="/contact" className="hover:text-[#1DA1F2] text-lg">
+        <Link to="/contact" className="hover:text-[#1DA1F2] text-lg text-white">
           Contact
         </Link>
       </li>
       <li>
-        <Link to="/servicesDetails" className="hover:text-[#1DA1F2] text-lg">
+        <Link to="/servicesDetails" className="hover:text-[#1DA1F2] text-lg text-white">
           Services
         </Link>
       </li>
       <li>
-        <Link to="/" className="hover:text-[#1DA1F2] text-lg">
+        <Link to="/" className="hover:text-[#1DA1F2] text-lg text-white">
           Portfolio
         </Link>
       </li>
@@ -70,7 +70,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 "
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#b2ddf8] rounded-box w-52 "
           >
             {navbarList}
           </ul>
