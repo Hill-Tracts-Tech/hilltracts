@@ -1,5 +1,5 @@
 import { services } from "./ServiceData";
-// import '../../styles/styles.css'
+import '../../styles/styles.css'
 
 const ServiceDetails = () => {
   return (
