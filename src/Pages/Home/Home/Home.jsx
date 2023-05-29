@@ -3,7 +3,7 @@ import Banner from "../Banner/Banner";
 import BlogAndNew from "../BlogAndNew/BlogAndNew";
 import Services from "../Services/Services";
 import Portfolio from "../Portfolio/Portfolio";
-// import TeamMembers from "../TeamMembers/TeamMembers";
+import TeamMembers from "../TeamMembers/TeamMembers";
 import FeedBack from "../FeedBack/FeedBack";
 import Members from "../Members/Members";
 import OurClients from "../OurClients/OurClients";
@@ -58,6 +58,7 @@ const Home = () => {
      <Services />
       <Portfolio />
       <Members />
+      <TeamMembers/>
       <FeedBack />
       {/* <OurClients /> */}
       <BlogAndNew />

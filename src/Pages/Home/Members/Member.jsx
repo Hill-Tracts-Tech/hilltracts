@@ -4,6 +4,7 @@ import "../../../styles/styles.css";
 import "./style.css";
 
 function Member(props) {
+  console.log(props);
   return (
     <div className="social-icons-wrapper">
       <div className="card rounded-full h-full p-3">

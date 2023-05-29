@@ -1,10 +1,9 @@
-import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import "../../../styles/styles.css";
-import { productData } from "./data";
+import { data } from "./data";
+import Member from "./Member";
 const TeamMembers = () => {
-  console.log(productData);
   return (
-    <div className="max-w-5xl mx-auto mb-10">
+    <div className="w-[90%] mx-auto mb-10">
       <div className="s-title-outline w-48 mx-auto mt-20">
         <h2 className="text-lg font-semibold text-[#1DA1F2] s-title text-center uppercase">
           Team
@@ -15,40 +14,14 @@ const TeamMembers = () => {
           Our Best Team members
         </h1>
       </div>
-      <div className="services grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-between gap-3 mt-8">
-        {productData?.map((info) => (
-          <div key={info.id} className="bg-slate-50">
-            <div className="social-icons-wrapper">
-              <img
-                className="h-[250px] w-full"
-                src={info.imgURL}
-                alt={info.name}
-              />
-              <div className="flex justify-center z-0 items-center gap-2 social-icons">
-                <button className="bg-[#1DA1F2] p-2 rounded-full">
-                  <a href={info.faceBook}>
-                    <FaFacebookF color="white" />
-                  </a>
-                </button>
-                <button className="bg-[#1DA1F2] p-2 rounded-full">
-                  <a href={info.gitHub}>
-                    <FaGithub color="white" />
-                  </a>
-                </button>
-                <button className="bg-[#1DA1F2] p-2 rounded-full">
-                  <a href={info.linkedIn}>
-                    <FaLinkedinIn color="white" />
-                  </a>
-                </button>
-              </div>
-            </div>
-            <div className="text-center z-10 leading-none">
-              <h3 className="text-xl font-semibold">{info.name}</h3>
-              <span className="text-sm font-semibold text-[#1DA1F2]">
-                {info.designation}
-              </span>
-            </div>
-          </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center gap-3 mt-8">
+        {
+          data&&
+          data.map((info) => (
+          <Member
+            key={info.id}
+            info={info}
+          />
         ))}
       </div>
     </div>

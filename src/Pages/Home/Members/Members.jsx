@@ -1,8 +1,6 @@
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Member from "./Member";
-import { productData, responsive } from "./data";
-
+import { productData } from "./data";
 export default function Members() {
   const product = productData.map((item, i) => (
     <>
@@ -30,16 +28,7 @@ export default function Members() {
           </h1>
         </div>
         <div className="mt-[-30px]">
-          <Carousel
-            showDots={false}
-            responsive={responsive}
-            keyBoardControl={true}
-            containerClass="container"
-            itemClass="carousel-item-padding-0-px slider-item"
-            sliderClass="inner-slider"
-          >
-            {product}
-          </Carousel>
+          <Member product={product}/>
         </div>
       </div>
     </div>
