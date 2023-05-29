@@ -112,56 +112,56 @@ const Banner = () => {
     
     <div> {isActive ?  ( setId(1) || <img src={slide_image_1} alt="slide_image" />)  : <img src={slide_image_1} alt="slide_image" />}</div>
   )} */}
-<img src={slide_image_1} alt="slide_image" />
+<Link to="/servicesDetails"><img src={slide_image_1} alt="slide_image" /></Link>
       </SwiperSlide>
       <SwiperSlide>
       {/* {({ isActive }) => (
     
     <div> {isActive ?  ( setId(2) ||<Link to='/servicesDetails'> <img src={slide_image_2} alt="slide_image" /></Link>)  : <img src={slide_image_2} alt="slide_image" />}</div>
   )} */}
-<img src={slide_image_2} alt="slide_image" />
+<Link to="/servicesDetails"><img src={slide_image_2} alt="slide_image" /></Link>
       </SwiperSlide>
       <SwiperSlide>
       {/* {({ isActive }) => (
     
     <div> {isActive ?  ( setId(3) || <img src={slide_image_3} alt="slide_image" />)  : <img src={slide_image_3} alt="slide_image" />}</div>
   )} */}
-<img src={slide_image_3} alt="slide_image" />
+<Link to="/servicesDetails"><img src={slide_image_3} alt="slide_image" /></Link>
       </SwiperSlide>
       <SwiperSlide>
       {/* {({ isActive }) => (
     
     <div> {isActive ?  ( setId(4) || <img src={slide_image_4} alt="slide_image" />)  : <img src={slide_image_4} alt="slide_image" />}</div>
   )} */}
-<img src={slide_image_4} alt="slide_image" />
+<Link to="/servicesDetails"><img src={slide_image_4} alt="slide_image" /></Link>
       </SwiperSlide>
       <SwiperSlide>
       {/* {({ isActive }) => (
     
     <div> {isActive ?  ( setId(5) || <img src={slide_image_5} alt="slide_image" />)  : <img src={slide_image_5} alt="slide_image" />}</div>
   )} */}
-<img src={slide_image_5} alt="slide_image" />
+<Link to="/servicesDetails"><img src={slide_image_5} alt="slide_image" /></Link>
       </SwiperSlide>
       <SwiperSlide>
       {/* {({ isActive }) => (
     
     <div> {isActive ?  ( setId(6) || <img src={slide_image_6} alt="slide_image" />)  : <img src={slide_image_6} alt="slide_image" />}</div>
   )} */}
-<img src={slide_image_6} alt="slide_image" />
+<Link to="/servicesDetails"><img src={slide_image_6} alt="slide_image" /></Link>
       </SwiperSlide>
       <SwiperSlide>
       {/* {({ isActive }) => (
     
     <div> {isActive ?  ( setId(7) || <img src={slide_image_7} alt="slide_image" />)  : <img src={slide_image_7} alt="slide_image" />}</div>
   )} */}
-<img src={slide_image_7} alt="slide_image" />
+<Link to="/servicesDetails"><img src={slide_image_7} alt="slide_image" /></Link>
       </SwiperSlide>
       <SwiperSlide >
       {/* {({ isActive }) => (
     
     <div> {isActive ?  ( setId(8) || <img src={slide_image_8} alt="slide_image" />)  : <img src={slide_image_8} alt="slide_image" />}</div>
   )} */}
-<img src={slide_image_8} alt="slide_image" />
+<Link to="/servicesDetails"><img src={slide_image_8} alt="slide_image" /></Link>
       </SwiperSlide>
       
       <SwiperSlide>
@@ -169,14 +169,14 @@ const Banner = () => {
     
     <div> {isActive ?  ( setId(9) || <img src={slide_image_9} alt="slide_image" />)  : <img src={slide_image_9} alt="slide_image" />}</div>
   )} */}
-<img src={slide_image_9} alt="slide_image" />
+<Link to="/servicesDetails"><img src={slide_image_9} alt="slide_image" /></Link>
       </SwiperSlide>
       <SwiperSlide>
       {/* {({ isActive }) => (
     
     <div> {isActive ?  ( setId(10) || <img src={slide_image_10} alt="slide_image" />)  : <img src={slide_image_10} alt="slide_image" />}</div>
   )} */}
-<img src={slide_image_10} alt="slide_image" />
+<Link to="/servicesDetails"><img src={slide_image_10} alt="slide_image" /></Link>
       </SwiperSlide>
      
     </Swiper>
