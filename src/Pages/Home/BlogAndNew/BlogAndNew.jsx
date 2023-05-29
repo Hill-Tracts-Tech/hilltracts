@@ -47,11 +47,19 @@ const BlogAndNew = () => {
             What is Happening
           </h2>
         </div>
-        <div className="lg:flex md:flex justify-around gap-8  ">
+        <div className="w-1/2 mx-auto block lg:hidden md:hidden">
+          <h1
+            className="text-3xl font-bold text-center capitalize lg:text-4xl md:text-4xl tracking-[6px] font-[cursive]"
+            style={{ lineHeight: "55px" }}
+          >
+            Best News & Blog
+          </h1>
+        </div>
+        <div className="lg:flex md:flex justify-between gap-8 items-center  ">
           {data.map((item) => (
             <div
               key={item?.id}
-              className=" card-bordered rounded-lg shadow-xl mt-5 lg:mt-0 md:mt-0"
+              className=" card-bordered rounded-lg shadow-xl mt-5 lg:mt-0 md:mt-0 "
             >
               <div className="">
                 <img className=" rounded-lg" src={item?.image} alt="" />
@@ -61,7 +69,8 @@ const BlogAndNew = () => {
                   src={item?.userimage}
                   alt=""
                 />
-
+                <div className="p-2">
+                  
                 <Link to="/blog-details" className="text-xl font-semibold my-4">
                   {item?.title}
                 </Link>
@@ -78,12 +87,11 @@ const BlogAndNew = () => {
                     </li>
                   </ul>
                 </div>
+                </div>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="w-1/2 mx-auto">
+        <div className="w-1/2 mx-auto hidden lg:flex md:flex">
           <h1
             className="text-3xl font-bold text-center capitalize lg:text-4xl md:text-4xl  w-20 tracking-[6px] font-[cursive]"
             style={{ lineHeight: "55px" }}
@@ -91,6 +99,8 @@ const BlogAndNew = () => {
             Best News & Blog
           </h1>
         </div>
+        </div>
+
       </div>
     </div>
   );
