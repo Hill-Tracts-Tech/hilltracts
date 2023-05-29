@@ -19,29 +19,7 @@ const BlogDetails = () => {
         </div>
       </div>
       <p className="text-justify m-7">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad
-        perspiciatis explicabo, repellendus suscipit in nihil voluptate
-        quibusdam cumque ut nostrum fuga voluptatibus dolorum repudiandae.
-        Voluptas facilis nostrum quis itaque at impedit voluptate praesentium,
-        dolor est ut veniam officia totam omnis quod pariatur eius repellat.
-        Nesciunt repellendus blanditiis nemo dicta, incidunt suscipit cum nisi
-        culpa, itaque repudiandae debitis nulla! Aut, itaque at iure fuga
-        dignissimos possimus! Vitae a, voluptatem sequi nihil cum consequatur
-        error esse et aliquam qui fugiat atque ullam quisquam dolor molestias
-        expedita enim. Veritatis culpa accusantium repellendus libero sapiente,
-        ratione odit pariatur dicta molestias vitae molestiae voluptas omnis
-        voluptatibus unde velit consequuntur magni maxime excepturi. Similique
-        animi nobis exercitationem soluta nihil. Labore porro error officia
-        iusto ratione minus consequuntur consectetur soluta architecto, dicta
-        quis saepe voluptas quibusdam eum perspiciatis placeat atque
-        necessitatibus praesentium velit exercitationem blanditiis? Dolores
-        nostrum est, voluptatem perferendis, illum repudiandae itaque unde
-        velit, distinctio expedita molestiae. At quia tenetur quos, sequi quam
-        magni laudantium incidunt est deleniti ullam officiis dignissimos
-        debitis earum minus beatae perspiciatis repellendus labore quisquam
-        quibusdam tempora itaque qui a possimus voluptatem? Rerum error magni
-        quo saepe tempore aliquid recusandae vero deleniti! Nam laboriosam rem
-        consequuntur ut accusantium quod nesciunt distinctio magnam!
+        Coming soon!!!
       </p>
       <hr className="my-4" />
       <div className="flex justify-between items-center">
