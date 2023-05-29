@@ -2,6 +2,7 @@
 import React from "react";
 import { FaClock, FaComment } from "react-icons/fa";
 import "../../../styles/styles.css";
+import { Link } from "react-router-dom";
 const BlogAndNew = () => {
   const data = [
     {
@@ -42,7 +43,7 @@ const BlogAndNew = () => {
     <div className="max-w-[90%] mx-auto mb-10">
       <div className="b-title-outline w-48 mx-auto mt-20">
         <h2 className="text-lg font-semibold text-[#1DA1F2] b-title text-center uppercase ">
-          What’s Happening
+          What is Happening
         </h2>
       </div>
       <div className="w-1/2 mx-auto">
@@ -62,7 +63,7 @@ const BlogAndNew = () => {
                 alt=""
               />
 
-              <p className="text-xl font-semibold my-4">{item?.title}</p>
+              <Link to="/blog-details" className="text-xl font-semibold my-4">{item?.title}</Link>
               <p className=" text-left">{item?.blog.slice(0, 70)}.....</p>
               <div className="mt-4">
                 <ul className="flex justify-between">

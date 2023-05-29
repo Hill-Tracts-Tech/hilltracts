@@ -21,14 +21,14 @@ const About = () => {
             <div className="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
               <div className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg">
                 <img src={logo} className="w-full h-[350px]" alt="Louvre" />
-                <a href="#!">
+                <a href="#">
                   <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"></div>
                 </a>
               </div>
             </div>
 
             <div className="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6">
-              <h3 className="text-2xl font-bold mb-4">That is the news!</h3>
+              <h3 className="text-2xl font-bold mb-4 capitalize">What we do?</h3>
               <p className="text-gray-500 mb-6 text-justify">
                 {about.slice(0, 582)}
               </p>
@@ -40,11 +40,11 @@ const About = () => {
         </section>
         <section className="mb-5">
           <div className="flex justify-between items-center gap-4">
-            <div className="border-2 rounded-md shadow-lg opacity-75 p-4 mission">
+            <div className="border-2 rounded-md shadow-lg opacity-75 p-4 common">
               <h3 className="text-xl font-bold mb-2 sm-12">Our Mission</h3>
               <p className="text-justify">{mission}</p>
             </div>
-            <div className="border-2 rounded-md shadow-lg opacity-75 p-4 vision">
+            <div className="border-2 rounded-md shadow-lg opacity-75 p-4 common">
               <h3 className="text-xl font-bold mb-2">Our Vision</h3>
               <p className="text-justify">{vision}</p>
             </div>

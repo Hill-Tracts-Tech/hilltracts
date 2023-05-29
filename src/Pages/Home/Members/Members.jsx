@@ -18,27 +18,30 @@ export default function Members() {
 
   return (
     <div className="App ">
-     <div className="max-w-[90%] mx-auto">
-     <div className="m-title-outline w-48 mx-auto mt-20">
-        <h2 className="text-lg font-semibold text-[#1DA1F2] m-title text-center uppercase">
-          Team
-        </h2>
+      <div className="max-w-[90%] mx-auto">
+        <div className="m-title-outline w-48 mx-auto mt-20">
+          <h2 className="text-lg font-semibold text-[#1DA1F2] m-title text-center uppercase">
+            Team
+          </h2>
+        </div>
+        <div className="w-1/2 mx-auto">
+          <h1 className="text-3xl font-bold text-center capitalize font-[cursive]">
+            Our Best Team members
+          </h1>
+        </div>
+        <div className="mt-[-30px]">
+          <Carousel
+            showDots={false}
+            responsive={responsive}
+            keyBoardControl={true}
+            containerClass="container"
+            itemClass="carousel-item-padding-0-px slider-item"
+            sliderClass="inner-slider"
+          >
+            {product}
+          </Carousel>
+        </div>
       </div>
-      <div className="w-1/2 mx-auto">
-        <h1 className="text-3xl font-bold text-center capitalize font-[cursive]">
-          Our Best Team members
-        </h1>
-      </div>
-     <div className="mt-[-30px]">
-     <Carousel
-        showDots={false}
-        responsive={responsive}
-        itemClass="carousel-item-padding-0-px"
-      >
-        {product}
-      </Carousel>
-      </div>
-     </div>
-      </div>
+    </div>
   );
 }

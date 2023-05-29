@@ -10,7 +10,7 @@ const ServiceDetails = () => {
         </h1>
         <img
           className="w-full h-full object-cover"
-          src="https://i.ibb.co/9bZ9cXj/4.png"
+          src="https://i.ibb.co/Q8GXTb8/2.png"
           alt="Banner"
         />
       </div>
