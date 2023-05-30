@@ -1,5 +1,5 @@
-import { BsBookmarkPlus, BsPlayCircle, BsShare, BsHeart } from "react-icons/bs";
-import {FaRegComment} from 'react-icons/fa'
+import { BsBookmarkPlus, BsPlayCircle, BsShare, BsEye } from "react-icons/bs";
+import { FaRegComment } from "react-icons/fa";
 const BlogDetails = () => {
   return (
     <div className="w-[90%] mx-auto">
@@ -18,19 +18,30 @@ const BlogDetails = () => {
           </span>
         </div>
       </div>
-      <p className="text-justify m-7">
-        Coming soon!!!
-      </p>
+      <p className="text-justify m-7">Coming soon!!!</p>
       <hr className="my-4" />
       <div className="flex justify-between items-center">
         <div className="flex justify-normal items-center gap-4">
-          <button><BsHeart/></button>
-          <button><FaRegComment/></button>
+          <div>
+            <button>
+              <BsEye />
+            </button>
+            <sup className="ml-2">3</sup>
+          </div>
+          <button>
+            <FaRegComment />
+          </button>
         </div>
         <div className="flex justify-normal items-center gap-4">
-          <button><BsBookmarkPlus/></button>
-          <button><BsPlayCircle/></button>
-          <button><BsShare/></button>
+          <button>
+            <BsBookmarkPlus />
+          </button>
+          <button>
+            <BsPlayCircle />
+          </button>
+          <button>
+            <BsShare />
+          </button>
         </div>
       </div>
       <hr className="my-4" />
