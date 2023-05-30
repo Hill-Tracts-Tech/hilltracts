@@ -104,7 +104,7 @@
 
 .details-project {
   position: absolute;
-  bottom: 0px;
+  bottom: -70px;
   padding: 10px;
   left: 0;
   right: 0;
@@ -114,6 +114,7 @@
 }
 
 .project-card:hover .details-project {
+  bottom: 0px;
   visibility: visible;
 }
 
