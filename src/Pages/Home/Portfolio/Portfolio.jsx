@@ -2,6 +2,7 @@ import { filterData } from "./filterData";
 import "../../../styles/styles.css";
 import { useState } from "react";
 import { portfolioData } from "./PortfolioProjects";
+import { Link } from "react-router-dom";
 const Portfolio = () => {
   const [active, setActive] = useState("all");
   const [filterProject, setFilterProject] = useState("all");
@@ -49,9 +50,9 @@ const Portfolio = () => {
                 <img src={data.imgURL} alt={data.imgURL} />
               </div>
               <div className="w-full details-project">
-                <a href={data.projectLink} className="text-white">
+                <Link target={"_blank"} to={data.projectLink} className="text-white">
                   {data.title}
-                </a>
+                </Link>
                 <h3 className="font-semibold text-[#1DA1F2]">
                   {data.projectType}
                 </h3>

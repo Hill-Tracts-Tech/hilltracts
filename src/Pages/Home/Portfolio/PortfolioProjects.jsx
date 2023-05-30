@@ -29,7 +29,7 @@ export const portfolioData = [
     projectType: "web-app",
     imgURL: "https://i.ibb.co/gJntZFq/Slide1.png",
     description: "This is the third project description.",
-    projectLink: "https://hilltractstech.com",
+    projectLink: "https://cht.hilltractstech.com/",
   },
   {
     id: 5,

@@ -109,9 +109,8 @@
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.65);
-  animation: increase;
-  transition: 0.3s ease;
   visibility: hidden;
+  transition: 0.5s all;
 }
 
 .project-card:hover .details-project {
