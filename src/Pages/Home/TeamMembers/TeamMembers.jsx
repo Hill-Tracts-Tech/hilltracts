@@ -28,12 +28,13 @@ const TeamMembers = () => {
           Team
         </h2>
       </div>
-      <div className="w-1/2 mx-auto">
-        <h1 className="text-3xl font-bold text-center capitalize font-[cursive]">
-          Our Best Team members
+     <div className="lg:flex  justify-between items-center">
+     <div className="w-1/2 mx-auto col-span-2">
+        <h1 className="text-3xl font-bold text-center capitalize font-[cursive] tracking-[6px] " style={{lineHeight:"70px"}}>
+          Our <br></br> Best Team members
         </h1>
       </div>
-      <div className="responsive-container-block container">
+      <div className=" container col-span-10">
         <div className="responsive-container-block">
           {data &&
             data.slice(less, more).map((info) => (
@@ -80,6 +81,7 @@ const TeamMembers = () => {
           )}
         </div>
       </div>
+     </div>
     </div>
   );
 };

@@ -22,13 +22,15 @@ export default function Members() {
             Team
           </h2>
         </div>
-        <div className="w-1/2 mx-auto">
+        <div className="">
+        <div className="w-1/2 mx-auto ">
           <h1 className="text-3xl font-bold text-center capitalize font-[cursive]">
             Our Best Team members
           </h1>
         </div>
-        <div className="mt-[-30px]">
-          <Member product={product}/>
+        <div className="mt-[-30px] col-span-9">
+          <Member product={product} />
+        </div>
         </div>
       </div>
     </div>
