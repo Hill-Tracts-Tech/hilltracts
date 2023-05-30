@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <>
-      <div className="w-full h-[300px] relative">
+      <div className="w-full h-[500px] relative mt-[-100px]">
         <img
           className="w-full h-full object-cover mt-[-100px]"
           src="https://i.ibb.co/zRbvgPF/contactus.png"
