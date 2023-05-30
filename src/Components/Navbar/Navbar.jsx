@@ -52,7 +52,7 @@ const Navbar = () => {
    
         <div className="dropdown">
           {/* Mobile navbar */}
-          <label tabIndex={0} className="btn btn-ghost lg:hidden text-white">
+          <label tabIndex={0} className="btn btn-ghost lg:hidden text-[#90cff6]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
