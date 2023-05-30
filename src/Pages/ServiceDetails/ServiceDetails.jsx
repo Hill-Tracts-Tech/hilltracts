@@ -1,5 +1,5 @@
 import { services } from "./ServiceData";
-import '../../styles/styles.css'
+import "../../styles/styles.css";
 
 const ServiceDetails = () => {
   return (
@@ -10,7 +10,7 @@ const ServiceDetails = () => {
           src="https://i.ibb.co/Q8GXTb8/2.png"
           alt="Banner"
         />
-        <div className="uppercase absolute text-white font-bold top-[65%] left-1/2 translate-x-[-50%] translate-y-[-50%] text-4xl">
+        <div className="uppercase absolute text-white font-bold top-[59.5%] left-1/2 translate-x-[-50%] translate-y-[-50%] text-4xl">
           Our Services
         </div>
       </div>
