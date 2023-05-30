@@ -5,7 +5,7 @@ import "../../styles/styles.css";
 const About = () => {
   return (
     <>
-      <div className="w-full h-[300px] relative text-center">
+      <div className="w-full h-[500px] relative text-center mt-[-100px]">
         <img
           className="w-full h-full object-cover mt-[-100px]"
           src="https://i.ibb.co/GPBrF99/aboutus.png"
