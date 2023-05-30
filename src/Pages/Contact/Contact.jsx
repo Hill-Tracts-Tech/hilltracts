@@ -3,69 +3,15 @@ const Contact = () => {
     <>
       <div className="w-full h-[300px] relative">
         <img
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover mt-[-100px]"
           src="https://i.ibb.co/zRbvgPF/contactus.png"
           alt="Banner"
         />
-        <div className="absolute text-white font-bold top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] text-4xl uppercase">
+        <div className="absolute text-white font-bold top-[65%] left-1/2 translate-x-[-50%] translate-y-[-50%] text-4xl uppercase">
           Get in touch
         </div>
       </div>
       <div className="max-w-[90%] mx-auto mb-10">
-        {/* <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 lg:gap-8">
-          <a
-            className="flex flex-col h-full text-center rounded-md bg-gray-100 hover:bg-gray-200 p-4 sm:p-6 dark:hover:bg-white/[.05]"
-            href="#"
-          >
-            <img
-              src="https://i.ibb.co/R6wRM9g/phone-call.png"
-              className="w-[80px]  mx-auto"
-              alt=""
-            />
-            <div className="grow">
-              <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-                Give us a call
-              </h3>
-              <p className="mt-1 text-gray-500">(+880) 1818-266 226</p>
-              <p className="mt-1 text-gray-500">(+880) 1728-010 810</p>
-            </div>
-          </a>
-          <a
-            className="flex flex-col h-full text-center rounded-md bg-gray-100 hover:bg-gray-200 p-4 sm:p-6 dark:hover:bg-white/[.05]"
-            href="#"
-          >
-            <img
-              src="https://i.ibb.co/6Dhnq8C/location.png"
-              className="w-[80px] mx-auto"
-              alt=""
-            />
-            <div className="grow">
-              <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-                Visit our office
-              </h3>
-              <p className="mt-1 text-gray-500">
-                Bandarban, Chittagong, Bangladesh
-              </p>
-            </div>
-          </a>
-          <a
-            className="flex flex-col h-full text-center rounded-md bg-gray-100 hover:bg-gray-200 p-4 sm:p-6 dark:hover:bg-white/[.05]"
-            href="#"
-          >
-            <img
-              src="https://i.ibb.co/t8r8v0h/gmail.png"
-              className="w-[80px] mx-auto"
-              alt=""
-            />
-            <div className="grow">
-              <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-                Drop us a line
-              </h3>
-              <p className="mt-1 text-gray-500">chttravel.htt@gmail.com</p>
-              <p className="mt-1 text-gray-500">info.htt@gmail.com</p>
-            </div>
-          </a>
-        </div> */}
         <div className="lg:w-[60%] sm:w-[100%] mt-24 mx-auto">
           <div className="text-left flex flex-col border rounded-xl p-4 sm:p-6 common">
             <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-gray-200">
@@ -136,6 +82,60 @@ const Contact = () => {
               </div>
             </form>
           </div>
+        </div>
+        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 lg:gap-8">
+          <a
+            className="flex flex-col h-full text-center rounded-md bg-gray-100 hover:bg-gray-200 p-4 sm:p-6 dark:hover:bg-white/[.05]"
+            href="#"
+          >
+            <img
+              src="https://i.ibb.co/R6wRM9g/phone-call.png"
+              className="w-[80px]  mx-auto"
+              alt=""
+            />
+            <div className="grow">
+              <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+                Give us a call
+              </h3>
+              <p className="mt-1 text-gray-500">(+880) 1818-266 226</p>
+              <p className="mt-1 text-gray-500">(+880) 1728-010 810</p>
+            </div>
+          </a>
+          <a
+            className="flex flex-col h-full text-center rounded-md bg-gray-100 hover:bg-gray-200 p-4 sm:p-6 dark:hover:bg-white/[.05]"
+            href="#"
+          >
+            <img
+              src="https://i.ibb.co/6Dhnq8C/location.png"
+              className="w-[80px] mx-auto"
+              alt=""
+            />
+            <div className="grow">
+              <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+                Visit our office
+              </h3>
+              <p className="mt-1 text-gray-500">
+                Bandarban, Chittagong, Bangladesh
+              </p>
+            </div>
+          </a>
+          <a
+            className="flex flex-col h-full text-center rounded-md bg-gray-100 hover:bg-gray-200 p-4 sm:p-6 dark:hover:bg-white/[.05]"
+            href="#"
+          >
+            <img
+              src="https://i.ibb.co/t8r8v0h/gmail.png"
+              className="w-[80px] mx-auto"
+              alt=""
+            />
+            <div className="grow">
+              <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+                Drop us a line
+              </h3>
+              <p className="mt-1 text-gray-500">chttravel.htt@gmail.com</p>
+              <p className="mt-1 text-gray-500">info.htt@gmail.com</p>
+            </div>
+          </a>
         </div>
       </div>
     </>
