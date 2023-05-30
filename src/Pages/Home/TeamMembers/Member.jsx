@@ -2,11 +2,10 @@ import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import "../../../styles/styles.css";
 const Member = (info) => {
   return (
-    <div className="w-full">
-      <div className="relative">
-        <div className="border-4 rounded-full border-indigo-500/50 w-[250px] h-[250px]">
+      <div className="relative mx-auto w-full">
+        <div className="border-4 rounded-full border-indigo-500/50 w-[240px] h-[240px]">
           <img
-            className="w-full h-full rounded-full border-indigo-500/50"
+            className="w-[100%] h-[100%] rounded-full border-indigo-500/50 object-contain"
             src={info.info.imgURL}
             alt={info.info.name}
           />
@@ -28,14 +27,13 @@ const Member = (info) => {
             </a>
           </button>
         </div>
+        <div className="text-center">
+          <h3 className="text-xl font-semibold">{info.info.name}</h3>
+          <span className="text-sm font-semibold text-[#1DA1F2]">
+            {info.info.designation}
+          </span>
+        </div>
       </div>
-      <div className="text-center">
-        <h3 className="text-xl font-semibold">{info.info.name}</h3>
-        <span className="text-sm font-semibold text-[#1DA1F2]">
-          {info.info.designation}
-        </span>
-      </div>
-    </div>
   );
 };
 
