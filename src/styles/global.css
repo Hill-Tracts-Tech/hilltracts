@@ -1,7 +1,9 @@
 #root {
   background: #eafaff;
 }
-
+* {
+  font-family: Nunito, sans-serif;
+}
 ::-webkit-scrollbar {
   width: 10px;
   background-color: #f5f5f5;

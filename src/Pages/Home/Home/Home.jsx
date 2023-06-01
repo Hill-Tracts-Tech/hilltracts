@@ -5,12 +5,9 @@ import Services from "../Services/Services";
 import Portfolio from "../Portfolio/Portfolio";
 import TeamMembers from "../TeamMembers/TeamMembers";
 import FeedBack from "../FeedBack/FeedBack";
-import Members from "../Members/Members";
-import OurClients from "../OurClients/OurClients";
 import backgroundImage from "../../../assets/background.png";
 import bubble from "../../../assets/bubble.png";
 import "./Home.css";
-import { useState } from "react";
 
 const Home = () => {
   // const [cardData, setCardData] = useState();
@@ -52,7 +49,6 @@ const Home = () => {
       <Portfolio />
       <TeamMembers/>
       <FeedBack />
-      {/* <OurClients /> */}
       <BlogAndNew />
     </div>
   );
