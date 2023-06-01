@@ -14,7 +14,7 @@ const BlogAndNew = () => {
       title: "Networking",
       blog: "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence.",
       comment: "2",
-      date: "23,4,2023",
+      date: "June-2023",
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ const BlogAndNew = () => {
       title: "web development",
       blog: "We specialize in creating dynamic and responsive websites tailored to your unique needs. Our expert team utilizes the latest web technologies to deliver user-friendly interfaces, seamless navigation, and captivating designs that enhance your online presence.",
       comment: "2",
-      date: "23,4,2023",
+      date: "May-2023",
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ const BlogAndNew = () => {
       title: "Digital marketing",
       blog: "Reach your target audience and boost your online visibility with our digital marketing services. We offer SEO, social media marketing, and content creation to drive traffic and conversions.",
       comment: "2",
-      date: "23,4,2023",
+      date: "April-2023",
     }
   ];
   return (
