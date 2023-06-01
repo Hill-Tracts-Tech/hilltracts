@@ -47,7 +47,7 @@ const BlogAndNew = () => {
             What is Happening
           </h2>
         </div>
-        <div className="w-1/2 mx-auto block lg:hidden md:hidden">
+        <div className="w-1/2 mx-auto block lg:hidden md:block">
           <h1
             className="text-3xl font-bold text-center capitalize lg:text-4xl md:text-4xl tracking-[6px] font-[cursive]"
             style={{ lineHeight: "55px" }}
@@ -91,7 +91,7 @@ const BlogAndNew = () => {
               </div>
             </div>
           ))}
-        <div className="w-1/2 mx-auto hidden lg:flex md:flex">
+        <div className="w-1/2 mx-auto hidden lg:flex md:hidden">
           <h1
             className="text-3xl font-bold text-center capitalize lg:text-4xl md:text-4xl  w-20 tracking-[6px] font-[cursive]"
             style={{ lineHeight: "55px" }}

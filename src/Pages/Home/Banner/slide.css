@@ -23,7 +23,7 @@
 .swiper-slide img {
   display: block;
   width: 200%;
-  max-width: 130%;
+  max-width: 115%;
 }
 
 .swiper-3d .swiper-slide-shadow-left {
@@ -32,4 +32,11 @@
 
 .swiper-3d .swiper-slide-shadow-right {
   background-image:none !important;
+}
+@media only screen and (max-width: 500px) {
+  .swiper-slide img {
+    display: block;
+    width: 200%;
+    max-width: 140%;
+  }
 }

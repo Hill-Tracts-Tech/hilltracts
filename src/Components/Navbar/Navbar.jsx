@@ -8,27 +8,27 @@ const Navbar = () => {
   const navbarList = (
     <React.Fragment>
       <li>
-        <Link to="/" className="text-lg text-indigo-600 hover:text-[#1DA1F2]">
+        <Link to="/" className="text-lg  hover:text-[#1DA1F2] text-gray-500"> 
           Home
         </Link>
       </li>
       <li>
-        <Link to="/about" className="hover:text-[#1DA1F2] text-lg text-indigo-600">
+        <Link to="/about" className="hover:text-[#1DA1F2] text-lg text-gray-500">
           About
         </Link>
       </li>
       <li>
-        <Link to="/contact" className="hover:text-[#1DA1F2] text-lg text-indigo-600">
+        <Link to="/contact" className="hover:text-[#1DA1F2] text-lg text-gray-500">
           Contact
         </Link>
       </li>
       <li>
-        <Link to="/servicesDetails" className="hover:text-[#1DA1F2] text-lg text-indigo-600">
+        <Link to="/servicesDetails" className="hover:text-[#1DA1F2] text-lg text-gray-500">
           Services
         </Link>
       </li>
       <li>
-        <Link to="/" className="hover:text-[#1DA1F2] text-lg text-indigo-600">
+        <Link to="/" className="hover:text-[#1DA1F2] text-lg text-gray-500">
           Portfolio
         </Link>
       </li>
@@ -36,15 +36,15 @@ const Navbar = () => {
   );
 
   return (
-    <div className=" z-40 shadow-md navbar sticky top-0 backdrop-filter backdrop-blur-lg bg-transparent lg:px-24 ">
-      <div className="navbar-start hidden lg:block md:block">
+    <div className=" z-40 shadow-md navbar sticky top-0 backdrop-filter backdrop-blur-lg bg-transparent ">
+      <div className="navbar-start hidden lg:block md:hidden">
         <img
           style={{ width: "80px", height: "80px" }}
           src={navicon}
           alt=""
         ></img>
       </div>
-      <div className="navbar-center hidden lg:flex md:flex">
+      <div className="navbar-center hidden lg:flex md:hidden">
         <ul className="flex justify-center items-center gap-5 px-1">
           {navbarList}
         </ul>
@@ -52,7 +52,7 @@ const Navbar = () => {
    
         <div className="dropdown">
           {/* Mobile navbar */}
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <label tabIndex={0} className="btn btn-ghost lg:hidden text-[#90cff6]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -76,7 +76,7 @@ const Navbar = () => {
           </ul>
           {/* Mobile navbar ends */}
         </div>
-        <div className=" block lg:hidden md:hidden ml-[200px] ">
+        <div className=" block lg:hidden md:block ml-[200px] md:ml-[600px]">
           <img
             style={{ width: "80px", height: "80px" }}
             src={navicon}
