@@ -55,7 +55,7 @@ const BlogAndNew = () => {
             Best News & Blog
           </h1>
         </div>
-        <div className="lg:flex md:flex justify-between gap-8 items-center  ">
+        <div className="lg:flex md:flex justify-between gap-5 items-center  ">
           {data.map((item) => (
             <div
               key={item?.id}

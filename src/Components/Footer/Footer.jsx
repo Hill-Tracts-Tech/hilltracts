@@ -9,7 +9,7 @@ import { FaEnvelope, FaPhoneAlt, FaPlus, FaPlusCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <div className="w-full bg-[#d8f0ff] lg:h-[400px] border-t-2  rounded-tr-[250px] ">
+    <div className="w-full bg-[#d8f0ff] lg:h-[400px] border-t-2  lg:rounded-tr-[250px]code  ">
       <footer className="footer p-10  text-base-content pt-24">
         <div className="lg:ml-20">
           <img
@@ -30,7 +30,7 @@ const Footer = () => {
             >
               <img src={facebook} alt="" />
             </a>
-            <a target={"_blank"} rel="noreferrer" href="www.instagram.com">
+            <a target={"_blank"} rel="noreferrer" href="https://www.instagram.com/hilltractstech/">
               <img src={instra} alt="" />
             </a>
             <a target={"_blank"} rel="noreferrer" href="www.twittor.com">
@@ -76,7 +76,7 @@ const Footer = () => {
           <span className="footer-title">Newsletter</span>
           <div className="form-control w-80">
             <label className="label">
-              <span className="label-text"><FaPhoneAlt className=" inline-block text-[#1DA1F2] " />  202-555-0184</span>
+              <span className="label-text"><FaPhoneAlt className=" inline-block text-[#1DA1F2] " />+8801728-010810</span>
             </label>
             <label className="label">
               <span className="label-text"><FaEnvelope className=" inline-block text-[#1DA1F2] " /> Enter your email</span>

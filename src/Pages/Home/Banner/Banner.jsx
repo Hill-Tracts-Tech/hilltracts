@@ -147,6 +147,7 @@ const Banner = () => {
             <img src={slide_image_10} alt="slide_image" />
           </Link>
         </SwiperSlide>
+        
       </Swiper>
     </div>
   );
