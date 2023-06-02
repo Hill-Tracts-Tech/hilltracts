@@ -8,27 +8,27 @@ const Navbar = () => {
   const navbarList = (
     <React.Fragment>
       <li>
-        <Link to="/" className="text-lg  hover:text-[#1DA1F2] text-gray-500"> 
+        <Link to="/" className="text-lg font-semibold  hover:text-[#1DA1F2] text-gray-500"> 
           Home
         </Link>
       </li>
       <li>
-        <Link to="/about" className="hover:text-[#1DA1F2] text-lg text-gray-500">
+        <Link to="/about" className="hover:text-[#1DA1F2] text-lg font-semibold  text-gray-500">
           About
         </Link>
       </li>
       <li>
-        <Link to="/contact" className="hover:text-[#1DA1F2] text-lg text-gray-500">
+        <Link to="/contact" className="hover:text-[#1DA1F2] text-lg font-semibold  text-gray-500">
           Contact
         </Link>
       </li>
       <li>
-        <Link to="/servicesDetails" className="hover:text-[#1DA1F2] text-lg text-gray-500">
+        <Link to="/servicesDetails" className="hover:text-[#1DA1F2] text-lg font-semibold  text-gray-500">
           Services
         </Link>
       </li>
       <li>
-        <Link to="/" className="hover:text-[#1DA1F2] text-lg text-gray-500">
+        <Link to="/" className="hover:text-[#1DA1F2] text-lg font-semibold  text-gray-500">
           Portfolio
         </Link>
       </li>
@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <div className=" z-40 shadow-md navbar sticky top-0 backdrop-filter backdrop-blur-lg bg-transparent ">
-      <div className="navbar-start hidden lg:block md:hidden">
+      <div className="navbar-start hidden lg:block md:hidden lg:ml-[30px]">
         <img
           style={{ width: "80px", height: "80px" }}
           src={navicon}
