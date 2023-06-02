@@ -31,7 +31,7 @@ const Home = () => {
             className="lg:col-span-12 py-5 mt-[100px] lg:mt-0 md:mt-[100px]"
             // style={{ height: "300px" }}
           >
-            <Banner />
+            {/* <Banner /> */}
           </div>
         </div>
         <div className="bubbles mb-[-60px]">
