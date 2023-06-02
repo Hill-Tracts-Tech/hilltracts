@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Contact = () => {
   return (
     <>
@@ -7,7 +9,7 @@ const Contact = () => {
           src="https://i.ibb.co/zRbvgPF/contactus.png"
           alt="Banner"
         />
-        <div className="absolute text-white font-bold top-[65%] left-1/2 translate-x-[-50%] translate-y-[-50%] text-4xl uppercase">
+        <div className="absolute text-white font-bold top-[59.5%] left-1/2 translate-x-[-50%] translate-y-[-50%] text-4xl uppercase">
           Get in touch
         </div>
       </div>
@@ -84,12 +86,12 @@ const Contact = () => {
           </div>
         </div>
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 lg:gap-8">
-          <a
-            className="flex flex-col h-full text-center rounded-md bg-gray-100 hover:bg-gray-200 p-4 sm:p-6 dark:hover:bg-white/[.05]"
+          <div
+            className="flex flex-col h-full text-center rounded-md bg-gray-100 hover:bg-gray-200 p-4 sm:p-6 dark:hover:bg-white/[.05] common"
             href="#"
           >
             <img
-              src="https://i.ibb.co/R6wRM9g/phone-call.png"
+              src="https://i.ibb.co/2Y9vPPd/phone-Call.png"
               className="w-[80px]  mx-auto"
               alt=""
             />
@@ -97,34 +99,45 @@ const Contact = () => {
               <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
                 Give us a call
               </h3>
-              <p className="mt-1 text-gray-500">(+880) 1818-266 226</p>
-              <p className="mt-1 text-gray-500">(+880) 1728-010 810</p>
+              <a
+                className="mt-1 text-gray-500 block"
+                href="tel:+8801818-266 226"
+              >
+                (+880) 1818-266 226
+              </a>
+              <a className="mt-1 text-gray-500" href="tel:+8801728-010 810">
+                (+880) 1728-010 810
+              </a>
             </div>
-          </a>
-          <a
-            className="flex flex-col h-full text-center rounded-md bg-gray-100 hover:bg-gray-200 p-4 sm:p-6 dark:hover:bg-white/[.05]"
+          </div>
+          <div
+            className="flex flex-col h-full text-center rounded-md bg-gray-100 hover:bg-gray-200 p-4 sm:p-6 dark:hover:bg-white/[.05] common"
             href="#"
           >
             <img
-              src="https://i.ibb.co/6Dhnq8C/location.png"
+              src="https://i.ibb.co/FsqPvPF/office.png"
               className="w-[80px] mx-auto"
               alt=""
             />
             <div className="grow">
-              <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+              <Link
+                target={"_blank"}
+                to="https://goo.gl/maps/PiLYVnRvFwj7NZwP9?coh=178571&entry=tt"
+                className="text-lg font-semibold text-gray-800 dark:text-gray-200 hover:underline hover:text-blue-500"
+              >
                 Visit our office
-              </h3>
+              </Link>
               <p className="mt-1 text-gray-500">
                 Bandarban, Chittagong, Bangladesh
               </p>
             </div>
-          </a>
-          <a
-            className="flex flex-col h-full text-center rounded-md bg-gray-100 hover:bg-gray-200 p-4 sm:p-6 dark:hover:bg-white/[.05]"
+          </div>
+          <div
+            className="flex flex-col h-full text-center rounded-md bg-gray-100 hover:bg-gray-200 p-4 sm:p-6 dark:hover:bg-white/[.05] common"
             href="#"
           >
             <img
-              src="https://i.ibb.co/t8r8v0h/gmail.png"
+              src="https://i.ibb.co/s6RW30g/email.png"
               className="w-[80px] mx-auto"
               alt=""
             />
@@ -132,10 +145,20 @@ const Contact = () => {
               <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
                 Drop us a line
               </h3>
-              <p className="mt-1 text-gray-500">chttravel.htt@gmail.com</p>
-              <p className="mt-1 text-gray-500">info.htt@gmail.com</p>
+              <a
+                href="mailto:chttravel.htt@gmail.com"
+                className="mt-1 text-gray-500 block"
+              >
+                chttravel.htt@gmail.com
+              </a>
+              <a
+                href="mailto:hilltractstech@gmail.com"
+                className="mt-1 text-gray-500"
+              >
+                hilltractstech@gmail.com
+              </a>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </>

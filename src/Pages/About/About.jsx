@@ -11,7 +11,7 @@ const About = () => {
           src="https://i.ibb.co/GPBrF99/aboutus.png"
           alt="Banner"
         />
-        <div className="absolute text-white font-bold top-[65%] left-1/2 translate-x-[-50%] translate-y-[-50%] text-4xl uppercase">
+        <div className="absolute text-white font-bold top-[59.5%] left-1/2 translate-x-[-50%] translate-y-[-50%] text-4xl uppercase">
           About Us
         </div>
       </div>

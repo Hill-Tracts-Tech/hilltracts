@@ -2,12 +2,12 @@ export const data = [
   {
     id: 1,
     imgURL: "https://i.ibb.co/HKtpBKH/masum.jpg",
-    name: "Tahidul Islam Masum",
-    designation: "Directing Manager",
+    name: "MD Tahidul Islam Masum",
+    designation: "Managing Director",
     description: "Some text about the career....",
-    facebook: "#",
+    facebook: "https://www.facebook.com/ktimasum1997",
     github: "#",
-    linkedIn: "#",
+    linkedIn: "https://bd.linkedin.com/in/ktimasum",
   },
   {
     id: 2,
