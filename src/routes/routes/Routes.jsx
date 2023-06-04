@@ -9,38 +9,38 @@ import NotFound from "../../Pages/_404";
 
 
 const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <Main></Main>,
-        children: [
-            {
-                path:'/',
-                element:<Home></Home>
-            },
-            {
-                path:'/contact',
-                element:<Contact></Contact>
-            },
-            {
-                path:'/about',
-                element:<About></About>
-            }
-            ,
-            {
-                path:'/servicesDetails',
-                element:<ServiceDetails/>
-            },
+  {
+    path: "/",
+    element: <Main></Main>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
+      },
+      {
+        path: "/about",
+        element: <About></About>,
+      },
+      {
+        path: "/servicesDetails",
+        element: <ServiceDetails />,
+      },
 
-            {
-                path:'/blog-details',
-                element:<BlogDetails/>
-            }
-        ]
-    },
-    {
-        path: '*',
-        element:<NotFound/>
-    }
-])
+      {
+        path: "/blog-details",
+        element: <BlogDetails />,
+        loader: ({ params }) => fetch(`http://localhost:8000/blog-details/${params._id}`),
+      },
+    ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
+  },
+]);
 
 export default router;

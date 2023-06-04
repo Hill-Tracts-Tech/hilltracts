@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import Banner from "../Banner/Banner";
-import BlogAndNew from "../BlogAndNew/BlogAndNew";
+import BlogAndNews from "../BlogAndNews/BlogAndNews";
 import Services from "../Services/Services";
 import Portfolio from "../Portfolio/Portfolio";
 import TeamMembers from "../TeamMembers/TeamMembers";
@@ -49,7 +49,7 @@ const Home = () => {
       <Portfolio />
       <TeamMembers/>
       <FeedBack />
-      <BlogAndNew />
+      <BlogAndNews />
     </div>
   );
 };

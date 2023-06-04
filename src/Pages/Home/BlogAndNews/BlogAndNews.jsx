@@ -1,15 +1,21 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import "../../../styles/styles.css";
 import { Link } from "react-router-dom";
-const BlogAndNew = () => {
+const BlogAndNews = () => {
+  const [blogs, setBlogs] = useState();
+  useEffect(() => {
+    fetch("http://localhost:8000/blogs")
+      .then(res => res.json())
+      .then(data => setBlogs(data))
+  }, [])
   const data = [
     {
       id: 1,
       image:
         "https://urnothemes.com/solute/wp-content/uploads/2023/01/blog3.jpg",
-      userimage:
+      userImage:
         "https://urnothemes.com/solute/wp-content/uploads/2023/01/team1.jpg",
       title: "Networking",
       blog: "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence.",
@@ -20,7 +26,7 @@ const BlogAndNew = () => {
       id: 2,
       image:
         "https://urnothemes.com/solute/wp-content/uploads/2023/01/blog2.jpg",
-      userimage:
+      userImage:
         "https://urnothemes.com/solute/wp-content/uploads/2023/01/team2.jpg",
       title: "web development",
       blog: "We specialize in creating dynamic and responsive websites tailored to your unique needs. Our expert team utilizes the latest web technologies to deliver user-friendly interfaces, seamless navigation, and captivating designs that enhance your online presence.",
@@ -31,7 +37,7 @@ const BlogAndNew = () => {
       id: 3,
       image:
         "https://urnothemes.com/solute/wp-content/uploads/2023/01/blog1.jpg",
-      userimage:
+      userImage:
         "https://urnothemes.com/solute/wp-content/uploads/2023/01/team3.jpg",
       title: "Digital marketing",
       blog: "Reach your target audience and boost your online visibility with our digital marketing services. We offer SEO, social media marketing, and content creation to drive traffic and conversions.",
@@ -56,44 +62,48 @@ const BlogAndNew = () => {
           </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-8 items-center">
-          {data.map((item) => (
-            <div
-              key={item?.id}
-              className=" card-bordered rounded-lg shadow-xl mt-5 lg:mt-0 md:mt-0 "
-            >
-              <div className="">
-                <img className=" rounded-lg" src={item?.image} alt="" />
+          {blogs &&
+            blogs.map((item) => (
+              <div
+                key={item?.id}
+                className=" card-bordered rounded-lg shadow-xl mt-5 lg:mt-0 md:mt-0 "
+              >
+                <div className="">
+                  <img className=" rounded-lg" src={item?.image} alt="" />
 
-                <img
-                  className="rounded-full h-12 ml-3 mt-[-30px]  card-bordered "
-                  src={item?.userimage}
-                  alt=""
-                />
-                <div className="p-2">
-                  <Link
-                    to="/blog-details"
-                    className="text-xl font-semibold my-4"
-                  >
-                    {item?.title}
-                  </Link>
-                  <p className=" text-left cursor-pointer">{item?.blog.slice(0, 70)} <span title={item.blog}>...</span> </p>
-                  <div className="mt-4">
+                  <img
+                    className="rounded-full h-12 ml-3 mt-[-30px]  card-bordered "
+                    src={item?.userImage}
+                    alt=""
+                  />
+                  <div className="p-2">
                     <Link
                       to="/blog-details"
-                      className="font-semibold hover:text-[#1DA1F2]"
+                      className="text-xl font-semibold my-4"
                     >
-                      Read More
-                      <BsArrowRight size={20} className="inline-block ml-1" />
+                      {item?.title}
                     </Link>
+                    <p className=" text-left cursor-pointer">
+                      {item.objective}
+                      <span title={item.objective}>...</span>{" "}
+                    </p>
+                    <div className="mt-4">
+                      <Link
+                        to="/blog-details"
+                        className="font-semibold hover:text-[#1DA1F2]"
+                      >
+                        Read More
+                        <BsArrowRight size={20} className="inline-block ml-1" />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
       </div>
     </>
   );
 };
 
-export default BlogAndNew;
+export default BlogAndNews;
