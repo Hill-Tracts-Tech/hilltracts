@@ -23,13 +23,10 @@ const Home = () => {
           marginTop: "-100px",
         }}
       >
-        <div className="mt-[-480px] lg:mt-0 md:mt-[-600px] pb-16 lg:pb-0 lg:grid  grid-cols-12 flex flex-col-reverse lg:justify-between items-center h-[100%] max-w-[90%] mx-auto">
-          <div className=" text-stone-50  text-center flex justify-center items-center lg:col-span-0">
-           
-          </div>
+        <div className=" flex justify-between items-center h-[100%] max-w-[90%] mx-auto">
+         
           <div
-            className="lg:col-span-12 py-5 mt-[100px] lg:mt-0 md:mt-[100px]"
-            // style={{ height: "300px" }}
+            className=" py-5 "
           >
             <Banner />
           </div>
