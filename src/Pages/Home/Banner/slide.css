@@ -40,3 +40,10 @@
     max-width: 140%;
   }
 }
+@media only screen and (max-width: 800px) {
+  .swiper-slide img {
+    display: block;
+  	width: 200px;
+    max-width: 140%;
+  }
+}
