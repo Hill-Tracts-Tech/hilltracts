@@ -18,7 +18,7 @@ const Navbar = () => {
       <li>
         <Link
           to="/"
-          className="text-lg font-semibold hover:text-[#1DA1F2] text-gray-500"
+          className="text-lg font-semibold hover:text-[#1DA1F2] text-gray-500 dark:text-white"
           onClick={closeMobileMenu}
         >
           Home
@@ -27,7 +27,7 @@ const Navbar = () => {
       <li>
         <Link
           to="/about"
-          className="hover:text-[#1DA1F2] text-lg font-semibold text-gray-500"
+          className="hover:text-[#1DA1F2] text-lg font-semibold text-gray-500 dark:text-white"
           onClick={closeMobileMenu}
         >
           About
@@ -36,7 +36,7 @@ const Navbar = () => {
       <li>
         <Link
           to="/contact"
-          className="hover:text-[#1DA1F2] text-lg font-semibold text-gray-500"
+          className="hover:text-[#1DA1F2] text-lg font-semibold text-gray-500 dark:text-white"
           onClick={closeMobileMenu}
         >
           Contact
@@ -45,7 +45,7 @@ const Navbar = () => {
       <li>
         <Link
           to="/servicesDetails"
-          className="hover:text-[#1DA1F2] text-lg font-semibold text-gray-500"
+          className="hover:text-[#1DA1F2] text-lg font-semibold text-gray-500 dark:text-white"
           onClick={closeMobileMenu}
         >
           Services
@@ -54,7 +54,7 @@ const Navbar = () => {
       <li>
         <Link
           to="/"
-          className="hover:text-[#1DA1F2] text-lg font-semibold text-gray-500"
+          className="hover:text-[#1DA1F2] text-lg font-semibold text-gray-500 dark:text-white"
           onClick={closeMobileMenu}
         >
           Portfolio
@@ -103,7 +103,7 @@ const Navbar = () => {
         {isMobileMenuOpen && (
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#b2ddf8] rounded-box w-52"
+            className=" menu menu-compact dropdown-content mt-3 p-2 shadow-lg  bg-gray-100 dark:bg-gray-500 rounded-box w-52"
             onClick={closeMobileMenu}
           >
             {navbarList}

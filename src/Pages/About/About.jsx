@@ -28,13 +28,13 @@ const About = () => {
             </div>
 
             <div className="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pl-6">
-              <h3 className="text-2xl font-bold mb-4 capitalize">
+              <h3 className="text-2xl font-bold mb-4 capitalize dark:text-gray-400">
                 What we do?
               </h3>
-              <p className="text-gray-500 mb-6 text-justify">
+              <p className="text-gray-500 mb-6 text-justify dark:text-gray-300">
                 {about.slice(0, 582)}
               </p>
-              <p className="text-gray-500 mb-3 text-justify">
+              <p className="text-gray-500 mb-3 text-justify dark:text-gray-300">
                 {about.slice(583, 1210)}
               </p>
             </div>
@@ -42,19 +42,19 @@ const About = () => {
         </section>
         <section className="mb-5">
           <div className="grid grid-cols-1 lg:grid-cols-2 justify-between items-center gap-4">
-            <div className="border-2 rounded-md shadow-lg opacity-75 p-4 common">
-              <h3 className="text-xl font-bold mb-2 sm-12">Our Mission</h3>
-              <p className="text-justify">{mission}</p>
+            <div className="border-2 rounded-md shadow-lg opacity-75 p-4 common card-bordered">
+              <h3 className="text-xl font-bold mb-2 sm-12 dark:text-gray-300">Our Mission</h3>
+              <p className="text-justify dark:text-white">{mission}</p>
             </div>
-            <div className="border-2 rounded-md shadow-lg opacity-75 p-4 common">
-              <h3 className="text-xl font-bold mb-2">Our Vision</h3>
-              <p className="text-justify">{vision}</p>
+            <div className="border-2 rounded-md shadow-lg opacity-75 p-4 common card-bordered">
+              <h3 className="text-xl font-bold mb-2 dark:text-gray-400">Our Vision</h3>
+              <p className="text-justify dark:text-white">{vision}</p>
             </div>
           </div>
         </section>
         <div className="">
           <p className="text-blue-600">REASON TO CHOOSE US</p>
-          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 dark:text-gray-400 my-5">
             We provide truly prominent IT solutions.
           </h1>
         </div>
@@ -64,7 +64,7 @@ const About = () => {
             services.map((data) => (
               <div
                 key={data.id}
-                className="p-4 rounded-lg border-2 border-gray-300 shadow-lg opacity-75 hover:shadow-xl cursor-pointer"
+                className="p-4 rounded-lg border-2  shadow-lg opacity-75 hover:shadow-xl cursor-pointer"
               >
                 <div className="w-[120px] h-[120px] mx-auto">
                   <img
@@ -73,10 +73,10 @@ const About = () => {
                     alt={data.imgURL}
                   />
                 </div>
-                <h1 className="text-2xl text-gray-900 font-bold">
+                <h1 className="text-2xl text-gray-900 font-bold dark:text-gray-400">
                   {data.title}
                 </h1>
-                <p className="text-gray-900 text-start">
+                <p className="text-gray-900 text-start dark:text-white">
                   {data.description.slice(0, 140)}...
                 </p>
               </div>

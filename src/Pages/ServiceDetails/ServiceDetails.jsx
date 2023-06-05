@@ -10,7 +10,7 @@ const ServiceDetails = () => {
           src="https://i.ibb.co/Q8GXTb8/2.png"
           alt="Banner"
         />
-        <div className="uppercase absolute text-white font-bold top-[59.5%] left-1/2 translate-x-[-50%] translate-y-[-50%] text-4xl">
+        <div className="absolute text-white mt-[-25px] font-bold top-[59.5%] lg:left-1/2 md:left-1/2  lg:translate-x-[-50%] lg:translate-y-[-50%] text-4xl uppercase ml-[70px] lg:ml-0 md:ml-0">
           Our Services
         </div>
       </div>
@@ -32,12 +32,12 @@ const ServiceDetails = () => {
                   alt={service.imgURL}
                 />
               </div>
-              <div className="md:w-1/2 w-full p-4">
+              <div className="md:w-1/2 w-full p-4 dark:text-white">
                 {service.icon}
-                <h2 className="text-start text-3xl font-bold my-5">
+                <h2 className="text-start text-3xl font-bold my-5 dark:text-gray-400">
                   {service.title}
                 </h2>
-                <p className="text-justify">{service.description}</p>
+                <p className="text-justify dark:text-white">{service.description}</p>
               </div>
             </div>
           ))}
