@@ -9,14 +9,14 @@ const Contact = () => {
           src="https://i.ibb.co/zRbvgPF/contactus.png"
           alt="Banner"
         />
-        <div className="absolute text-white font-bold top-[59.5%] left-1/2 translate-x-[-50%] translate-y-[-50%] text-4xl uppercase">
+        <div className="absolute text-white mt-[-25px] font-bold top-[59.5%] lg:left-1/2 md:left-1/2  lg:translate-x-[-50%] lg:translate-y-[-50%] text-4xl uppercase ml-[77px] lg:ml-0 md:ml-0">
           Get in touch
         </div>
       </div>
       <div className="max-w-[90%] mx-auto mb-10">
         <div className="lg:w-[60%] sm:w-[100%] mt-24 mx-auto">
           <div className="text-left flex flex-col border rounded-xl p-4 sm:p-6 common">
-            <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-black">
+            <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-white">
               Fill in the form
             </h2>
 
@@ -31,7 +31,7 @@ const Contact = () => {
                       type="text"
                       name="fullName"
                       required
-                      className="py-3 px-4 block w-full border-gray-300 border-blue border rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                      className="py-3 px-4 block w-full border-gray-300 border-blue border rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-500 dark:border-0 dark:text-gray-900"
                     ></input>
                   </div>
                   <div>
@@ -42,7 +42,7 @@ const Contact = () => {
                       type="tel"
                       name="phone"
                       required
-                      className="py-3 px-4 block w-full border-gray-300 border rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                      className="py-3 px-4 block w-full border-gray-300 border rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-500 dark:border-0 dark:text-gray-900"
                     ></input>
                   </div>
                 </div>
@@ -57,7 +57,7 @@ const Contact = () => {
                       name="email"
                       required
                       autoComplete="email"
-                      className="py-3 px-4 block w-full border-gray-300 rounded-md text-sm focus:border-blue-500 border focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                      className="py-3 px-4 block w-full border-gray-300 rounded-md text-sm focus:border-blue-500 border focus:ring-blue-500 dark:bg-slate-500 dark:border-0 dark:text-gray-900"
                     ></input>
                   </div>
                 </div>
@@ -70,7 +70,7 @@ const Contact = () => {
                     required
                     name="message"
                     rows="4"
-                    className="py-3 px-4 block w-full border-gray-500 rounded-md text-sm focus:border-blue-300 border focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                    className="py-3 px-4 block w-full border-gray-500 rounded-md text-sm focus:border-blue-300 border focus:ring-blue-500 dark:bg-slate-500 dark:border-0 dark:text-gray-900"
                   ></textarea>
                 </div>
               </div>
@@ -87,7 +87,7 @@ const Contact = () => {
         </div>
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 lg:gap-8">
           <div
-            className="flex flex-col h-full text-center rounded-md bg-gray-100 hover:bg-gray-200 p-4 sm:p-6 dark:hover:bg-white/[.05] common"
+            className="flex flex-col h-full text-center rounded-md  hover:bg-[#b9e2fc] p-4 sm:p-6 dark:hover:bg-white/[.05] common"
             href="#"
           >
             <img
@@ -100,18 +100,23 @@ const Contact = () => {
                 Give us a call
               </h3>
               <a
-                className="mt-1 text-gray-500 block"
+                className="mt-1 text-gray-500
+                dark:text-white
+                block"
                 href="tel:+8801818-266 226"
               >
                 (+880) 1818-266 226
               </a>
-              <a className="mt-1 text-gray-500" href="tel:+8801728-010 810">
+              <a className="mt-1
+               text-gray-500
+               dark:text-white
+               " href="tel:+8801728-010 810">
                 (+880) 1728-010 810
               </a>
             </div>
           </div>
           <div
-            className="flex flex-col h-full text-center rounded-md bg-gray-100 hover:bg-gray-200 p-4 sm:p-6 dark:hover:bg-white/[.05] common"
+            className="flex flex-col h-full text-center rounded-md  hover:bg-[#51ebad] p-4 sm:p-6 dark:hover:bg-white/[.05] common"
             href="#"
           >
             <img
@@ -127,13 +132,14 @@ const Contact = () => {
               >
                 Visit our office
               </Link>
-              <p className="mt-1 text-gray-500">
+              <p className="mt-1 text-gray-500
+              dark:text-white">
                 Bandarban, Chittagong, Bangladesh
               </p>
             </div>
           </div>
           <div
-            className="flex flex-col h-full text-center rounded-md bg-gray-100 hover:bg-gray-200 p-4 sm:p-6 dark:hover:bg-white/[.05] common"
+            className="flex flex-col h-full text-center rounded-md  hover:bg-[#b9e2fc] p-4 sm:p-6 dark:hover:bg-white/[.05] common"
             href="#"
           >
             <img
@@ -147,13 +153,13 @@ const Contact = () => {
               </h3>
               <a
                 href="mailto:chttravel.htt@gmail.com"
-                className="mt-1 text-gray-500 block"
+                className="mt-1 text-gray-500 block dark:text-white"
               >
                 chttravel.htt@gmail.com
               </a>
               <a
                 href="mailto:hilltractstech@gmail.com"
-                className="mt-1 text-gray-500"
+                className="mt-1 text-gray-500 dark:text-white"
               >
                 hilltractstech@gmail.com
               </a>

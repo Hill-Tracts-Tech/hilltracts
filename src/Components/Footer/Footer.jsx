@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="w-full bg-[#d8f0ff] dark:bg-gray-700 lg:h-[400px] border-t-2  lg:rounded-tr-[250px]code  ">
-      <footer className="footer p-10  text-base-content pt-24">
+      <footer className="footer px-6  text-base-content pt-24">
         <div className="lg:ml-20">
           <img
             style={{ width: "80px", height: "80px" }}
@@ -94,7 +94,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <p className="text-center pb-4">
+      <p className="text-center py-4 px-3  text-sm">
         Copyright © 2023 HTT | Powered by Hill Tracts Tech
       </p>
     </div>
