@@ -24,13 +24,12 @@ import slide_image_10 from "../../../assets/images/img_10.png";
 import { Link } from "react-router-dom";
 
 const Banner = () => {
-
   return (
     <div className=" lg:container md:container ">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
-        centeredSlides={true}
+        // centeredSlides={true || ""}
         loop={true}
         slidesPerView={"auto"}
         coverflowEffect={{
@@ -100,7 +99,6 @@ const Banner = () => {
             <img src={slide_image_10} alt="slide_image" />
           </Link>
         </SwiperSlide>
-        
       </Swiper>
     </div>
   );
