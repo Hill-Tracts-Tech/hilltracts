@@ -9,7 +9,7 @@ import { FaEnvelope, FaPhoneAlt, FaPlus, FaPlusCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <div className="w-full bg-[#d8f0ff] lg:h-[400px] border-t-2  lg:rounded-tr-[250px]code  ">
+    <div className="w-full bg-[#d8f0ff] dark:bg-gray-700 lg:h-[400px] border-t-2  lg:rounded-tr-[250px]code  ">
       <footer className="footer p-10  text-base-content pt-24">
         <div className="lg:ml-20">
           <img
@@ -26,14 +26,14 @@ const Footer = () => {
             <a
               target={"_blank"}
               rel="noreferrer"
-              href="https://www.facebook.com/hilltrackstech"
+              href="https://www.facebook.com/hilltractstech"
             >
               <img src={facebook} alt="" />
             </a>
             <a target={"_blank"} rel="noreferrer" href="https://www.instagram.com/hilltractstech/">
               <img src={instra} alt="" />
             </a>
-            <a target={"_blank"} rel="noreferrer" href="www.twittor.com">
+            <a target={"_blank"} rel="noreferrer" href="https://twitter.com/HillTractsTech">
               <img src={twittor} alt="" />
             </a>
             <a target={"_blank"} rel="noreferrer" href="https://www.linkedin.com/in/hill-tracts-tech-450aa4274/">

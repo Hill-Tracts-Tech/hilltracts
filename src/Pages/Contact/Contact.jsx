@@ -16,7 +16,7 @@ const Contact = () => {
       <div className="max-w-[90%] mx-auto mb-10">
         <div className="lg:w-[60%] sm:w-[100%] mt-24 mx-auto">
           <div className="text-left flex flex-col border rounded-xl p-4 sm:p-6 common">
-            <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-gray-200">
+            <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-black">
               Fill in the form
             </h2>
 
