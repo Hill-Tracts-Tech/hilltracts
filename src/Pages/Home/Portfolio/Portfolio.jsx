@@ -33,7 +33,7 @@ const Portfolio = () => {
             {filterData.map((project, i) => (
               <li
                 className={
-                  project.category == active ? "active project" : "project"
+                  project.category == active ? "active project " : "project "
                 }
                 key={i}
                 onClick={() => handleFilter(project.category)}
@@ -57,7 +57,7 @@ const Portfolio = () => {
                 <Link
                   target={"_blank"}
                   to={data.projectLink}
-                  className="text-white"
+                  className="text-white "
                 >
                   {data.title}
                 </Link>

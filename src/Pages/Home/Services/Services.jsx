@@ -35,12 +35,12 @@ const Services = () => {
                             {data.icon}
                           </div>
                           <div>
-                            <h2 className="text-base lg:text-xl font-bold capitalize">
+                            <h2 className="text-base lg:text-xl font-bold capitalize dark:text-gray-800">
                               {data.title}
                             </h2>
                           </div>
                         </div>
-                        <div className="ml-[30px] text-start ">
+                        <div className="ml-[30px] text-start dark:text-gray-800">
                           <p>{data.description.slice(0, 120)}...</p>
 
                           <Link
@@ -65,12 +65,12 @@ const Services = () => {
                             {data.icon}
                           </div>
                           <div>
-                            <h2 className="text-base lg:text-xl font-bold capitalize">
+                            <h2 className="text-base lg:text-xl dark:text-gray-800 font-bold capitalize">
                               {data.title}
                             </h2>
                           </div>
                         </div>
-                        <div className="ml-[30px] text-start text-sm  lg:text-base">
+                        <div className="ml-[30px] text-start text-sm  lg:text-base dark:text-gray-800">
                           <p>{data.description.slice(0, 120)}...</p>
 
                           <Link

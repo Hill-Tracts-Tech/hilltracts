@@ -24,53 +24,6 @@ import slide_image_10 from "../../../assets/images/img_10.png";
 import { Link } from "react-router-dom";
 
 const Banner = () => {
-  // const handleSlideChange = (swiper) => {
-  // console.log("1:>",swiper);
-  //   const activeIndex = swiper.activeIndex;
-  //   console.log("2:> Active slide index:", activeIndex,"length",length);
-  //   // Perform any actions based on the activeIndex
-  //   // const slideIndexes = [];
-  //   // for (let i = 0; i < swiper.slides.length; i++) {
-  //   //   slideIndexes.push(i);
-  //   // }
-  //   // console.log('Slide indexes:', slideIndexes);
-  //   if(activeIndex==1){
-  //   const data=  serviceData.filter(item=>item.id===1)
-  //     setCardData(data)
-  //   }
-  //   else if(activeIndex==2){
-  //   const data=  serviceData.filter(item=>item.id===2)
-  //     setCardData(data)
-  //   }
-  //   else if(activeIndex==3){
-  //   const data=  serviceData.filter(item=>item.id===3)
-  //     setCardData(data)
-  //   }
-  //   else if(activeIndex==4){
-  //   const data=  serviceData.filter(item=>item.id===4)
-  //     setCardData(data)
-  //   }
-  //   else if(activeIndex==5){
-  //   const data=  serviceData.filter(item=>item.id===5)
-  //     setCardData(data)
-  //   }
-  //   else if(activeIndex==6){
-  //   const data=  serviceData.filter(item=>item.id===6)
-  //     setCardData(data)
-  //   }
-  //   else if(activeIndex==7){
-  //   const data=  serviceData.filter(item=>item.id===7)
-  //     setCardData(data)
-  //   }
-  //   else if(activeIndex==8){
-  //   const data=  serviceData.filter(item=>item.id===8)
-  //     setCardData(data)
-  //   }
-  //   else {
-  //   const data=  serviceData.filter(item=>item.id===9)
-  //     setCardData(data)
-  //   }
-  // };
 
   return (
     <div className="container">

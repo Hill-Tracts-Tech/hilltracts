@@ -36,14 +36,11 @@
 @media only screen and (max-width: 500px) {
   .swiper-slide img {
     display: block;
-  	width: 400px;
+  	width: 500px;
     max-width: 140%;
   }
-  .swiper-slide img {
-    display: block;
-    width: 200%;
-    max-width: 200%;
-  }
+ 
+
 }
 @media only screen and (max-width: 800px) {
   .swiper-slide img {
