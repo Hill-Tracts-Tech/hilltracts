@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 const BlogAndNews = () => {
   const [blogs, setBlogs] = useState();
   useEffect(() => {
-    fetch("http://localhost:8000/blogs")
-      .then(res => res.json())
-      .then(data => setBlogs(data))
+    fetch("https://rowopyusay-server.vercel.app/blogs")
+      .then((res) => res.json())
+      .then((data) => setBlogs(data));
   }, [])
   const data = [
     {

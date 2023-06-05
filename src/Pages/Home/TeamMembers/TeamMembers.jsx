@@ -7,9 +7,12 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { data } from "./data";
+import Modal from "./Modal";
 const TeamMembers = () => {
   const [next, setNext] = useState(4);
   const [previous, setPrevious] = useState(0);
+  const [modalData, setModalData] = useState({});
+  const [modalOpen, setModalOpen] = useState(false);
   const handleNext = () => {
     setNext(next + 4);
     setPrevious(previous + 4);
@@ -17,6 +20,11 @@ const TeamMembers = () => {
   const handlePrev = () => {
     setNext(next - 4);
     setPrevious(previous - 4);
+  };
+
+  const handleModalData = (selectedData) => {
+    setModalData(selectedData);
+    setModalOpen(true);
   };
   return (
     <>
@@ -28,9 +36,7 @@ const TeamMembers = () => {
       <div className="flex md:flex-row flex-col justify-between items-center w-[90%] mx-auto my-10">
         <div className="w-full md:w-[20%] mx-auto">
           <div className="w-full">
-            <h1
-              className="text-2xl font-bold text-center capitalize  tracking-[6px] font-[cursive]"
-            >
+            <h1 className="text-2xl font-bold text-center capitalize  tracking-[6px] font-[cursive]">
               Our <br></br> Best Team members
             </h1>
           </div>
@@ -39,6 +45,7 @@ const TeamMembers = () => {
           <div className="flex flex-wrap w-full">
             {data.slice(previous, next).map((info) => (
               <div
+                onClick={() => handleModalData(info)}
                 key={info.id}
                 className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4"
               >
@@ -90,7 +97,7 @@ const TeamMembers = () => {
         <button disabled={previous <= 0} onClick={handlePrev} title="Previous">
           <FaLongArrowAltRight
             className="rotate-180 text-[#1da1f2] mr-4"
-            size={23}
+            size={30}
           />
         </button>
         <button
@@ -98,8 +105,14 @@ const TeamMembers = () => {
           onClick={handleNext}
           title="Next"
         >
-          <FaLongArrowAltRight className="text-[#1da1f2]" size={23} />
+          <FaLongArrowAltRight className="text-[#1da1f2]" size={30} />
         </button>
+      </div>
+      <div className={`fixed left-0 right-0 bottom-0 md:top-[212px] top-[21px] z-50 ${modalOpen?"visible":"hidden"}`}>
+        <Modal
+          modalData={modalData}
+          setModalOpen={setModalOpen}
+        />
       </div>
     </>
   );
