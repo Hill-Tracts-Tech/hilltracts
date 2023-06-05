@@ -26,7 +26,7 @@ const Home = () => {
         <div className=" flex justify-between items-center h-[100%] max-w-[90%] mx-auto">
          
           <div
-            className=" py-5 mt-[70px] md:mt-10 lg:mt-10"
+            className=" py-5 mt-[150px] mb-[50px] mb:mt-10 lg:mt-10 lg:mb-0 md:mb-0"
           >
             <Banner />
           </div>

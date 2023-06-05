@@ -33,7 +33,7 @@ const Portfolio = () => {
             {filterData.map((project, i) => (
               <li
                 className={
-                  project.category == active ? "active project " : "project "
+                  project.category == active ? "active project " : "project dark:text-gray-400 text-black"
                 }
                 key={i}
                 onClick={() => handleFilter(project.category)}

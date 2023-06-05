@@ -23,10 +23,10 @@ const Services = () => {
           <div className="services grid grid-cols-1 md:grid-cols-2 items-center justify-between gap-3">
             {serviceData &&
               serviceData.map((data, i) => (
-                <div key={data.id} className="pl-[3px]">
+                <div key={data.id} className="">
                   {i % 2 === 0 ? (
                     <div
-                      className={`service-card p-6  lg:p-4 md:p-4 lg:h-auto h-72 shadow-xl ${data.rounded} card-bordered w-100% lg:w-auto md:w-auto`}
+                      className={`service-card px-3 py-8  lg:p-4 md:p-4 lg:h-auto  shadow-xl ${data.rounded} card-bordered w-100% lg:w-auto md:w-auto`}
                       style={{ backgroundColor: `${data.bg}` }}
                     >
                       <div className="content ">
@@ -56,7 +56,7 @@ const Services = () => {
                     </div>
                   ) : (
                     <div
-                      className={`service-card p-6  lg:p-4 md:p-4 lg:h-auto h-72 ${data.rounded} shadow-xl w-100% lg:w-auto md:w-auto card-bordered`}
+                      className={`service-card px-3 py-8  lg:p-4 md:p-4 lg:h-auto  ${data.rounded} shadow-xl w-100% lg:w-auto md:w-auto card-bordered`}
                       style={{ backgroundColor: `${data.bg}` }}
                     >
                       <div className="content">

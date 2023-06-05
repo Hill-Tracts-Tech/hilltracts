@@ -25,7 +25,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="container">
+    <div className=" lg:container md:container ">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
