@@ -36,7 +36,7 @@ const FeedBack = () => {
                     </div>
                     <div className="mt-3 flex gap-2">
                       <img src={comma} className="w-4 h-4 rotate-180" alt="" />
-                      <p>{data.review}</p>
+                      <p className="dark:text-black">{data.review}</p>
 
                       <img src={comma} className="w-4 h-4" alt="" />
                     </div>
@@ -116,7 +116,7 @@ const FeedBack = () => {
                         className="w-4 h-4 rotate-180"
                         alt=""
                       />
-                      <p>{data.review}</p>
+                      <p className="dark:text-black">{data.review}</p>
 
                       <img
                         src="https://cdn.iconscout.com/icon/premium/png-256-thumb/inverted-commas-1-648947.png"
