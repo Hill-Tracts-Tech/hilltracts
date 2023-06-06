@@ -69,7 +69,7 @@ const Footer = () => {
         <div>
           <span className="footer-title">Legal</span>
           <a className="link no-underline hover:text-[#1DA1F2]"><FaPlusCircle className=" inline-block text-[#1DA1F2] "/> <span >Terms of use</span> </a>
-          <Link to="/term-condition" className="link no-underline hover:text-[#1DA1F2]"><FaPlusCircle className=" inline-block text-[#1DA1F2] "/> <span >Privacy policy</span> </Link>
+          <Link to="/term-condition" target={"_blank"} className="link no-underline hover:text-[#1DA1F2]"><FaPlusCircle className=" inline-block text-[#1DA1F2] "/> <span >Privacy policy</span> </Link>
           <a className="link no-underline hover:text-[#1DA1F2]"><FaPlusCircle className=" inline-block text-[#1DA1F2] "/> <span >Cookie policy</span> </a>
         </div>
         <div>

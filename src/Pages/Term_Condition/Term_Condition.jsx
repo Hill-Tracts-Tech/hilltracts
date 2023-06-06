@@ -13,12 +13,12 @@ const Term_Condition = () => {
     <div className="w-full h-full p-6">
       <div className="w-[90%] mx-auto">
         <div className="flex flex-wrap justify-between items-center bg-gray-200 shadow-lg p-4 rounded-md">
-          <h1 className="md:text-4xl text-2xl font-bold text-[#1DA1F2] uppercase">
+          <h1 className="md:text-3xl text-2xl font-bold text-[#1DA1F2] uppercase">
             Privacy Policy
           </h1>
           <Link
             to="/"
-            className="md:text-4xl text-2xl font-bold underline text-[#1DA1F2]"
+            className="md:text-3xl text-2xl font-bold underline text-[#1DA1F2]"
           >
             Go To Home
           </Link>
@@ -34,9 +34,16 @@ const Term_Condition = () => {
           We may use the personal information we collect for the following
           purposes:
         </p>
-        <ul className="my-6">
-          {infoPurpose && infoPurpose.map((data, i) => <li key={i}>{data}</li>)}
-        </ul>
+        <div className="p-4">
+          <ul className="my-6 list-disc">
+            {infoPurpose &&
+              infoPurpose.map((data, i) => (
+                <li className="" key={i}>
+                  {data}
+                </li>
+              ))}
+          </ul>
+        </div>
         <p>{purposesUsage}</p>
         {Privacies &&
           Privacies.map((data, i) => (

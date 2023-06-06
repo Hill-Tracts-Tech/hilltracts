@@ -6,12 +6,12 @@ export const usageInfo =
   "We may automatically collect certain information when you visit our website, such as your IP address, browser type, operating system, referring website, pages viewed, and the dates and times of your visits. This information is used for analytical purposes to understand how our website is being used and to improve our services.";
 
 export const infoPurpose = [
-  "- Providing and improving our services",
-  "- Communicating with you about your inquiries, requests, or feedback",
-  "- Sending you promotional materials or newsletters if you have opted in to receive them",
-  "- Customizing your user experience",
-  "- Enforcing our terms of service and policies",
-  "- Complying with legal obligations",
+  "Providing and improving our services",
+  "Communicating with you about your inquiries, requests, or feedback",
+  "Sending you promotional materials or newsletters if you have opted in to receive them",
+  "Customizing your user experience",
+  "Enforcing our terms of service and policies",
+  "Complying with legal obligations",
 ];
 export const purposesUsage =
   "Usage information is primarily used to analyze trends, administer the website, track users' movements, and gather demographic information for aggregate use. This helps us improve our website and provide a better user experience.";

@@ -111,7 +111,7 @@ const TeamMembers = () => {
         </button>
       </div>
         <div
-          className={`fixed left-0 right-0 bottom-0 md:top-[212px] top-[21px] z-50 ease-in-out duration-300 ${
+          className={`fixed left-0 right-0 bottom-0 md:top-[212px] top-[21px] z-50 ease-in-out duration-300  ${
             modalOpen ? "visible" : "hidden"
           }`}
         >
