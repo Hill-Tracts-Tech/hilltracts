@@ -31,8 +31,10 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/blogs",
+        path: "/blogs/:id",
         element: <BlogDetails />,
+        loader: ({ params }) =>
+          fetch(`https://rowopyusay-server.vercel.app/blogs/${params.id}`),
       },
     ],
   },
@@ -42,8 +44,8 @@ const router = createBrowserRouter([
   },
   {
     path: "/term-condition",
-    element:<Term_Condition/>
-  }
+    element: <Term_Condition />,
+  },
 ]);
 
 export default router;

@@ -6,35 +6,35 @@
       "objective":"React.js is a powerful JavaScript library for building user interfaces. To get started with React, there are several key topics that you should be familiar with",
       "content": [
         {
-            "sub-title":"Components",
+            "subTitle":"Components",
             "description":"Components: React is based on a component-based architecture, where you break your UI into smaller reusable pieces. Components can be simple, like a button, or complex, like an entire form."
         },
         {
-            "sub-title":"JSX",
+            "subTitle":"JSX",
             "description":"JSX: JSX is a syntax extension for JavaScript that allows you to write HTML-like code inside your JavaScript files. It makes it easy to write and maintain your UI code."
         },
         {
-            "sub-title":"State",
+            "subTitle":"State",
             "description":"State: State is the internal data that a component uses to render itself. By updating the state, you can change how a component appears and behaves."
         },
         {
-            "sub-title":"Props",
+            "subTitle":"Props",
             "description":"Props: Props are the inputs that a component receives from its parent. They allow you to pass data from one component to another."
         },
         {
-            "sub-title":"Lifecycle methods",
+            "subTitle":"Lifecycle methods",
             "description":"Lifecycle methods: React provides a set of methods that allow you to hook into the lifecycle of a component. This can be useful for performing setup and teardown operations, or for handling updates to a component."
         },
         {
-            "sub-title":"Routing",
+            "subTitle":"Routing",
             "description":"Routing: React Router is a popular library for adding client-side routing to your React applications. It allows you to define routes and switch between them without reloading the page."
         },
         {
-            "sub-title":"Redux",
+            "subTitle":"Redux",
             "description":"Redux: Redux is a state management library for React. It provides a centralized store where you can manage your application's state and make it available to your components."
         },
         {
-            "sub-title":"Hooks",
+            "subTitle":"Hooks",
             "description":"Hooks: React Hooks are a way to add state and lifecycle methods to functional components. They allow you to reuse stateful logic across multiple components."
         }
       ],
