@@ -4,11 +4,13 @@ import Navbar from "../../Components/Navbar/Navbar";
 import ScrollToTopComponent from "../../Components/Scroll/ScrollToTop";
 const Main = () => {
   return (
-    <ScrollToTopComponent>
+   <div className="dark:bg-gray-700">
+     <ScrollToTopComponent>
       <Navbar></Navbar>
       <Outlet></Outlet>
       <Footer></Footer>
     </ScrollToTopComponent>
+   </div>
   );
 };
 

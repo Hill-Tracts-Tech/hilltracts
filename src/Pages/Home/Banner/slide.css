@@ -1,11 +1,11 @@
 
 
 .swiper-wrapper{
-  width: 30% !important;
+  width: 31% !important;
 }
 
 .swiper-3d {
-  perspective: 668px !important;
+  perspective: 458px !important;
 }
 .swiper {
   width: 100%;
@@ -34,16 +34,22 @@
   background-image:none !important;
 }
 @media only screen and (max-width: 500px) {
+ 
   .swiper-slide img {
     display: block;
-  	width: 400px;
+  	width: 500px;
     max-width: 140%;
   }
-  .swiper-slide img {
-    display: block;
-    width: 200%;
-    max-width: 200%;
-  }
+  
+.swiper-wrapper{
+  width: 30% !important;
+}
+
+.swiper-3d {
+  perspective: 458px !important;
+}
+ 
+
 }
 @media only screen and (max-width: 800px) {
   .swiper-slide img {

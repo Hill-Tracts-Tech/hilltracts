@@ -59,7 +59,7 @@ const TeamMembers = () => {
                     />
                   </div>
                   <div className="text-center mt-6">
-                    <h1 className="text-gray-900 text-xl font-bold mb-1">
+                    <h1 className="text-gray-900 dark:text-gray-400 text-xl font-bold mb-1">
                       {info.name}
                     </h1>
                     <div className="text-gray-700 font-light mb-2">
