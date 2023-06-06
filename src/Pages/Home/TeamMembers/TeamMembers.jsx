@@ -41,7 +41,9 @@ const TeamMembers = () => {
             </h1>
           </div>
         </div>
-        <div className="w-[80%] mt-5 mx-auto">
+        <div
+          className="w-[80%] mt-5 mx-auto cursor-pointer"
+        >
           <div className="flex flex-wrap w-full">
             {data.slice(previous, next).map((info) => (
               <div
@@ -108,12 +110,13 @@ const TeamMembers = () => {
           <FaLongArrowAltRight className="text-[#1da1f2]" size={30} />
         </button>
       </div>
-      <div className={`fixed left-0 right-0 bottom-0 md:top-[212px] top-[21px] z-50 ${modalOpen?"visible":"hidden"}`}>
-        <Modal
-          modalData={modalData}
-          setModalOpen={setModalOpen}
-        />
-      </div>
+        <div
+          className={`fixed left-0 right-0 bottom-0 md:top-[212px] top-[21px] z-50 ease-in-out duration-300 ${
+            modalOpen ? "visible" : "hidden"
+          }`}
+        >
+          <Modal modalData={modalData} setModalOpen={setModalOpen} />
+        </div>
     </>
   );
 };

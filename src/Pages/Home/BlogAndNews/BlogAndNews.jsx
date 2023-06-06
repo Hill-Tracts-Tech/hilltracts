@@ -65,7 +65,7 @@ const BlogAndNews = () => {
           {blogs &&
             blogs.map((item) => (
               <div
-                key={item?.id}
+                key={item?._id}
                 className=" card-bordered rounded-lg shadow-xl mt-5 lg:mt-0 md:mt-0 "
               >
                 <div className="">
@@ -89,7 +89,7 @@ const BlogAndNews = () => {
                     </p>
                     <div className="mt-4">
                       <Link
-                        to="/blog-details"
+                        to={`/blogs/${item._id}`}
                         className="font-semibold hover:text-[#1DA1F2]"
                       >
                         Read More

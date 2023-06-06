@@ -7,7 +7,6 @@ import ServiceDetails from "../../Pages/ServiceDetails/ServiceDetails";
 import BlogDetails from "../../Pages/BlogDetails/BlogDetails";
 import NotFound from "../../Pages/_404";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,9 +30,13 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/blog-details",
+        path: "/blogs/:blogId",
         element: <BlogDetails />,
-        loader: ({ params }) => fetch(`http://localhost:8000/blog-details/${params._id}`),
+        loader: ({ params }) => {
+          return fetch(
+            `https://rowopyusay-server.vercel.app/blogs/${params.blogId}}`
+          );
+        },
       },
     ],
   },

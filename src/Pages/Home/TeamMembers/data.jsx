@@ -46,8 +46,8 @@ export const data = [
     designation: "Product Manager",
     description: "Some text about the career....",
     facebook: "https://www.facebook.com/swaypai.rowock/",
-    github: "#",
-    linkedIn: "https://www.linkedin.com/in/dawsing-marma-6b6b001b6",
+    github: "https://github.com/sway16",
+    linkedIn: "https://bd.linkedin.com/in/dawsing-marma-6b6b001b6",
   },
   {
     id: 6,

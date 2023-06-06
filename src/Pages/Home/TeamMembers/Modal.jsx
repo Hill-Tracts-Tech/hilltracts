@@ -1,5 +1,4 @@
 const Modal = ({ modalData, setModalOpen }) => {
-  console.log(setModalOpen);
   return (
     <div className="w-[80%] mx-auto bg-[#eae7e7] p-5 shadow-lg rounded-md relative">
       <button
