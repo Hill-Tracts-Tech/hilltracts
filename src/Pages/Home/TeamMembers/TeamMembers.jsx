@@ -32,7 +32,7 @@ const TeamMembers = () => {
       <div className="flex md:flex-row flex-col justify-between items-center w-[90%] mx-auto my-10">
         <div className="w-full md:w-[20%] mx-auto">
           <div className="w-full">
-            <h1 className="text-2xl font-bold text-center capitalize  tracking-[6px] font-[cursive]">
+            <h1 className="text-2xl font-bold text-center capitalize dark:text-[#fff] tracking-[6px] font-[cursive]">
               Our <br></br> Best Team members
             </h1>
           </div>

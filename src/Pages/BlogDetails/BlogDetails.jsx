@@ -3,8 +3,6 @@ import { FaRegComment } from "react-icons/fa";
 import { Link, useLoaderData } from "react-router-dom";
 const BlogDetails = () => {
   const blog = useLoaderData();
-  console.log(blog);
-  console.log(blog.content.length);
   return (
     <div className="w-[90%] mx-auto p-9 flex md:flex-nowrap flex-wrap justify-between items-center gap-4">
       <div className="w-full md:w-[70%]">

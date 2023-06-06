@@ -23,7 +23,7 @@ const BlogAndNews = () => {
 
       <div className="my-10 w-[90%] mx-auto flex md:flex-row-reverse flex-col justify-between items-center gap-6">
         <div className="">
-          <h1 className="text-2xl font-bold text-center capitalize  tracking-[6px] font-[cursive]">
+          <h1 className="text-2xl font-bold text-center capitalize dark:text-[#fff] tracking-[6px] font-[cursive]">
             Best News & Blog
           </h1>
         </div>

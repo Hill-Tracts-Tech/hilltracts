@@ -16,7 +16,7 @@ const Services = () => {
       <div className="w-[90%] my-10 mx-auto">
         <div className="flex md:flex-row-reverse flex-col justify-between items-center gap-7">
           <div className="my-5 flex-1">
-            <h1 className="text-2xl font-bold text-center capitalize  tracking-[6px] font-[cursive]">
+            <h1 className="text-2xl font-bold text-center capitalize dark:text-[#fff] tracking-[6px] font-[cursive]">
               We offer all types of IT solution services
             </h1>
           </div>
