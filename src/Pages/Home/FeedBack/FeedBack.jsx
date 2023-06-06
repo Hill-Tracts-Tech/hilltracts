@@ -3,6 +3,7 @@ import "../../../styles/styles.css";
 import { BsStarFill, BsStar } from "react-icons/bs";
 import { clientReviewData } from "./ClientReviewData";
 import "./FeedBack.css";
+import { FaUserAlt  } from "react-icons/fa";
 import comma from'../../../assets/icon/comma.webp'
 const FeedBack = () => {
   return (
@@ -27,12 +28,13 @@ const FeedBack = () => {
                     key={data.id}
                     className="cursor-pointer shadow-lg bg-[#b9e2fc] p-4  rounded-lg flex flex-col justify-center items-center"
                   >
-                    <div className="mt-[-60px]">
-                      <img
-                        className="w-24 h-24 rounded-full card-bordered"
-                        src={data.profile}
-                        alt={data.profile}
-                      />
+                    <div className="mt-[-60px] ">
+    
+                        
+                        <FaUserAlt className="w-24 h-24 rounded-full card-bordered bg-white text-[#1DA1F2]"></FaUserAlt>
+
+                    
+                      
                     </div>
                     <div className="mt-3 flex gap-2">
                       <img src={comma} className="w-4 h-4 rotate-180" alt="" />
@@ -42,9 +44,7 @@ const FeedBack = () => {
                     </div>
                     <div className="flex justify-start items-center gap-4">
                       <div>
-                        <h3 className="text-xl mt-2 text-center font-semibold text-gray-900">
-                          {data.name}
-                        </h3>
+                       
                         <div className="flex justify-center items-center gap-2 ">
                           {data.rating == 1 && (
                             <>
@@ -104,11 +104,8 @@ const FeedBack = () => {
                     className="cursor-pointer shadow-lg bg-[#b9e2fc] p-4  rounded-lg flex flex-col justify-center items-center"
                   >
                     <div className="mt-[-60px]">
-                      <img
-                        className="w-24 h-24 rounded-full card-bordered"
-                        src={data.profile}
-                        alt={data.profile}
-                      />
+                       
+                    <FaUserAlt className="w-24 h-24 rounded-full card-bordered bg-white text-[#1DA1F2]"></FaUserAlt>
                     </div>
                     <div className="mt-3 flex gap-2">
                       <img
@@ -126,9 +123,7 @@ const FeedBack = () => {
                     </div>
                     <div className="flex justify-start items-center gap-4">
                       <div>
-                        <h3 className="text-xl mt-2 text-center font-semibold text-gray-900">
-                          {data.name}
-                        </h3>
+                       
                         <div className="flex justify-center items-center gap-2 ">
                           {data.rating == 1 && (
                             <>
