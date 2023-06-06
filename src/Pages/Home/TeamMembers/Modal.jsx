@@ -16,14 +16,14 @@ const Modal = ({ modalData, setModalOpen }) => {
           />
         </div>
         <div className="flex-1">
-          <h1 className="text-center font-bold text-[25px] text-gray-700">
+          <h1 className="font-bold text-[25px] text-gray-700">
             {modalData.name}
           </h1>
-          <h3 className="text-center font-semibold text-[20px]">
+          <h3 className="font-semibold text-[20px]">
             {modalData.designation}
           </h3>
-          <h2 className="text-center font-bold text-xl my-5">Bio</h2>
-          <p className="text-justify font-[400] leading-7">
+          <h2 className="font-bold text-xl my-5">Bio</h2>
+          <p className="font-[400] leading-7">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
             expedita maiores eius natus accusantium iste distinctio tempora
             pariatur rerum porro quis maxime voluptatibus, ab mollitia delectus

@@ -6,6 +6,7 @@ import About from "../../Pages/About/About";
 import ServiceDetails from "../../Pages/ServiceDetails/ServiceDetails";
 import BlogDetails from "../../Pages/BlogDetails/BlogDetails";
 import NotFound from "../../Pages/_404";
+import Term_Condition from "../../Pages/Term_Condition/Term_Condition";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
     path: "*",
     element: <NotFound />,
   },
+  {
+    path: "/term-condition",
+    element:<Term_Condition/>
+  }
 ]);
 
 export default router;

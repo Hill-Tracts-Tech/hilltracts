@@ -16,7 +16,7 @@ const About = () => {
         </div>
       </div>
       <div className="max-w-[90%] mx-auto mb-10">
-        <section className="mb-32 text-gray-800">
+        <section className="text-gray-800">
           <div className="flex flex-wrap mb-12 mt-16">
             <div className="grow-0 shrink-0 basis-auto w-full lg:w-6/12 lg:pr-6 mb-6 lg:mb-0">
               <div className="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg">
