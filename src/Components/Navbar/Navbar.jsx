@@ -65,12 +65,13 @@ const Navbar = () => {
 
   return (
     <div className="z-40 shadow-md navbar sticky top-0 backdrop-filter backdrop-blur-lg bg-transparent">
-      <div className="navbar-start hidden lg:block md:hidden lg:ml-[30px]">
+      <div className="navbar-start hidden lg:flex md:hidden lg:ml-[30px] ">
         <img
           style={{ width: "80px", height: "80px" }}
           src={navicon}
           alt=""
         ></img>
+        <h  className="text-xl font-semibold font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#51ebad] to-[#b9e2fc]">Hill Tracts Tech</h>
       </div>
       <div className="navbar-center hidden lg:flex md:hidden">
         <ul className="flex justify-center items-center gap-5 px-1">
