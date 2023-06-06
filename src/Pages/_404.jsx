@@ -7,7 +7,7 @@ const NotFound = () => {
         <div className="w-full">
         <h1 className="text-center text-5xl font-bold text-gray-700">404<span className="text-[#e64d4d]">!</span><span className="text-[#9b9a9a]">!</span></h1>
           <p className="text-2xl md:text-3xl font-light leading-normal">
-            Sorry we could not find this page.{" "}
+            Sorry we could not find this page!!{" "}
           </p>
           <p className="mb-8">
             But dont worry, you can find plenty of other things on our homepage.
