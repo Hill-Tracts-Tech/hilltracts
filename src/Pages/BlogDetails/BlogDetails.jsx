@@ -57,9 +57,11 @@ const BlogDetails = () => {
         <hr className="my-4" />
       </div>
       <div className="w-full md:w-[30%]">
-        <h1 className="text-2xl font-semibold">Relevant Blogs</h1>
-        <div className="h-[500px] md:overflow-y-scroll overflow-hidden border">
-          <Link className="hover:under cursor-pointer">
+        <h1 className="text-2xl font-semibold text-center underline underline-offset-8">
+          Relevant Blogs
+        </h1>
+        <div className="h-[500px] md:overflow-y-scroll overflow-hidden border-l-4 border-indigo-500 p-4">
+          <Link className="hover:underline cursor-pointer">
             No Relevant News or Blog found
           </Link>
         </div>
