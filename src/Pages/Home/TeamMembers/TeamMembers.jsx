@@ -1,11 +1,7 @@
 import { useState } from "react";
 import {
-  FaFacebookF,
-  FaGithub,
-  FaLinkedinIn,
   FaLongArrowAltRight,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import { data } from "./data";
 import Modal from "./Modal";
 const TeamMembers = () => {
@@ -65,29 +61,7 @@ const TeamMembers = () => {
                     <div className="text-gray-700 font-light mb-2">
                       {info.designation}
                     </div>
-                    <div className="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
-                      <Link
-                        target={"_blank"}
-                        to={info.facebook}
-                        className="flex rounded-full hover:bg-indigo-50 h-10 w-10"
-                      >
-                        <FaFacebookF className="text-[#1da1f2]" />
-                      </Link>
-                      <a
-                        target={"_blank"}
-                        to={info.github}
-                        className="flex rounded-full hover:bg-blue-50 h-10 w-10"
-                      >
-                        <FaGithub className="text-[#1da1f2]" />
-                      </a>
-                      <a
-                        target={"_blank"}
-                        to={info.linkedIn}
-                        className="flex rounded-full hover:bg-orange-50 h-10 w-10"
-                      >
-                        <FaLinkedinIn className="text-[#1da1f2]" />
-                      </a>
-                    </div>
+
                   </div>
                 </div>
               </div>

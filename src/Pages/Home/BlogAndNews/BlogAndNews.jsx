@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import "../../../styles/styles.css";
+import { BsFillPersonFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 const BlogAndNews = () => {
   const [blogs, setBlogs] = useState();
@@ -10,41 +11,6 @@ const BlogAndNews = () => {
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   }, [])
-  const data = [
-    {
-      id: 1,
-      image:
-        "https://urnothemes.com/solute/wp-content/uploads/2023/01/blog3.jpg",
-      userImage:
-        "https://urnothemes.com/solute/wp-content/uploads/2023/01/team1.jpg",
-      title: "Networking",
-      blog: "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence.",
-      comment: "2",
-      date: "June-2023",
-    },
-    {
-      id: 2,
-      image:
-        "https://urnothemes.com/solute/wp-content/uploads/2023/01/blog2.jpg",
-      userImage:
-        "https://urnothemes.com/solute/wp-content/uploads/2023/01/team2.jpg",
-      title: "web development",
-      blog: "We specialize in creating dynamic and responsive websites tailored to your unique needs. Our expert team utilizes the latest web technologies to deliver user-friendly interfaces, seamless navigation, and captivating designs that enhance your online presence.",
-      comment: "2",
-      date: "May-2023",
-    },
-    {
-      id: 3,
-      image:
-        "https://urnothemes.com/solute/wp-content/uploads/2023/01/blog1.jpg",
-      userImage:
-        "https://urnothemes.com/solute/wp-content/uploads/2023/01/team3.jpg",
-      title: "Digital marketing",
-      blog: "Reach your target audience and boost your online visibility with our digital marketing services. We offer SEO, social media marketing, and content creation to drive traffic and conversions.",
-      comment: "2",
-      date: "April-2023",
-    }
-  ];
   return (
     <>
       {/* header */}
@@ -73,7 +39,7 @@ const BlogAndNews = () => {
 
                   <img
                     className="rounded-full h-12 ml-3 mt-[-30px]  card-bordered "
-                    src={item?.userImage}
+                    src="https://i.ibb.co/gJmbQS0/uhai.jpg"
                     alt=""
                   />
                   <div className="p-2">
@@ -89,7 +55,7 @@ const BlogAndNews = () => {
                     </p>
                     <div className="mt-4">
                       <Link
-                        to={`/blogs/${item._id}`}
+                        to="/blogs"
                         className="font-semibold hover:text-[#1DA1F2]"
                       >
                         Read More

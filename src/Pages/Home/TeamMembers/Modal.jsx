@@ -1,9 +1,16 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+import {
+  FaFacebookF,
+  FaGithub,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 const Modal = ({ modalData, setModalOpen }) => {
+  console.log(modalData);
   return (
-    <div className="fixed top-0 left-0 w-full h-screen flex z-50 items-center justify-center bg-gray-700 bg-opacity-60">
-      <div className="w-[60%] mx-auto bg-[#ffffff] p-5 shadow-lg rounded-md relative">
+    <div className="fixed top-0 left-0 w-full h-screen flex z-50 items-center justify-center bg-[#252A2F] bg-opacity-60">
+      <div className="w-full md:w-[80%] mx-auto dark:bg-[#252A2F] bg-[#bfd6d8] p-5 shadow-lg rounded-md relative dark:text-[#fff] text-gray-700">
         <button
           onClick={() => setModalOpen(false)}
           className="absolute right-6 top-3 font-bold text-xl hover:bg-red-600 hover:text-white p-2 h-8 w-8 flex justify-center items-center rounded-sm"
@@ -19,10 +26,10 @@ const Modal = ({ modalData, setModalOpen }) => {
             />
           </div>
           <div className="flex-1">
-            <h1 className="font-bold text-[25px] text-gray-700">
+            <h1 className="font-bold text-[25px] dark:text-[#ced5dc] text-[#252A2F]">
               {modalData.name}
             </h1>
-            <h3 className="font-semibold text-[20px] text-blue-300">
+            <h3 className="font-semibold text-[20px] text-blue-700">
               {modalData.designation}
             </h3>
             <h2 className="font-bold text-xl my-2">Bio</h2>
@@ -30,10 +37,30 @@ const Modal = ({ modalData, setModalOpen }) => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
               expedita maiores eius natus accusantium iste distinctio tempora
               pariatur rerum porro quis maxime voluptatibus, ab mollitia
-              delectus ex tempore veniam doloribus facere cupiditate. Adipisci
-              vitae non dolores ex, quas nemo veritatis, amet et facere, rerum
-              voluptatibus blanditiis quisquam beatae. Inventore, eveniet.
             </p>
+            <div className="flex justify-start items-center mt-5">
+              <Link
+                target={"_blank"}
+                to={modalData.facebook}
+                className="flex rounded-full h-10 w-10 cursor-pointer"
+              >
+                <FaFacebookF className="text-[#1da1f2]" />
+              </Link>
+              <a
+                target={"_blank"}
+                to={modalData.github}
+                className="flex rounded-full h-10 w-10 cursor-pointer"
+              >
+                <FaGithub className="text-[#1da1f2]" />
+              </a>
+              <a
+                target={"_blank"}
+                to={modalData.linkedIn}
+                className="flex rounded-full h-10 w-10 cursor-pointer"
+              >
+                <FaLinkedinIn className="text-[#1da1f2]" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

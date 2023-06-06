@@ -31,13 +31,8 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/blogs/:blogId",
+        path: "/blogs",
         element: <BlogDetails />,
-        loader: ({ params }) => {
-          return fetch(
-            `https://rowopyusay-server.vercel.app/blogs/${params.blogId}}`
-          );
-        },
       },
     ],
   },

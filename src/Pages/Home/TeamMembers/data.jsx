@@ -72,7 +72,7 @@ export const data = [
   {
     id: 8,
     imgURL: "https://i.ibb.co/hg5YP2S/Ranghin-Mro.jpg",
-    name: "Ranghin",
+    name: "Ranghin Mro",
     designation: "Public Relation Officer",
     description: "Some text about the career....",
     facebook: "https://web.facebook.com/rang.hin.92",
@@ -82,7 +82,7 @@ export const data = [
   {
     id: 7,
     imgURL: "https://i.ibb.co/tQTBLRB/umay2.jpg",
-    name: "Umay Fru",
+    name: "Umay Frue Chawdhury",
     designation: "Logistic Supporter",
     description: "Some text about the career....",
     facebook: "#",
@@ -92,7 +92,7 @@ export const data = [
   {
     id: 8,
     imgURL: "https://i.ibb.co/2MRC8pm/jerin.jpg",
-    name: "Jerin",
+    name: "Ma Aye Sain",
     designation: "Human Resource Officer",
     description: "Some text about the career....",
     facebook: "#",
@@ -112,18 +112,8 @@ export const data = [
   {
     id: 10,
     imgURL: "https://i.ibb.co/5BZvb4s/sadia.jpg",
-    name: "Riya",
+    name: "Sadia Afrine Riya",
     designation: "Designer",
-    description: "Some text about the career....",
-    facebook: "#",
-    github: "#",
-    linkedIn: "#",
-  },
-  {
-    id: 11,
-    imgURL: "https://i.ibb.co/P9mjGDZ/tonmoy.jpg",
-    name: "Tonmoy",
-    designation: "Human Resource Officer",
     description: "Some text about the career....",
     facebook: "#",
     github: "#",

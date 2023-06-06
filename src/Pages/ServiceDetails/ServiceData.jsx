@@ -28,7 +28,7 @@ export const services = [
     title: "Software Development",
     description:
       "We offer custom software development services to streamline your business operations and enhance productivity. Our talented developers build robust and scalable software solutions tailored to your specific requirements, helping you automate tasks, manage data effectively, and improve overall efficiency.",
-    imgURL: "https://i.ibb.co/wzW0bgw/software-Dev-No-BG.png",
+    imgURL: "https://i.ibb.co/z8M1SD1/software.png",
     icon: <SiBmcsoftware size={50} className="s-icon hover:rotate-180" />,
   },
   {
@@ -76,7 +76,7 @@ export const services = [
     title: "Digital Marketing",
     description:
       "Reach your target audience and boost your online visibility with our digital marketing services. We offer SEO, social media marketing, and content creation to drive traffic and conversions.",
-    imgURL: "https://i.ibb.co/Hg90Krj/digital-marketing-No-BG.png",
+    imgURL: "https://i.ibb.co/yf1b5L7/digitalmrketing.png",
     icon: <FaDigitalOcean size={50} className="s-icon hover:rotate-180" />,
   },
 ];

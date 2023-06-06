@@ -1,9 +1,6 @@
 import { BsBookmarkPlus, BsPlayCircle, BsShare, BsEye } from "react-icons/bs";
 import { FaRegComment } from "react-icons/fa";
-import { useLoaderData } from "react-router-dom";
 const BlogDetails = () => {
-  const blog = useLoaderData();
-  console.log(blog);
   return (
     <div className="w-[90%] mx-auto">
       <h2 className="text-2xl font-bold">Blog Title</h2>
