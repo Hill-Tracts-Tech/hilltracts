@@ -58,7 +58,7 @@ const BlogDetails = () => {
       </div>
       <div className="w-full md:w-[30%]">
         <h1 className="text-2xl font-semibold">Relevant Blogs</h1>
-        <div className="h-[500px] md:overflow-y-scroll overflow-hidden">
+        <div className="h-[500px] md:overflow-y-scroll overflow-hidden border">
           <Link className="hover:under cursor-pointer">
             No Relevant News or Blog found
           </Link>
