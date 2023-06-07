@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import navicon from "../../assets/navicon.png";
 import facebook from "../../assets/facebook.png";
 import instra from "../../assets/instra.png";
@@ -9,7 +9,22 @@ import ScrollToTop from "react-scroll-to-top";
 import { FaEnvelope, FaPhoneAlt, FaPlusCircle } from "react-icons/fa";
 import { BsRocket } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 const Footer = () => {
+  const [input, setInput] = useState("");
+  const handleOnSubscribe = (e) => {
+    e.preventDefault();
+    setInput(e.target.email.value);
+  };
+  if (input) {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Your request is sent successfully.",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  }
   return (
     <div className="w-full bg-[#d8f0ff] dark:bg-gray-700 lg:h-[400px] border-t-2  lg:rounded-tr-[250px]code text-center">
       <footer className="footer px-6  text-base-content pt-24">
@@ -134,16 +149,21 @@ const Footer = () => {
                 your email
               </span>
             </label>
-            <div className="relative">
+            <form onSubmit={handleOnSubscribe} className="relative">
               <input
+                required
                 type="text"
                 placeholder="username@site.com"
                 className="input input-bordered w-full pr-16"
+                name="email"
               />
-              <button className="btn bg-[#1DA1F2] absolute top-0 right-0 rounded-l-none border-0 hover:bg-[#1DA1f2]">
+              <button
+                onSubmit={handleOnSubscribe}
+                className="btn bg-[#1DA1F2] absolute top-0 right-0 rounded-l-none border-0 hover:bg-[#1DA1f2]"
+              >
                 Subscribe
               </button>
-            </div>
+            </form>
           </div>
         </div>
         <ScrollToTop
