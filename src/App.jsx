@@ -1,3 +1,18 @@
+import { useEffect, useState } from "react";
+import Loader from "./Components/Loader/Loader";
+
 export default function App() {
-  return <h1 className="text-green-800">Hello world!</h1>;
+  const [isLoading, setIsLoading] = useState(true);
+    useEffect(() => {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 2500);
+    }, []);
+  return (
+    <>
+      {
+        isLoading && <Loader/>
+      }
+    </>
+  );
 }

@@ -32,14 +32,12 @@ const TeamMembers = () => {
       <div className="flex md:flex-row flex-col justify-between items-center w-[90%] mx-auto my-10">
         <div className="w-full md:w-[20%] mx-auto">
           <div className="w-full">
-            <h1 className="text-2xl font-bold text-center capitalize  tracking-[6px] font-[cursive]">
+            <h1 className="text-2xl font-bold text-center capitalize dark:text-[#fff] tracking-[6px] font-[cursive]">
               Our <br></br> Best Team members
             </h1>
           </div>
         </div>
-        <div
-          className="w-[80%] mt-5 mx-auto cursor-pointer"
-        >
+        <div className="w-[80%] mt-5 mx-auto cursor-pointer">
           <div className="flex flex-wrap w-full">
             {data.slice(previous, next).map((info) => (
               <div
@@ -61,7 +59,6 @@ const TeamMembers = () => {
                     <div className="text-gray-700 font-light mb-2">
                       {info.designation}
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -72,7 +69,7 @@ const TeamMembers = () => {
       <div className="w-[90%] text-end">
         <button disabled={previous <= 0} onClick={handlePrev} title="Previous">
           <FaLongArrowAltRight
-            className="rotate-180 text-[#1da1f2] mr-4"
+            className={`rotate-180 text-[#1da1f2] mr-4 ${previous<=0?"text-[#74828a] cursor-not-allowed":""}`}
             size={30}
           />
         </button>
@@ -81,16 +78,21 @@ const TeamMembers = () => {
           onClick={handleNext}
           title="Next"
         >
-          <FaLongArrowAltRight className="text-[#1da1f2]" size={30} />
+          <FaLongArrowAltRight
+            className={`text-[#1da1f2] ${
+              next >= data.length ? "text-[#74828a] cursor-not-allowed" : ""
+            }`}
+            size={30}
+          />
         </button>
       </div>
-        <div
-          className={`fixed left-0 right-0 bottom-0 md:top-[212px] top-[21px] z-50 ease-in-out duration-300  ${
-            modalOpen ? "visible" : "hidden"
-          }`}
-        >
-          <Modal modalData={modalData} setModalOpen={setModalOpen} />
-        </div>
+      <div
+        className={`fixed left-0 right-0 bottom-0 md:top-[212px] top-[21px] z-50 ease-in-out duration-300  ${
+          modalOpen ? "visible" : "hidden"
+        }`}
+      >
+        <Modal modalData={modalData} setModalOpen={setModalOpen} />
+      </div>
     </>
   );
 };

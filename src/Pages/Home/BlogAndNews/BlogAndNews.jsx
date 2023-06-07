@@ -10,7 +10,7 @@ const BlogAndNews = () => {
     fetch("https://rowopyusay-server.vercel.app/blogs")
       .then((res) => res.json())
       .then((data) => setBlogs(data));
-  }, [])
+  }, []);
   return (
     <>
       {/* header */}
@@ -23,7 +23,7 @@ const BlogAndNews = () => {
 
       <div className="my-10 w-[90%] mx-auto flex md:flex-row-reverse flex-col justify-between items-center gap-6">
         <div className="">
-          <h1 className="text-2xl font-bold text-center capitalize  tracking-[6px] font-[cursive]">
+          <h1 className="text-2xl font-bold text-center capitalize dark:text-[#fff] tracking-[6px] font-[cursive]">
             Best News & Blog
           </h1>
         </div>
@@ -44,10 +44,10 @@ const BlogAndNews = () => {
                   />
                   <div className="p-2">
                     <Link
-                      to="/blog-details"
-                      className="text-xl font-semibold my-4"
+                      to={`/blogs/${item._id}`}
+                      className="text-xl font-semibold my-4 text-left"
                     >
-                      {item?.title}
+                      <button className="text-left">{item?.title}</button>
                     </Link>
                     <p className=" text-left cursor-pointer">
                       {item.objective}
@@ -55,10 +55,10 @@ const BlogAndNews = () => {
                     </p>
                     <div className="mt-4">
                       <Link
-                        to="/blogs"
+                        to={`/blogs/${item._id}`}
                         className="font-semibold hover:text-[#1DA1F2]"
                       >
-                        Read More
+                        <button>Read More</button>
                         <BsArrowRight size={20} className="inline-block ml-1" />
                       </Link>
                     </div>

@@ -34,9 +34,7 @@ const Modal = ({ modalData, setModalOpen }) => {
             </h3>
             <h2 className="font-bold text-xl my-2">Bio</h2>
             <p className="text-justify font-[400] leading-7">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              expedita maiores eius natus accusantium iste distinctio tempora
-              pariatur rerum porro quis maxime voluptatibus, ab mollitia
+              {modalData.description}
             </p>
             <div className="flex justify-start items-center mt-5">
               <Link
