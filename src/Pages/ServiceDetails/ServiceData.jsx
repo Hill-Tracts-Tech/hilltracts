@@ -5,7 +5,7 @@ import { TbCloudComputing } from "react-icons/tb";
 import { GiCyberEye } from "react-icons/gi";
 import { GrTechnology } from "react-icons/gr";
 import { SiBmcsoftware, SiBigcommerce, SiAltiumdesigner } from "react-icons/si";
-import '../../styles/styles.css'
+import "../../styles/styles.css";
 export const services = [
   {
     id: 1,
@@ -80,3 +80,5 @@ export const services = [
     icon: <FaDigitalOcean size={50} className="s-icon hover:rotate-180" />,
   },
 ];
+
+
