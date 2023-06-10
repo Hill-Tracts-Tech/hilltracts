@@ -22,7 +22,7 @@ const Portfolio = () => {
         </div>
       </div>
       <div className="my-5">
-        <h1 className="text-2xl font-bold text-center capitalize  tracking-[6px] font-[cursive]">
+        <h1 className="text-2xl dark:text-[#fff] font-bold text-center capitalize  tracking-[6px] font-[cursive]">
           Awesome Portfolio and Projects
         </h1>
       </div>
@@ -33,7 +33,9 @@ const Portfolio = () => {
             {filterData.map((project, i) => (
               <li
                 className={
-                  project.category == active ? "active project " : "project dark:text-gray-400 text-black"
+                  project.category == active
+                    ? "active project "
+                    : "project dark:text-gray-400 text-black"
                 }
                 key={i}
                 onClick={() => handleFilter(project.category)}
@@ -51,7 +53,11 @@ const Portfolio = () => {
           filteredItems.map((data) => (
             <div key={data.id} className="project-card rounded-md">
               <div className="image-container rounded-md">
-                <img className="rounded-md" src={data.imgURL} alt={data.imgURL} />
+                <img
+                  className="rounded-md"
+                  src={data.imgURL}
+                  alt={data.imgURL}
+                />
               </div>
               <div className="w-full details-project">
                 <Link

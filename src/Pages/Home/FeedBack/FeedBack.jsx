@@ -14,7 +14,7 @@ const FeedBack = () => {
         </h2>
       </div>
       <div className="w-1/2 mx-auto my-5">
-        <h1 className="text-2xl font-bold text-center capitalize  tracking-[6px] font-[cursive]">
+        <h1 className="text-2xl font-bold text-center capitalize dark:text-[#fff] tracking-[6px] font-[cursive]">
           What are they saying about company
         </h1>
       </div>
@@ -29,12 +29,7 @@ const FeedBack = () => {
                     className="cursor-pointer shadow-lg bg-[#b9e2fc] p-4  rounded-lg flex flex-col justify-center items-center"
                   >
                     <div className="mt-[-60px] ">
-    
-                        
-                        <FaUserAlt className="w-24 h-24 rounded-full card-bordered bg-white text-[#1DA1F2]"></FaUserAlt>
-
-                    
-                      
+                      <FaUserAlt className="w-24 h-24 rounded-full card-bordered bg-white text-[#1DA1F2]"></FaUserAlt>
                     </div>
                     <div className="mt-3 flex gap-2">
                       <img src={comma} className="w-4 h-4 rotate-180" alt="" />
@@ -44,7 +39,6 @@ const FeedBack = () => {
                     </div>
                     <div className="flex justify-start items-center gap-4">
                       <div>
-                       
                         <div className="flex justify-center items-center gap-2 ">
                           {data.rating == 1 && (
                             <>
@@ -104,8 +98,7 @@ const FeedBack = () => {
                     className="cursor-pointer shadow-lg bg-[#b9e2fc] p-4  rounded-lg flex flex-col justify-center items-center"
                   >
                     <div className="mt-[-60px]">
-                       
-                    <FaUserAlt className="w-24 h-24 rounded-full card-bordered bg-white text-[#1DA1F2]"></FaUserAlt>
+                      <FaUserAlt className="w-24 h-24 rounded-full card-bordered bg-white text-[#1DA1F2]"></FaUserAlt>
                     </div>
                     <div className="mt-3 flex gap-2">
                       <img
@@ -123,7 +116,6 @@ const FeedBack = () => {
                     </div>
                     <div className="flex justify-start items-center gap-4">
                       <div>
-                       
                         <div className="flex justify-center items-center gap-2 ">
                           {data.rating == 1 && (
                             <>
