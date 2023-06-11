@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import navicon from "../../assets/Logo1.svg";
+import Logo1 from "../../assets/Logo1.png"
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -68,10 +68,10 @@ const Navbar = () => {
       <div className="navbar-start hidden lg:flex md:hidden lg:ml-[30px] items-center">
         <img
           style={{ width: "80px", height: "80px" }}
-          src={navicon}
+          src={Logo1}
           alt=""
         ></img>
-        <Link to='/' ><h  className="text-xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#51ebad] to-[#b9e2fc] ">Hill Tracts Tech</h></Link>
+        <Link to='/' ><h  className="text-xl ml-4 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#51ebad] to-[#b9e2fc] ">Hill Tracts Tech</h></Link>
       </div>
       <div className="navbar-center hidden lg:flex md:hidden">
         <ul className="flex justify-center items-center gap-5 px-1">
@@ -116,7 +116,7 @@ const Navbar = () => {
         <Link to='/'>
         <img
           style={{ width: "80px", height: "80px" }}
-          src={navicon}
+          src={Logo1}
           alt=""
         ></img>
         </Link>

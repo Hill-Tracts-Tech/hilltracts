@@ -13,7 +13,7 @@ const Loader = () => {
             wrapperStyle={{}}
             wrapperClass="dna-wrapper"
           />
-          <h6 className="text-center" data-text="&nbsp;Hill Tracts Tech&nbsp;">
+          <h6 className="" data-text="&nbsp;Hill Tracts Tech&nbsp;">
             &nbsp;Hill Tracts Tech&nbsp;
           </h6>
         </div>
