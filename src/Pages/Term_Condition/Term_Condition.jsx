@@ -10,7 +10,7 @@ import { Privacies } from "./Privacy";
 
 const Term_Condition = () => {
   return (
-    <div className="w-full h-full p-6">
+    <div className="w-full h-full p-6 dark:text-gray-700">
       <div className="w-[90%] mx-auto">
         <div className="flex flex-wrap justify-between items-center bg-gray-200 shadow-lg p-4 rounded-md">
           <h1 className="md:text-3xl text-2xl font-bold text-[#1DA1F2] uppercase">
@@ -55,7 +55,7 @@ const Term_Condition = () => {
         <div>
           <h1 className="text-2xl font-bold">Hill Tracts Tech</h1>
           <p>Chairman market, Bandarban Sadar, Bandarban</p>
-          <a href="tomail:hilltractstech@gmail.com">
+          <a className="cursor-pointer hover:underline" href="tomail:hilltractstech@gmail.com">
             Email: hilltractstech@gmail.com
           </a>
         </div>

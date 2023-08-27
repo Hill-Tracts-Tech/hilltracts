@@ -1,7 +1,48 @@
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const userName = form.user_name.value;
+    const email = form.user_email.value;
+    const phone = form.user_phone.value;
+    const message = form.message.value;
+    emailjs
+      .sendForm(
+        "service_dkhw9xn",
+        "template_nn4qowf",
+        e.target,
+        "3gaS_1eTUJsIxb-jQ"
+      )
+      .then((res) => {
+        if (res.text) {
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Your request is sent successfully.",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        }
+      })
+      .catch((error) => {
+        if (error.text) {
+          Swal.fire({
+            position: "center",
+            icon: "error",
+            title: "Something went wrong.Please Try again!",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        }
+      });
+    form.reset();
+    console.log(userName, email, phone, message);
+  };
   return (
     <>
       <Helmet>
@@ -26,7 +67,7 @@ const Contact = () => {
               Fill in the form
             </h2>
 
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="grid gap-4 lg:gap-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
                   <div>
@@ -35,7 +76,7 @@ const Contact = () => {
                     </label>
                     <input
                       type="text"
-                      name="fullName"
+                      name="user_name"
                       required
                       className="py-3 px-4 block w-full border-gray-300 border-blue border rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-500 dark:border-0 dark:text-gray-900"
                     ></input>
@@ -46,7 +87,7 @@ const Contact = () => {
                     </label>
                     <input
                       type="tel"
-                      name="phone"
+                      name="user_phone"
                       required
                       className="py-3 px-4 block w-full border-gray-300 border rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-500 dark:border-0 dark:text-gray-900"
                     ></input>
@@ -60,7 +101,7 @@ const Contact = () => {
                     </label>
                     <input
                       type="email"
-                      name="email"
+                      name="user_email"
                       required
                       autoComplete="email"
                       className="py-3 px-4 block w-full border-gray-300 rounded-md text-sm focus:border-blue-500 border focus:ring-blue-500 dark:bg-slate-500 dark:border-0 dark:text-gray-900"
@@ -83,6 +124,7 @@ const Contact = () => {
               <div className="mt-6 grid">
                 <button
                   type="submit"
+                  value="Send"
                   className="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
                 >
                   Send

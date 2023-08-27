@@ -1,5 +1,5 @@
 import { about, mission, vision } from "./aboutData";
-import logo from "../../../public/Logo1.svg";
+import logo from "../../assets/logo1.png";
 import { services } from "../ServiceDetails/ServiceData";
 import "../../styles/styles.css";
 import { Helmet } from "react-helmet";

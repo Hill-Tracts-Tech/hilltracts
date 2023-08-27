@@ -4,7 +4,7 @@ import { Link, useLoaderData } from "react-router-dom";
 const BlogDetails = () => {
   const blog = useLoaderData();
   return (
-    <div className="w-[90%] mx-auto p-9 flex md:flex-nowrap flex-wrap justify-between items-center gap-4">
+    <div className="w-[90%] mx-auto p-9 flex md:flex-nowrap flex-wrap justify-between gap-4">
       <div className="w-full md:w-[70%]">
         <h2 className="text-2xl font-bold text-center">{blog.title}</h2>
         <div className="flex justify-start items-center gap-3 my-5">
@@ -54,11 +54,11 @@ const BlogDetails = () => {
         </div>
         <hr className="my-4" />
       </div>
-      <div className="w-full md:w-[30%]">
+      <div className="w-full md:w-[30%] mt-9 md:mt-36">
         <h1 className="text-2xl font-semibold text-center underline underline-offset-8">
           Relevant Blogs
         </h1>
-        <div className="h-[500px] md:overflow-y-scroll overflow-hidden border-l-4 border-indigo-500 p-4">
+        <div className="md:overflow-y-scroll overflow-hidden border-l-4 border-indigo-500 p-4">
           <Link className="hover:underline cursor-pointer">
             No Relevant News or Blog found
           </Link>
