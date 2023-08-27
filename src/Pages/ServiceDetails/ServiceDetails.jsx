@@ -1,9 +1,15 @@
 import { services } from "./ServiceData";
 import "../../styles/styles.css";
+import { Helmet } from "react-helmet";
 
 const ServiceDetails = () => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Services - Hill Tracts Tech</title>
+        <link rel="canonical" href="https://hilltractstech.com/about" />
+      </Helmet>
       <div className="w-full h-[500px] relative mt-[-100px]">
         <img
           className="w-full h-full object-cover mt-[-100px]"
@@ -37,7 +43,9 @@ const ServiceDetails = () => {
                 <h2 className="text-start text-3xl font-bold my-5 dark:text-gray-400">
                   {service.title}
                 </h2>
-                <p className="text-justify dark:text-white">{service.description}</p>
+                <p className="text-justify dark:text-white">
+                  {service.description}
+                </p>
               </div>
             </div>
           ))}

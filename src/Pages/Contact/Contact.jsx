@@ -1,8 +1,14 @@
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Contact - Hill Tracts Tech</title>
+        <link rel="canonical" href="https://hilltractstech.com/contact" />
+      </Helmet>
       <div className="w-full h-[500px] relative mt-[-100px]">
         <img
           className="w-full h-full object-cover mt-[-100px]"
@@ -107,10 +113,13 @@ const Contact = () => {
               >
                 (+880) 1818-266 226
               </a>
-              <a className="mt-1
+              <a
+                className="mt-1
                text-gray-500
                dark:text-white
-               " href="tel:+8801728-010 810">
+               "
+                href="tel:+8801728-010 810"
+              >
                 (+880) 1728-010 810
               </a>
             </div>
@@ -132,8 +141,10 @@ const Contact = () => {
               >
                 Visit our office
               </Link>
-              <p className="mt-1 text-gray-500
-              dark:text-white">
+              <p
+                className="mt-1 text-gray-500
+              dark:text-white"
+              >
                 Bandarban, Chittagong, Bangladesh
               </p>
             </div>

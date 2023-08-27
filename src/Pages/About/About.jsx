@@ -2,9 +2,15 @@ import { about, mission, vision } from "./aboutData";
 import logo from "../../../public/Logo1.svg";
 import { services } from "../ServiceDetails/ServiceData";
 import "../../styles/styles.css";
+import { Helmet } from "react-helmet";
 const About = () => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>About - Hill Tracts Tech</title>
+        <link rel="canonical" href="https://hilltractstech.com/about" />
+      </Helmet>
       <div className="w-full h-[500px] relative text-center mt-[-100px]">
         <img
           className="w-full h-full object-cover mt-[-100px]"
@@ -43,11 +49,15 @@ const About = () => {
         <section className="mb-5">
           <div className="grid grid-cols-1 lg:grid-cols-2 justify-between items-center gap-4">
             <div className="border-2 rounded-md shadow-lg opacity-75 p-4 common card-bordered">
-              <h3 className="text-xl font-bold mb-2 sm-12 dark:text-gray-300">Our Mission</h3>
+              <h3 className="text-xl font-bold mb-2 sm-12 dark:text-gray-300">
+                Our Mission
+              </h3>
               <p className="text-justify dark:text-white">{mission}</p>
             </div>
             <div className="border-2 rounded-md shadow-lg opacity-75 p-4 common card-bordered">
-              <h3 className="text-xl font-bold mb-2 dark:text-gray-400">Our Vision</h3>
+              <h3 className="text-xl font-bold mb-2 dark:text-gray-400">
+                Our Vision
+              </h3>
               <p className="text-justify dark:text-white">{vision}</p>
             </div>
           </div>

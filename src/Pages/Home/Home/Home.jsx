@@ -8,12 +8,18 @@ import FeedBack from "../FeedBack/FeedBack";
 import backgroundImage from "../../../assets/background.png";
 import bubble from "../../../assets/bubble.png";
 import "./Home.css";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   // const [cardData, setCardData] = useState();
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home - Hill Tracts Tech</title>
+        <link rel="canonical" href="https://hilltractstech.com/" />
+      </Helmet>
       <div
         className="w-full sm:h-[100vh] md:h-[calc(110vh-0rem)] "
         style={{
@@ -24,10 +30,7 @@ const Home = () => {
         }}
       >
         <div className=" flex justify-between items-center h-[100%] max-w-[90%] mx-auto">
-         
-          <div
-            className=" py-5 mt-[150px] mb-[50px] mb:mt-10 lg:mt-10 lg:mb-0 md:mb-0"
-          >
+          <div className=" py-5 mt-[150px] mb-[50px] mb:mt-10 lg:mt-10 lg:mb-0 md:mb-0">
             <Banner />
           </div>
         </div>
@@ -44,7 +47,7 @@ const Home = () => {
 
       <Services />
       <Portfolio />
-      <TeamMembers/>
+      <TeamMembers />
       <FeedBack />
       <BlogAndNews />
     </div>
