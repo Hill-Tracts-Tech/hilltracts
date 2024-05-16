@@ -14,7 +14,7 @@ export const data = [
     id: 2,
     imgURL: "https://i.ibb.co/W2vtSF0/rasel.jpg",
     name: "Rasel Ahmed",
-    designation: "Adviser",
+    designation: "CEO (Chief Executive Officer)",
     description:
       "A versatile Full Stack senior web developer committed to continuous improvement at Hill Tracts Tech Company. Their active participation in conferences and online communities keeps them abreast of the latest industry trends",
     facebook: "https://www.facebook.com/rasalahmad.ahmad.3/",

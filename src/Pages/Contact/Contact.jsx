@@ -160,9 +160,9 @@ const Contact = () => {
                text-gray-500
                dark:text-white
                "
-                href="tel:+8801728-010 810"
+                href="tel:+8801625-605 340"
               >
-                (+880) 1728-010 810
+                (+880) 1625-605 340
               </a>
             </div>
           </div>
@@ -181,13 +181,39 @@ const Contact = () => {
                 to="https://goo.gl/maps/PiLYVnRvFwj7NZwP9?coh=178571&entry=tt"
                 className="text-lg font-semibold text-gray-800 dark:text-gray-200 hover:underline hover:text-blue-500"
               >
-                Visit our office
+                Visit our Bandarban Office
               </Link>
               <p
                 className="mt-1 text-gray-500
               dark:text-white"
               >
-                Bandarban, Chittagong, Bangladesh
+                (1st floor) Shorolipi building, Rajar maat, Bandarban Sadar
+              </p>
+            </div>
+          </div>
+          <div
+            className="flex flex-col h-full text-center rounded-md  hover:bg-[#51ebad] p-4 sm:p-6 dark:hover:bg-white/[.05] common"
+            href="#"
+          >
+            <img
+              src="https://i.ibb.co/FsqPvPF/office.png"
+              className="w-[80px] mx-auto"
+              alt=""
+            />
+            <div className="grow">
+              <Link
+                target={"_blank"}
+                to="https://maps.app.goo.gl/z4LbD6p4BFUNFmeX6"
+                className="text-lg font-semibold text-gray-800 dark:text-gray-200 hover:underline hover:text-blue-500"
+              >
+                Visit our Chittagong Office
+              </Link>
+              <p
+                className="mt-1 text-gray-500
+              dark:text-white"
+              >
+                Level-4, Sheikh Kamal IT and Business Incubator, CUET,
+                Chittagong
               </p>
             </div>
           </div>

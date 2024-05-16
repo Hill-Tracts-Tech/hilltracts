@@ -140,7 +140,7 @@ const Footer = () => {
             <label className="label">
               <span className="label-text">
                 <FaPhoneAlt className=" inline-block text-[#1DA1F2] " />
-                +8801728-010810
+                +8801818-266 226
               </span>
             </label>
             <label className="label">
