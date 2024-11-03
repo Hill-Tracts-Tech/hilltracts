@@ -3,7 +3,7 @@ export const data = [
     id: 1,
     imgURL: "https://i.ibb.co/HKtpBKH/masum.jpg",
     name: "MD Tahidul Islam Masum",
-    designation: "Managing Director",
+    designation: "Founder & Managing Director",
     description:
       "Get acquainted with me, a forward-thinking managing director at Hill Tracts Tech Company. Their proficiency in 2 years experience enables them to export the Hill Tracts Tech Company",
     facebook: "https://www.facebook.com/ktimasum1997",
@@ -12,14 +12,26 @@ export const data = [
   },
   {
     id: 2,
-    imgURL: "https://i.ibb.co/W2vtSF0/rasel.jpg",
+    imgURL: "https://i.ibb.co.com/5s8X2Q0/pic.jpg",
     name: "Rasel Ahmed",
-    designation: "CEO (Chief Executive Officer)",
+    designation: "Co-Founder & CEO (Chief Executive Officer)",
     description:
-      "A versatile Full Stack senior web developer committed to continuous improvement at Hill Tracts Tech Company. Their active participation in conferences and online communities keeps them abreast of the latest industry trends",
+      "As the co-founder and CEO of Hill Tracts Tech, Rasel Ahmad oversees the strategic direction and day-to-day operations of the company. He is responsible for setting vision and goals, driving innovation, and ensuring that Hill Tracts Tech delivers impactful tech solutions. Rasel's leadership focuses on scaling the business while fostering a culture of growth and excellence.",
     facebook: "https://www.facebook.com/rasalahmad.ahmad.3/",
     github: "https://github.com/Rasalahmad/",
     linkedIn: "https://www.linkedin.com/in/ahmad-rasal/",
+  },
+  {
+    id: 3,
+    imgURL:
+      "https://i.ibb.co.com/C0gjC80/Whats-App-Image-2024-11-03-at-5-53-45-PM.jpg",
+    name: "Abdullah Al Momen",
+    designation: "Co-Founder & CMO (Chief Marketing Officer)",
+    description:
+      "As the co-founder and Chief Marketing Officer (CMO) of Hill Tracts Tech, Abdullah Al Momen leads the company's marketing strategy and brand development. He focuses on driving growth through innovative marketing initiatives, optimizing customer engagement, and building a strong market presence for the company.",
+    facebook: "https://www.facebook.com/abdullahmomen24",
+    github: "https://github.com",
+    linkedIn: "https://www.linkedin.com/in/abdullahmomen24/",
   },
   {
     id: 6,

@@ -1,7 +1,5 @@
 import { useState } from "react";
-import {
-  FaLongArrowAltRight,
-} from "react-icons/fa";
+import { FaLongArrowAltRight } from "react-icons/fa";
 import { data } from "./data";
 import Modal from "./Modal";
 const TeamMembers = () => {
@@ -56,8 +54,8 @@ const TeamMembers = () => {
                     <h1 className="text-gray-900 dark:text-gray-400 text-xl font-bold mb-1">
                       {info.name}
                     </h1>
-                    <div className="text-gray-700 font-light mb-2">
-                      {info.designation}
+                    <div className="text-sm text-indigo-400 font-light mb-2">
+                      {info.designation?.replace(/\s*\(.*?\)/, "")}
                     </div>
                   </div>
                 </div>
@@ -69,7 +67,9 @@ const TeamMembers = () => {
       <div className="w-[90%] text-end">
         <button disabled={previous <= 0} onClick={handlePrev} title="Previous">
           <FaLongArrowAltRight
-            className={`rotate-180 text-[#1da1f2] mr-4 ${previous<=0?"text-[#74828a] cursor-not-allowed":""}`}
+            className={`rotate-180 text-[#1da1f2] mr-4 ${
+              previous <= 0 ? "text-[#74828a] cursor-not-allowed" : ""
+            }`}
             size={30}
           />
         </button>
