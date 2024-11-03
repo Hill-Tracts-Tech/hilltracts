@@ -5,7 +5,7 @@ export const data = [
     name: "MD Tahidul Islam Masum",
     designation: "Founder & Managing Director",
     description:
-      "Get acquainted with me, a forward-thinking managing director at Hill Tracts Tech Company. Their proficiency in 2 years experience enables them to export the Hill Tracts Tech Company",
+      "As the founder and Managing Director of Hill Tracts Tech, MD Tahidul Islam Masum leads the company with a focus on innovation, growth, and operational excellence. He is responsible for guiding the company's strategic vision, fostering key partnerships, and ensuring the team’s commitment to delivering cutting-edge tech solutions. His leadership is centered on driving Hill Tracts Tech's mission forward and expanding its impact.",
     facebook: "https://www.facebook.com/ktimasum1997",
     github: "#",
     linkedIn: "https://bd.linkedin.com/in/ktimasum",
